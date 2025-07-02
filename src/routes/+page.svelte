@@ -1,25 +1,5 @@
 <script>
-  import Header from '$lib/Header.svelte';
-  import Hero from '$lib/Hero.svelte';
-  import LocalTalents from '$lib/LocalTalents.svelte';
-  import Features from '$lib/Features.svelte';
-  import Footer from '$lib/Footer.svelte';
+  import Home from "./home/+page.svelte";
 </script>
 
-<svelte:head>
-  <title>Hotel Scape - Memorable Hotels for Moments Rich in Emotions</title>
-  <meta name="description" content="Experience luxury hospitality at Hotel Scape, where every stay becomes a cherished memory. Book now for the best prices on our premium accommodations." />
-</svelte:head>
-
-<div class="min-h-screen">
-  <!-- Header overlaid on hero -->
-  <Header />
-  
-  <main>
-    <!-- Hero starts at the top with padding to account for header -->
-    <Hero />
-    <LocalTalents />
-    <Features />
-  </main>
-  <Footer />
-</div>
+<Home />

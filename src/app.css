@@ -1,20 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
 @config '../tailwind.config.js';
-@import 'tailwindcss';
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
 
 /* Custom font faces for New Icon fonts */
 @font-face {
-  font-family: 'New Icon Serif';
-  src: url('/New-Icon-Serif.otf') format('opentype');
+  font-family: "New Icon Serif";
+  src: url("/New-Icon-Serif.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'New Icon Script';
-  src: url('/New-Icon-Script.otf') format('opentype');
+  font-family: "New Icon Script";
+  src: url("/New-Icon-Script.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -25,79 +25,142 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+
   /* Define custom colors */
-  --seashell-white: #FF9F71;
-  --nautical-navy: #2F3E46;
-  --sage-green: #97A78C;
-  --driftwood: #B55B24;
-  --hint-of-silver: #C0C0C0;
-  --fresh-cream: #F4EFE6;
-  --cloud-white: #FFFCF6;
-  --sky-blue: #D6E0E2;
-  --forest-green: #5E6C5B;
+  --seashell-white: #eeeee2;
+  --nautical-navy: #2f3e46;
+  --sage-green: #97a78c;
+  --driftwood: #a6a593;
+  --hint-of-silver: #c0c0c0;
+  --fresh-cream: #f4efe6;
+  --cloud-white: #fffcf6;
+  --sky-blue: #d6e0e2;
+  --forest-green: #5e6c5b;
   --storm-cloud: #686867;
-  --midnight: #162A2C;
+  --midnight: #162a2c;
 }
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .serif {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 .script-font {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
-
-/* New custom font classes */
 .new-icon-serif {
-  font-family: 'New Icon Serif', 'Playfair Display', serif;
+  font-family: "New Icon Serif", "Playfair Display", serif;
 }
 
 .new-icon-script {
-  font-family: 'New Icon Script', 'Dancing Script', cursive;
+  font-family: "New Icon Script", "Dancing Script", cursive;
 }
 
-/* Custom color utilities */
-.bg-seashellWhite { background-color: var(--seashell-white); }
-.bg-nauticalNavy { background-color: var(--nautical-navy); }
-.bg-sageGreen { background-color: var(--sage-green); }
-.bg-driftwood { background-color: var(--driftwood); }
-.bg-hintOfSilver { background-color: var(--hint-of-silver); }
-.bg-freshCream { background-color: var(--fresh-cream); }
-.bg-cloudWhite { background-color: var(--cloud-white); }
-.bg-skyBlue { background-color: var(--sky-blue); }
-.bg-forestGreen { background-color: var(--forest-green); }
-.bg-stormCloud { background-color: var(--storm-cloud); }
-.bg-midnight { background-color: var(--midnight); }
+.bg-seashellWhite {
+  background-color: var(--seashell-white);
+}
+.bg-nauticalNavy {
+  background-color: var(--nautical-navy);
+}
+.bg-sageGreen {
+  background-color: var(--sage-green);
+}
+.bg-driftwood {
+  background-color: var(--driftwood);
+}
+.bg-hintOfSilver {
+  background-color: var(--hint-of-silver);
+}
+.bg-freshCream {
+  background-color: var(--fresh-cream);
+}
+.bg-cloudWhite {
+  background-color: var(--cloud-white);
+}
+.bg-skyBlue {
+  background-color: var(--sky-blue);
+}
+.bg-forestGreen {
+  background-color: var(--forest-green);
+}
+.bg-stormCloud {
+  background-color: var(--storm-cloud);
+}
+.bg-midnight {
+  background-color: var(--midnight);
+}
 
-.text-seashellWhite { color: var(--seashell-white); }
-.text-nauticalNavy { color: var(--nautical-navy); }
-.text-sageGreen { color: var(--sage-green); }
-.text-driftwood { color: var(--driftwood); }
-.text-hintOfSilver { color: var(--hint-of-silver); }
-.text-freshCream { color: var(--fresh-cream); }
-.text-cloudWhite { color: var(--cloud-white); }
-.text-skyBlue { color: var(--sky-blue); }
-.text-forestGreen { color: var(--forest-green); }
-.text-stormCloud { color: var(--storm-cloud); }
-.text-midnight { color: var(--midnight); }
+.text-seashellWhite {
+  color: var(--seashell-white);
+}
+.text-nauticalNavy {
+  color: var(--nautical-navy);
+}
+.text-sageGreen {
+  color: var(--sage-green);
+}
+.text-driftwood {
+  color: var(--driftwood);
+}
+.text-hintOfSilver {
+  color: var(--hint-of-silver);
+}
+.text-freshCream {
+  color: var(--fresh-cream);
+}
+.text-cloudWhite {
+  color: var(--cloud-white);
+}
+.text-skyBlue {
+  color: var(--sky-blue);
+}
+.text-forestGreen {
+  color: var(--forest-green);
+}
+.text-stormCloud {
+  color: var(--storm-cloud);
+}
+.text-midnight {
+  color: var(--midnight);
+}
 
-.border-seashellWhite { border-color: var(--seashell-white); }
-.border-nauticalNavy { border-color: var(--nautical-navy); }
-.border-sageGreen { border-color: var(--sage-green); }
-.border-driftwood { border-color: var(--driftwood); }
-.border-hintOfSilver { border-color: var(--hint-of-silver); }
-.border-freshCream { border-color: var(--fresh-cream); }
-.border-cloudWhite { border-color: var(--cloud-white); }
-.border-skyBlue { border-color: var(--sky-blue); }
-.border-forestGreen { border-color: var(--forest-green); }
-.border-stormCloud { border-color: var(--storm-cloud); }
-.border-midnight { border-color: var(--midnight); }
+.border-seashellWhite {
+  border-color: var(--seashell-white);
+}
+.border-nauticalNavy {
+  border-color: var(--nautical-navy);
+}
+.border-sageGreen {
+  border-color: var(--sage-green);
+}
+.border-driftwood {
+  border-color: var(--driftwood);
+}
+.border-hintOfSilver {
+  border-color: var(--hint-of-silver);
+}
+.border-freshCream {
+  border-color: var(--fresh-cream);
+}
+.border-cloudWhite {
+  border-color: var(--cloud-white);
+}
+.border-skyBlue {
+  border-color: var(--sky-blue);
+}
+.border-forestGreen {
+  border-color: var(--forest-green);
+}
+.border-stormCloud {
+  border-color: var(--storm-cloud);
+}
+.border-midnight {
+  border-color: var(--midnight);
+}
 
 /* Custom button styles */
 .btn-primary {
