@@ -22,7 +22,7 @@ body {
   font-family: 'Dancing Script', cursive;
 }
 
-/* Custom button styles using your color palette */
+/* Custom button styles using Tailwind colors */
 .btn-primary {
   @apply bg-forest-green text-cloud-white border-forest-green;
 }

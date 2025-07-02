@@ -32,24 +32,9 @@ export default {
   },
   plugins: [daisyui],
   daisyui: {
-    themes: [
-      {
-        hotel: {
-          "primary": colors.nauticalNavy,
-          "secondary": colors.forestGreen,
-          "accent": colors.skyBlue,
-          "neutral": colors.stormCloud,
-          "base-100": colors.cloudWhite,
-          "base-200": colors.freshCream,
-          "base-300": colors.hintOfSilver,
-          "info": colors.skyBlue,
-          "success": colors.forestGreen,
-          "warning": colors.driftwood,
-          "error": colors.stormCloud,
-        }
-      }
-    ],
-    base: true,
-    utils: true,
+    themes: false, // Disable DaisyUI themes completely
+    base: true,    // Keep base styles
+    utils: true,   // Keep utility classes like btn, card, etc.
+    styled: true,  // Keep styled components
   },
 };
