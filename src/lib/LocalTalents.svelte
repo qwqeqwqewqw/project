@@ -11,7 +11,7 @@
 
       <!-- Right Content -->
       <div class="space-y-6">
-        <div class="text-lg text-midnight/80 leading-relaxed space-y-4">
+        <div class="text-lg text-midnight leading-relaxed space-y-4">
           <p>
             We let ourselves be <span class="font-semibold text-midnight">inspired by the rich history</span> as well 
             as by contemporary artists of the city. For in the 21st century 
