@@ -15,7 +15,7 @@
   <!-- Header overlaid on hero -->
   <Header />
   
-  <main class="-mt-20">
+  <main>
     <!-- Hero starts at the top with padding to account for header -->
     <Hero />
     <LocalTalents />
