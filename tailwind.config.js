@@ -1,4 +1,5 @@
 import daisyui from 'daisyui';
+import { colors } from './src/colors.js';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -14,18 +15,18 @@ export default {
         '88': '22rem',
       },
       colors: {
-        // Custom color palette with direct hex values
-        'seashell-white': '#F8F6F0',
-        'nautical-navy': '#1E3A8A',
-        'sage-green': '#9CA3AF',
-        'driftwood': '#A3A3A3',
-        'hint-of-silver': '#E5E7EB',
-        'fresh-cream': '#FFFBEB',
-        'cloud-white': '#FFFFFF',
-        'sky-blue': '#3B82F6',
-        'forest-green': '#059669',
-        'storm-cloud': '#6B7280',
-        'midnight': '#111827'
+        // Import colors from colors.js and convert camelCase to kebab-case
+        'seashell-white': colors.seashellWhite,
+        'nautical-navy': colors.nauticalNavy,
+        'sage-green': colors.sageGreen,
+        'driftwood': colors.driftwood,
+        'hint-of-silver': colors.hintOfSilver,
+        'fresh-cream': colors.freshCream,
+        'cloud-white': colors.cloudWhite,
+        'sky-blue': colors.skyBlue,
+        'forest-green': colors.forestGreen,
+        'storm-cloud': colors.stormCloud,
+        'midnight': colors.midnight
       }
     },
   },
@@ -34,17 +35,17 @@ export default {
     themes: [
       {
         hotel: {
-          "primary": "#1E3A8A",
-          "secondary": "#059669",
-          "accent": "#3B82F6",
-          "neutral": "#6B7280",
-          "base-100": "#FFFFFF",
-          "base-200": "#F8F6F0",
-          "base-300": "#E5E7EB",
-          "info": "#3B82F6",
-          "success": "#059669",
-          "warning": "#F59E0B",
-          "error": "#EF4444",
+          "primary": colors.nauticalNavy,
+          "secondary": colors.forestGreen,
+          "accent": colors.skyBlue,
+          "neutral": colors.stormCloud,
+          "base-100": colors.cloudWhite,
+          "base-200": colors.freshCream,
+          "base-300": colors.hintOfSilver,
+          "info": colors.skyBlue,
+          "success": colors.forestGreen,
+          "warning": colors.driftwood,
+          "error": colors.stormCloud,
         }
       }
     ],
