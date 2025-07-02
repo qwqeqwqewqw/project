@@ -4,7 +4,7 @@
   let guests = $state(2);
 </script>
 
-<section class="relative min-h-screen bg-seashell-White pt-20">
+<section class="relative min-h-screen bg-seashell-white pt-20">
   <div class="container mx-auto px-6 py-20">
     <div class="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
       <!-- Left Content -->
