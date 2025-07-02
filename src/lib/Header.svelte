@@ -2,12 +2,12 @@
   let isMenuOpen = $state(false);
 </script>
 
-<header class="bg-cloud-white/95 backdrop-blur-sm sticky top-0 z-50 shadow-sm border-b border-sky-blue/20">
+<header class="bg-cloudWhite/95 backdrop-blur-sm sticky top-0 z-50 shadow-sm border-b border-skyBlue/20">
   <div class="container mx-auto px-6 py-4">
     <nav class="flex items-center justify-between">
       <!-- Logo -->
       <div class="flex items-center space-x-2">
-        <div class="text-2xl font-serif font-semibold text-forest-green">
+        <div class="text-2xl font-serif font-semibold text-forestGreen">
           Hotel
         </div>
         <div class="text-2xl font-serif font-light text-midnight italic">
@@ -17,13 +17,13 @@
 
       <!-- Desktop Navigation -->
       <div class="hidden md:flex items-center space-x-8">
-        <a href="#story" class="text-midnight hover:text-forest-green transition-colors duration-300 font-medium">
+        <a href="#story" class="text-midnight hover:text-forestGreen transition-colors duration-300 font-medium">
           Our Story
         </a>
-        <a href="#packages" class="text-midnight hover:text-forest-green transition-colors duration-300 font-medium">
+        <a href="#packages" class="text-midnight hover:text-forestGreen transition-colors duration-300 font-medium">
           Packages
         </a>
-        <a href="#contact" class="text-midnight hover:text-forest-green transition-colors duration-300 font-medium">
+        <a href="#contact" class="text-midnight hover:text-forestGreen transition-colors duration-300 font-medium">
           Contact
         </a>
       </div>
@@ -37,7 +37,7 @@
 
       <!-- Mobile Menu Button -->
       <button 
-        class="md:hidden p-2 text-midnight hover:text-forest-green transition-colors"
+        class="md:hidden p-2 text-midnight hover:text-forestGreen transition-colors"
         onclick={() => isMenuOpen = !isMenuOpen}
       >
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -48,15 +48,15 @@
 
     <!-- Mobile Menu -->
     {#if isMenuOpen}
-      <div class="md:hidden mt-4 pb-4 border-t border-sky-blue/30">
+      <div class="md:hidden mt-4 pb-4 border-t border-skyBlue/30">
         <div class="flex flex-col space-y-4 mt-4">
-          <a href="#story" class="text-midnight hover:text-forest-green transition-colors duration-300">
+          <a href="#story" class="text-midnight hover:text-forestGreen transition-colors duration-300">
             Our Story
           </a>
-          <a href="#packages" class="text-midnight hover:text-forest-green transition-colors duration-300">
+          <a href="#packages" class="text-midnight hover:text-forestGreen transition-colors duration-300">
             Packages
           </a>
-          <a href="#contact" class="text-midnight hover:text-forest-green transition-colors duration-300">
+          <a href="#contact" class="text-midnight hover:text-forestGreen transition-colors duration-300">
             Contact
           </a>
           <button class="btn btn-primary w-full mt-4 py-3 rounded-lg font-semibold">

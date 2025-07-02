@@ -22,34 +22,34 @@ body {
   font-family: 'Dancing Script', cursive;
 }
 
-/* Custom button styles using Tailwind colors */
+/* Custom button styles using camelCase Tailwind colors */
 .btn-primary {
-  @apply bg-forest-green text-cloud-white border-forest-green;
+  @apply bg-forestGreen text-cloudWhite border-forestGreen;
 }
 
 .btn-primary:hover {
-  @apply bg-sage-green border-sage-green;
+  @apply bg-sageGreen border-sageGreen;
 }
 
 .btn-outline.btn-primary {
-  @apply bg-transparent text-forest-green border-forest-green;
+  @apply bg-transparent text-forestGreen border-forestGreen;
 }
 
 .btn-outline.btn-primary:hover {
-  @apply bg-forest-green text-cloud-white border-forest-green;
+  @apply bg-forestGreen text-cloudWhite border-forestGreen;
 }
 
 /* Form input styles */
 .input-bordered {
-  @apply border-sky-blue/50;
+  @apply border-skyBlue/50;
 }
 
 .input:focus,
 .select:focus {
-  @apply border-forest-green ring-2 ring-forest-green/20;
+  @apply border-forestGreen ring-2 ring-forestGreen/20;
 }
 
 /* Card styles */
 .card {
-  @apply bg-cloud-white;
+  @apply bg-cloudWhite;
 }

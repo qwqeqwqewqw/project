@@ -15,18 +15,18 @@ export default {
         '88': '22rem',
       },
       colors: {
-        // Import colors from colors.js and convert camelCase to kebab-case
-        'seashell-white': colors.seashellWhite,
-        'nautical-navy': colors.nauticalNavy,
-        'sage-green': colors.sageGreen,
-        'driftwood': colors.driftwood,
-        'hint-of-silver': colors.hintOfSilver,
-        'fresh-cream': colors.freshCream,
-        'cloud-white': colors.cloudWhite,
-        'sky-blue': colors.skyBlue,
-        'forest-green': colors.forestGreen,
-        'storm-cloud': colors.stormCloud,
-        'midnight': colors.midnight
+        // Use camelCase naming for color utilities
+        seashellWhite: colors.seashellWhite,
+        nauticalNavy: colors.nauticalNavy,
+        sageGreen: colors.sageGreen,
+        driftwood: colors.driftwood,
+        hintOfSilver: colors.hintOfSilver,
+        freshCream: colors.freshCream,
+        cloudWhite: colors.cloudWhite,
+        skyBlue: colors.skyBlue,
+        forestGreen: colors.forestGreen,
+        stormCloud: colors.stormCloud,
+        midnight: colors.midnight
       }
     },
   },

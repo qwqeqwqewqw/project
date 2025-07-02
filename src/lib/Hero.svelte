@@ -4,20 +4,20 @@
   let guests = $state(2);
 </script>
 
-<section class="relative min-h-screen bg-gradient-to-r from-fresh-cream to-cloud-white">
+<section class="relative min-h-screen bg-gradient-to-r from-freshCream to-cloudWhite">
   <div class="container mx-auto px-6 py-20">
     <div class="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
       <!-- Left Content -->
       <div class="space-y-8">
         <div class="space-y-6">
-          <div class="script-font text-forest-green text-3xl md:text-4xl">
+          <div class="script-font text-forestGreen text-3xl md:text-4xl">
             Memorable
           </div>
           
           <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl leading-tight text-midnight">
             Hotels for<br>
             moments 
-            <span class="script-font text-sage-green italic font-medium">Rich</span><br>
+            <span class="script-font text-sageGreen italic font-medium">Rich</span><br>
             in emotions
           </h1>
           
@@ -27,7 +27,7 @@
         </div>
 
         <!-- Booking Form -->
-        <div class="bg-cloud-white p-8 rounded-2xl shadow-xl max-w-2xl border border-sky-blue/30">
+        <div class="bg-cloudWhite p-8 rounded-2xl shadow-xl max-w-2xl border border-skyBlue/30">
           <div class="grid md:grid-cols-3 gap-6 mb-6">
             <!-- Arrival Date -->
             <div class="form-control">
@@ -37,7 +37,7 @@
               <input 
                 type="date" 
                 bind:value={arrivalDate}
-                class="input input-bordered w-full px-4 py-3 rounded-lg bg-cloud-white text-midnight"
+                class="input input-bordered w-full px-4 py-3 rounded-lg bg-cloudWhite text-midnight"
                 placeholder="06/04/2022"
               />
             </div>
@@ -50,7 +50,7 @@
               <input 
                 type="date" 
                 bind:value={departureDate}
-                class="input input-bordered w-full px-4 py-3 rounded-lg bg-cloud-white text-midnight"
+                class="input input-bordered w-full px-4 py-3 rounded-lg bg-cloudWhite text-midnight"
                 placeholder="06/04/2022"
               />
             </div>
@@ -60,7 +60,7 @@
               <label class="block text-sm font-medium text-midnight mb-2">
                 Number of people
               </label>
-              <select bind:value={guests} class="select input-bordered w-full px-4 py-3 rounded-lg bg-cloud-white text-midnight">
+              <select bind:value={guests} class="select input-bordered w-full px-4 py-3 rounded-lg bg-cloudWhite text-midnight">
                 <option value={1}>1 Guest</option>
                 <option value={2}>2 Guests</option>
                 <option value={3}>3 Guests</option>

@@ -18,7 +18,7 @@
   ];
 </script>
 
-<section class="py-20 bg-fresh-cream">
+<section class="py-20 bg-freshCream">
   <div class="container mx-auto px-6">
     <div class="text-center mb-16">
       <h2 class="font-serif text-4xl md:text-5xl text-midnight mb-4">
@@ -31,7 +31,7 @@
 
     <div class="grid md:grid-cols-3 gap-8">
       {#each features as feature}
-        <div class="card bg-cloud-white shadow-xl hover:shadow-2xl transition-shadow duration-300 border border-sky-blue/20">
+        <div class="card bg-cloudWhite shadow-xl hover:shadow-2xl transition-shadow duration-300 border border-skyBlue/20">
           <figure class="aspect-[4/3]">
             <img 
               src={feature.image} 
