@@ -12,8 +12,11 @@
 </svelte:head>
 
 <div class="min-h-screen">
+  <!-- Header overlaid on hero -->
   <Header />
-  <main>
+  
+  <main class="-mt-20">
+    <!-- Hero starts at the top with padding to account for header -->
     <Hero />
     <LocalTalents />
     <Features />
