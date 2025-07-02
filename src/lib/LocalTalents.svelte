@@ -3,7 +3,7 @@
     <div class="grid lg:grid-cols-2 gap-16 items-center">
       <!-- Left Content -->
       <div class="space-y-8">
-        <h2 class="font-serif text-5xl md:text-6xl leading-tight text-midnight">
+        <h2 class="new-icon-serif text-5xl md:text-6xl leading-tight text-midnight">
           Here, local talents<br>
           come together.
         </h2>

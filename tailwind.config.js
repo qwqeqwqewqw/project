@@ -8,6 +8,8 @@ export default {
       fontFamily: {
         'serif': ['Playfair Display', 'serif'],
         'sans': ['Inter', 'sans-serif'],
+        'new-icon-serif': ['New Icon Serif', 'Playfair Display', 'serif'],
+        'new-icon-script': ['New Icon Script', 'Dancing Script', 'cursive'],
       },
       spacing: {
         '18': '4.5rem',

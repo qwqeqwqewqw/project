@@ -10,14 +10,14 @@
       <!-- Left Content -->
       <div class="space-y-8">
         <div class="space-y-6">
-          <div class="script-font text-forestGreen text-3xl md:text-4xl">
+          <div class="new-icon-script text-forestGreen text-3xl md:text-4xl">
             Memorable
           </div>
           
-          <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl leading-tight text-midnight">
+          <h1 class="new-icon-serif text-5xl md:text-7xl lg:text-8xl leading-tight text-midnight">
             Hotels for<br>
             moments 
-            <span class="script-font text-sageGreen italic font-medium">Rich</span><br>
+            <span class="new-icon-script text-sageGreen italic font-medium">Rich</span><br>
             in emotions
           </h1>
           

@@ -7,10 +7,10 @@
     <nav class="flex items-center justify-between">
       <!-- Logo -->
       <div class="flex items-center space-x-2">
-        <div class="text-2xl font-serif font-semibold text-forestGreen">
+        <div class="text-2xl new-icon-serif font-semibold text-forestGreen">
           Hotel
         </div>
-        <div class="text-2xl font-serif font-light text-midnight italic">
+        <div class="text-2xl new-icon-script font-light text-midnight italic">
           Scape
         </div>
       </div>

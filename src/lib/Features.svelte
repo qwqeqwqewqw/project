@@ -21,7 +21,7 @@
 <section class="py-20 bg-freshCream">
   <div class="container mx-auto px-6">
     <div class="text-center mb-16">
-      <h2 class="font-serif text-4xl md:text-5xl text-midnight mb-4">
+      <h2 class="new-icon-serif text-4xl md:text-5xl text-midnight mb-4">
         Exceptional Experiences
       </h2>
       <p class="text-lg text-midnight/80 max-w-2xl mx-auto">
@@ -40,7 +40,7 @@
             />
           </figure>
           <div class="card-body p-8">
-            <h3 class="card-title font-serif text-2xl text-midnight mb-4">
+            <h3 class="card-title new-icon-serif text-2xl text-midnight mb-4">
               {feature.title}
             </h3>
             <p class="text-midnight/80 leading-relaxed">

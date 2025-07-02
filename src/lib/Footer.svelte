@@ -4,10 +4,10 @@
       <!-- Hotel Logo and Description -->
       <div class="md:col-span-2 space-y-6">
         <div class="flex items-center space-x-2">
-          <div class="text-3xl font-serif font-semibold text-sageGreen">
+          <div class="text-3xl new-icon-serif font-semibold text-sageGreen">
             Hotel
           </div>
-          <div class="text-3xl font-serif font-light italic text-cloudWhite">
+          <div class="text-3xl new-icon-script font-light italic text-cloudWhite">
             Scape
           </div>
         </div>
