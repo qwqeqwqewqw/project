@@ -1,4 +1,3 @@
-import { colors, theme } from './src/colors.js';
 import daisyui from 'daisyui';
 
 /** @type {import('tailwindcss').Config} */
@@ -15,18 +14,18 @@ export default {
         '88': '22rem',
       },
       colors: {
-        // Your custom color palette
-        'seashell-white': colors.seashellWhite,
-        'nautical-navy': colors.nauticalNavy,
-        'sage-green': colors.sageGreen,
-        'driftwood': colors.driftwood,
-        'hint-of-silver': colors.hintOfSilver,
-        'fresh-cream': colors.freshCream,
-        'cloud-white': colors.cloudWhite,
-        'sky-blue': colors.skyBlue,
-        'forest-green': colors.forestGreen,
-        'storm-cloud': colors.stormCloud,
-        'midnight': colors.midnight
+        // Custom color palette with direct hex values
+        'seashell-white': '#F8F6F0',
+        'nautical-navy': '#1E3A8A',
+        'sage-green': '#9CA3AF',
+        'driftwood': '#A3A3A3',
+        'hint-of-silver': '#E5E7EB',
+        'fresh-cream': '#FFFBEB',
+        'cloud-white': '#FFFFFF',
+        'sky-blue': '#3B82F6',
+        'forest-green': '#059669',
+        'storm-cloud': '#6B7280',
+        'midnight': '#111827'
       }
     },
   },
@@ -34,7 +33,19 @@ export default {
   daisyui: {
     themes: [
       {
-        hotel: theme
+        hotel: {
+          "primary": "#1E3A8A",
+          "secondary": "#059669",
+          "accent": "#3B82F6",
+          "neutral": "#6B7280",
+          "base-100": "#FFFFFF",
+          "base-200": "#F8F6F0",
+          "base-300": "#E5E7EB",
+          "info": "#3B82F6",
+          "success": "#059669",
+          "warning": "#F59E0B",
+          "error": "#EF4444",
+        }
       }
     ],
     base: true,
