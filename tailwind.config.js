@@ -1,0 +1,39 @@
+import { colors } from './src/colors.js';
+
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./src/**/*.{html,js,svelte,ts}'],
+  theme: {
+    extend: {
+      fontFamily: {
+        'serif': ['Playfair Display', 'serif'],
+        'sans': ['Inter', 'sans-serif'],
+      },
+      spacing: {
+        '18': '4.5rem',
+        '88': '22rem',
+      },
+      colors: {
+        // Your custom color palette
+        'seashell-white': colors.seashellWhite,
+        'nautical-navy': colors.nauticalNavy,
+        'sage-green': colors.sageGreen,
+        'driftwood': colors.driftwood,
+        'hint-of-silver': colors.hintOfSilver,
+        'fresh-cream': colors.freshCream,
+        'cloud-white': colors.cloudWhite,
+        'sky-blue': colors.skyBlue,
+        'forest-green': colors.forestGreen,
+        'storm-cloud': colors.stormCloud,
+        'midnight': colors.midnight
+      }
+    },
+  },
+  plugins: [require('daisyui')],
+  daisyui: {
+    themes: false, // Disable DaisyUI themes to use Tailwind colors
+    base: true,
+    utils: true,
+    styled: true,
+  },
+}
