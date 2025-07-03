@@ -5,9 +5,9 @@
 </script>
 
 <section class="relative min-h-screen bg-seashellWhite overflow-hidden">
-  <!-- Desktop Layout: Side by side -->
+  <!-- Desktop Layout: Content and Form stacked, Image on right -->
   <div class="hidden lg:flex items-stretch min-h-screen">
-    <!-- Left: Content -->
+    <!-- Left: Content and Booking Form -->
     <div class="flex-1 flex flex-col justify-center px-8 xl:px-16 py-24">
       <div class="space-y-6 mb-12 max-w-4xl">
         <div class="font-cursive1 text-[#0a3a8a] text-5xl xl:text-6xl">
@@ -23,59 +23,61 @@
           Slow Down. Breathe Deep. Live Cherilyn.
         </p>
       </div>
-
-      <!-- Desktop Booking Form - 80% width -->
-      <div class="bg-white/90 p-8 rounded-2xl shadow-xl" style="width: 80vw; max-width: 80vw;">
-        <div class="grid grid-cols-4 gap-6">
-          <div class="form-control">
-            <label class="label" for="arrival-desktop">
-              <span class="label-text font-medium text-forestGreen text-lg">Arrival date</span>
-            </label>
-            <input
-              id="arrival-desktop"
-              type="date"
-              bind:value={arrivalDate}
-              class="input input-bordered w-full px-4 py-3 rounded-lg bg-cloudWhite text-midnight text-base"
-            />
-          </div>
-          <div class="form-control">
-            <label class="label" for="departure-desktop">
-              <span class="label-text font-medium text-forestGreen text-lg">Departure date</span>
-            </label>
-            <input
-              id="departure-desktop"
-              type="date"
-              bind:value={departureDate}
-              class="input input-bordered w-full px-4 py-3 rounded-lg bg-cloudWhite text-midnight text-base"
-            />
-          </div>
-          <div class="form-control">
-            <label class="label" for="guests-desktop">
-              <span class="label-text font-medium text-forestGreen text-lg">Number of people</span>
-            </label>
-            <select
-              id="guests-desktop"
-              bind:value={guests}
-              class="select input-bordered w-full rounded-lg bg-cloudWhite text-midnight text-base"
-            >
-              <option value={1}>1 Guest</option>
-              <option value={2}>2 Guests</option>
-              <option value={3}>3 Guests</option>
-              <option value={4}>4 Guests</option>
-              <option value={5}>5+ Guests</option>
-            </select>
-          </div>
-          <button class="btn btn-primary text-white font-semibold h-auto py-4 mt-8">
-            <span class="text-lg">BOOK A STAY</span>
-          </button>
-        </div>
-      </div>
     </div>
 
     <!-- Right: Image -->
     <div class="w-1/2 relative">
       <img src="/gate.png" alt="Luxury hotel room" class="w-full h-full object-cover" />
       <div class="absolute inset-0 bg-black/20"></div>
+    </div>
+  </div>
+
+  <!-- Desktop Booking Form - 80% width, positioned below content -->
+  <div class="hidden lg:block absolute bottom-16 left-1/2 transform -translate-x-1/2 z-10" style="width: 80vw;">
+    <div class="bg-white/90 p-8 rounded-2xl shadow-xl">
+      <div class="grid grid-cols-4 gap-6">
+        <div class="form-control">
+          <label class="label" for="arrival-desktop">
+            <span class="label-text font-medium text-forestGreen text-lg">Arrival date</span>
+          </label>
+          <input
+            id="arrival-desktop"
+            type="date"
+            bind:value={arrivalDate}
+            class="input input-bordered w-full px-4 py-3 rounded-lg bg-cloudWhite text-midnight text-base"
+          />
+        </div>
+        <div class="form-control">
+          <label class="label" for="departure-desktop">
+            <span class="label-text font-medium text-forestGreen text-lg">Departure date</span>
+          </label>
+          <input
+            id="departure-desktop"
+            type="date"
+            bind:value={departureDate}
+            class="input input-bordered w-full px-4 py-3 rounded-lg bg-cloudWhite text-midnight text-base"
+          />
+        </div>
+        <div class="form-control">
+          <label class="label" for="guests-desktop">
+            <span class="label-text font-medium text-forestGreen text-lg">Number of people</span>
+          </label>
+          <select
+            id="guests-desktop"
+            bind:value={guests}
+            class="select input-bordered w-full rounded-lg bg-cloudWhite text-midnight text-base"
+          >
+            <option value={1}>1 Guest</option>
+            <option value={2}>2 Guests</option>
+            <option value={3}>3 Guests</option>
+            <option value={4}>4 Guests</option>
+            <option value={5}>5+ Guests</option>
+          </select>
+        </div>
+        <button class="btn btn-primary text-white font-semibold h-auto py-4 mt-8">
+          <span class="text-lg">BOOK A STAY</span>
+        </button>
+      </div>
     </div>
   </div>
 
