@@ -54,7 +54,7 @@
           About us
         </a>
         <a
-          href="/Contact-us"
+          href="/contact-us"
           class="text-midnight hover:text-primary font-medium transition duration-300"
         >
           Contact us
@@ -73,15 +73,11 @@
 
     <!-- Mobile Menu Toggle -->
     <button
-      class="block lg:hidden btn btn-ghost"
-      on:click={() => (isMenuOpen = !isMenuOpen)}
+      class="block lg:hidden btn btn-ghost !bg-transparent !border-transparent"
+      aria-label="Open menu"
+      onclick={() => (isMenuOpen = !isMenuOpen)}
     >
-      <svg
-        class="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
+      <svg class="w-6 h-6" fill="none" stroke="black" viewBox="0 0 24 24">
         <path
           stroke-linecap="round"
           stroke-linejoin="round"
@@ -97,10 +93,49 @@
     <div
       class="lg:hidden bg-white/80 backdrop-blur-md text-midnight px-6 py-4 space-y-4 border-t border-gray-300"
     >
-      <a href="#story" class="block hover:text-primary">Our Story</a>
-      <a href="#packages" class="block hover:text-primary">Packages</a>
-      <a href="#contact" class="block hover:text-primary">Contact</a>
-      <button class="btn btn-primary w-full"> BOOK NOW </button>
+      <a
+        href="/rooms"
+        class="block hover:text-primary font-medium transition duration-300"
+      >
+        Rooms
+      </a>
+      <a
+        href="/dining"
+        class="block hover:text-primary font-medium transition duration-300"
+      >
+        Dining
+      </a>
+      <a
+        href="/events"
+        class="block hover:text-primary font-medium transition duration-300"
+      >
+        Events
+      </a>
+      <a
+        href="/activities"
+        class="block hover:text-primary font-medium transition duration-300"
+      >
+        Activities
+      </a>
+      <a
+        href="/attractions"
+        class="block hover:text-primary font-medium transition duration-300"
+      >
+        Attractions
+      </a>
+      <a
+        href="/about-us"
+        class="block hover:text-primary font-medium transition duration-300"
+      >
+        About us
+      </a>
+      <a
+        href="/contact-us"
+        class="block hover:text-primary font-medium transition duration-300"
+      >
+        Contact us
+      </a>
+      <button class="btn btn-primary w-full">BOOK NOW</button>
     </div>
   {/if}
 </header>

@@ -13,10 +13,14 @@
         <div class="font-cursive1 text-[#0a3a8a] text-5xl xl:text-6xl">
           Cherilyn Monta Resort
         </div>
-        <h1 class="font-wasted font-light text-5xl xl:text-7xl leading-tight text-midnight">
+        <h1
+          class="font-wasted font-light text-5xl xl:text-7xl leading-tight text-midnight"
+        >
           Where Luxury <br />Meets Nature in the<br />
         </h1>
-        <span class="font-cursive1 text-forest-green block text-5xl xl:text-7xl -mt-4">
+        <span
+          class="font-cursive1 text-forest-green block text-5xl xl:text-7xl -mt-4"
+        >
           Heart of Konkan.
         </span>
         <p class="text-xl xl:text-2xl text-midnight leading-relaxed max-w-2xl">
@@ -27,18 +31,27 @@
 
     <!-- Right: Image -->
     <div class="w-1/2 relative">
-      <img src="/gate.png" alt="Luxury hotel room" class="w-full h-full object-cover" />
+      <img
+        src="/gate.png"
+        alt="Luxury hotel room"
+        class="w-full h-full object-cover"
+      />
       <div class="absolute inset-0 bg-black/20"></div>
     </div>
   </div>
 
   <!-- Desktop Booking Form - 80% width, positioned to the left -->
-  <div class="hidden lg:block absolute bottom-16 left-8 z-10" style="width: 80vw;">
+  <div
+    class="hidden lg:block absolute bottom-16 left-16 z-10"
+    style="width: 80vw;"
+  >
     <div class="bg-white/90 p-8 rounded-2xl shadow-xl">
       <div class="grid grid-cols-4 gap-6">
         <div class="form-control">
           <label class="label" for="arrival-desktop">
-            <span class="label-text font-medium text-forestGreen text-lg">Arrival date</span>
+            <span class="label-text font-medium text-forestGreen text-lg"
+              >Arrival date</span
+            >
           </label>
           <input
             id="arrival-desktop"
@@ -49,7 +62,9 @@
         </div>
         <div class="form-control">
           <label class="label" for="departure-desktop">
-            <span class="label-text font-medium text-forestGreen text-lg">Departure date</span>
+            <span class="label-text font-medium text-forestGreen text-lg"
+              >Departure date</span
+            >
           </label>
           <input
             id="departure-desktop"
@@ -60,7 +75,9 @@
         </div>
         <div class="form-control">
           <label class="label" for="guests-desktop">
-            <span class="label-text font-medium text-forestGreen text-lg">Number of people</span>
+            <span class="label-text font-medium text-forestGreen text-lg"
+              >Number of people</span
+            >
           </label>
           <select
             id="guests-desktop"
@@ -74,7 +91,9 @@
             <option value={5}>5+ Guests</option>
           </select>
         </div>
-        <button class="btn btn-primary text-white font-semibold h-auto py-4 mt-8">
+        <button
+          class="btn btn-primary text-white font-semibold h-auto py-4 mt-4"
+        >
           <span class="text-lg">BOOK A STAY</span>
         </button>
       </div>
@@ -84,15 +103,21 @@
   <!-- Mobile & Tablet Layout: Text → Booking Form → Image -->
   <div class="lg:hidden">
     <!-- Text Content Section -->
-    <div class="px-4 sm:px-6 md:px-8 py-16 sm:py-20">
+    <div class="px-4 md:px-8 py-10 sm:py-20 pt-25">
       <div class="space-y-6 text-center sm:text-left max-w-4xl mx-auto">
-        <div class="font-cursive1 text-[#0a3a8a] text-3xl sm:text-4xl md:text-5xl">
+        <div
+          class="font-cursive1 text-[#0a3a8a] text-3xl sm:text-4xl md:text-5xl"
+        >
           Cherilyn Monta Resort
         </div>
-        <h1 class="font-wasted font-light text-3xl sm:text-4xl md:text-5xl leading-tight text-midnight">
+        <h1
+          class="font-wasted font-light text-3xl sm:text-4xl md:text-5xl leading-tight text-midnight"
+        >
           Where Luxury <br />Meets Nature in the<br />
         </h1>
-        <span class="font-cursive1 text-forest-green block text-3xl sm:text-4xl md:text-5xl -mt-2">
+        <span
+          class="font-cursive1 text-forest-green block text-3xl sm:text-4xl md:text-5xl -mt-2"
+        >
           Heart of Konkan.
         </span>
         <p class="text-lg sm:text-xl md:text-2xl text-midnight leading-relaxed">
@@ -103,11 +128,15 @@
 
     <!-- Mobile/Tablet Booking Form -->
     <div class="px-4 sm:px-6 md:px-8 py-8">
-      <div class="bg-white/95 p-6 sm:p-8 rounded-2xl shadow-xl max-w-2xl mx-auto">
+      <div
+        class="bg-white/95 p-6 sm:p-8 rounded-2xl shadow-xl max-w-2xl mx-auto"
+      >
         <div class="space-y-6">
           <div class="form-control">
             <label class="label" for="arrival-mobile">
-              <span class="label-text font-medium text-forestGreen text-lg">Arrival date</span>
+              <span class="label-text font-medium text-forestGreen text-lg"
+                >Arrival date</span
+              >
             </label>
             <input
               id="arrival-mobile"
@@ -118,7 +147,9 @@
           </div>
           <div class="form-control">
             <label class="label" for="departure-mobile">
-              <span class="label-text font-medium text-forestGreen text-lg">Departure date</span>
+              <span class="label-text font-medium text-forestGreen text-lg"
+                >Departure date</span
+              >
             </label>
             <input
               id="departure-mobile"
@@ -129,7 +160,9 @@
           </div>
           <div class="form-control">
             <label class="label" for="guests-mobile">
-              <span class="label-text font-medium text-forestGreen text-lg">Number of people</span>
+              <span class="label-text font-medium text-forestGreen text-lg"
+                >Number of people</span
+              >
             </label>
             <select
               id="guests-mobile"
@@ -143,7 +176,9 @@
               <option value={5}>5+ Guests</option>
             </select>
           </div>
-          <button class="btn btn-primary w-full text-white font-semibold py-4 h-auto">
+          <button
+            class="btn btn-primary w-full text-white font-semibold py-4 h-auto"
+          >
             <span class="text-lg">BOOK A STAY</span>
           </button>
         </div>
@@ -152,7 +187,11 @@
 
     <!-- Image Section -->
     <div class="relative h-64 sm:h-80 md:h-96">
-      <img src="/gate.png" alt="Luxury hotel room" class="w-full h-full object-cover" />
+      <img
+        src="/gate.png"
+        alt="Luxury hotel room"
+        class="w-full h-full object-cover"
+      />
       <div class="absolute inset-0 bg-black/20"></div>
     </div>
   </div>

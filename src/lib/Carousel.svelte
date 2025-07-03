@@ -2,23 +2,16 @@
   import { onMount } from "svelte";
   let currentIndex = 0;
 
-  const imageUrl = "https://images.unsplash.com/photo-1600585154340-be6161a56a0c";
-
   const hotelRooms = [
-    { id: 1, name: "Deluxe Suite", price: "$199/night", image: imageUrl },
-    { id: 2, name: "Ocean View", price: "$249/night", image: imageUrl },
-    { id: 3, name: "Mountain Lodge", price: "$179/night", image: imageUrl },
-    { id: 4, name: "City Lights", price: "$209/night", image: imageUrl },
-    { id: 5, name: "Garden View", price: "$189/night", image: imageUrl },
-    { id: 6, name: "Penthouse", price: "$299/night", image: imageUrl },
+    { id: 1, name: "Suite", image: "/suites.png" },
+    { id: 2, name: "Deluxe Suite", image: "/delux.png" },
+    { id: 3, name: "Super Deluxe Suite", image: "/superdelux.png" },
+    { id: 4, name: "Bunglow", image: "/Bunglow.png" },
   ];
 
   let visibleCount = 3;
   let interval;
-
-  function nextSlide() {
-    currentIndex = (currentIndex + 1) % (hotelRooms.length - visibleCount + 1);
-  }
+  let transitioning = false;
 
   function updateVisibleCount() {
     if (window.innerWidth < 640) {
@@ -30,30 +23,66 @@
     }
   }
 
+  // Duplicate last visibleCount slides at the start and first visibleCount at the end
+  $: slides = [
+    ...hotelRooms.slice(-visibleCount),
+    ...hotelRooms,
+    ...hotelRooms.slice(0, visibleCount),
+  ];
+
+  // Start at the first real slide
+  $: startIndex = visibleCount;
+  $: endIndex = hotelRooms.length + visibleCount - 1;
+
+  function nextSlide() {
+    if (transitioning) return;
+    transitioning = true;
+    currentIndex += 1;
+  }
+
+  function handleTransitionEnd(event) {
+    const row = event.currentTarget;
+    // Loop back to real start after reaching cloned end
+    if (currentIndex > endIndex) {
+      row.style.transition = "none";
+      currentIndex = startIndex;
+      row.style.transform = `translateX(-${(currentIndex * 100) / slides.length}%)`;
+      // Force reflow and restore transition
+      row.offsetHeight;
+      row.style.transition = "transform 700ms ease-in-out";
+    }
+    transitioning = false;
+  }
+
   onMount(() => {
     updateVisibleCount();
-    window.addEventListener('resize', updateVisibleCount);
+    window.addEventListener("resize", updateVisibleCount);
+    currentIndex = visibleCount;
     interval = setInterval(nextSlide, 4000);
-    
+
     return () => {
       clearInterval(interval);
-      window.removeEventListener('resize', updateVisibleCount);
+      window.removeEventListener("resize", updateVisibleCount);
     };
   });
 
-  $: offset = `-${(currentIndex * 100) / hotelRooms.length}%`;
-  $: wrapperWidth = `${(100 * hotelRooms.length) / visibleCount}%`;
-  $: cardBasis = `${100 / hotelRooms.length}%`;
+  $: wrapperWidth = `${(100 * slides.length) / visibleCount}%`;
+  $: cardBasis = `${100 / slides.length}%`;
+  $: offset = `-${(currentIndex * 100) / slides.length}%`;
 </script>
 
 <section class="py-16 sm:py-20 lg:py-24 bg-skyBlue">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Section Header -->
     <div class="text-center mb-12 sm:mb-16">
-      <h2 class="new-icon-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-midnight mb-4">
+      <h2
+        class="new-icon-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-midnight mb-4"
+      >
         Our Rooms & Suites
       </h2>
-      <p class="text-base sm:text-lg lg:text-xl text-midnight max-w-2xl mx-auto">
+      <p
+        class="text-base sm:text-lg lg:text-xl text-midnight max-w-2xl mx-auto"
+      >
         Discover comfort and luxury in every carefully designed space
       </p>
     </div>
@@ -64,10 +93,13 @@
       <div
         class="flex transition-transform duration-700 ease-in-out"
         style="width: {wrapperWidth}; transform: translateX({offset});"
+        on:transitionend={handleTransitionEnd}
       >
-        {#each hotelRooms as room}
+        {#each slides as room}
           <div class="flex-none px-2 sm:px-3" style="flex-basis: {cardBasis};">
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div
+              class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+            >
               <div class="aspect-[4/3] overflow-hidden">
                 <img
                   src={room.image}
@@ -76,13 +108,20 @@
                 />
               </div>
               <div class="p-4 sm:p-6">
-                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 sm:gap-4">
+                <div
+                  class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 sm:gap-4"
+                >
                   <div>
-                    <h3 class="text-lg sm:text-xl font-semibold text-midnight mb-1">{room.name}</h3>
-                    <p class="text-sm sm:text-base text-stormCloud">{room.price}</p>
+                    <h3
+                      class="text-lg sm:text-xl font-semibold text-midnight mb-1"
+                    >
+                      {room.name}
+                    </h3>
                   </div>
                   <a href={`/room/${room.id}`} class="w-full sm:w-auto">
-                    <button class="btn bg-sageGreen text-white border-0 hover:bg-forestGreen transition-all duration-300 hover:scale-105 w-full sm:w-auto px-4 sm:px-6 py-2">
+                    <button
+                      class="btn bg-sageGreen text-white border-0 hover:bg-forestGreen transition-all duration-300 hover:scale-105 w-full sm:w-auto px-4 sm:px-6 py-2"
+                    >
                       <span class="text-sm sm:text-base">Book Now</span>
                     </button>
                   </a>
@@ -92,17 +131,6 @@
           </div>
         {/each}
       </div>
-    </div>
-
-    <!-- Carousel Indicators -->
-    <div class="flex justify-center mt-8 space-x-2">
-      {#each Array(hotelRooms.length - visibleCount + 1) as _, index}
-        <button
-          class="w-3 h-3 rounded-full transition-colors duration-300 {currentIndex === index ? 'bg-forestGreen' : 'bg-forestGreen/30'}"
-          on:click={() => currentIndex = index}
-          aria-label="Go to slide {index + 1}"
-        ></button>
-      {/each}
     </div>
   </div>
 </section>
