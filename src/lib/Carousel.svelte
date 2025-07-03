@@ -118,7 +118,7 @@
                       {room.name}
                     </h3>
                   </div>
-                  <a href={`/room/${room.id}`} class="w-full sm:w-auto">
+                  <a href={`/book?room=${room.id}&type=${encodeURIComponent(room.name)}`} class="w-full sm:w-auto">
                     <button
                       class="btn bg-sageGreen text-white border-0 hover:bg-forestGreen transition-all duration-300 hover:scale-105 w-full sm:w-auto px-4 sm:px-6 py-2"
                     >
