@@ -146,7 +146,7 @@
 
               <!-- Book Now Button -->
               <div class="pt-4">
-                <a href={`/book?room=${room.id}&type=${encodeURIComponent(room.name)}`} class="inline-block">
+                <a href={`/book/${room.id}`} class="inline-block">
                   <button class="btn bg-forestGreen text-white border-0 hover:bg-sageGreen transition-all duration-300 hover:scale-105 px-8 py-3 text-lg">
                     Book {room.name}
                   </button>
