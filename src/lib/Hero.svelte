@@ -24,8 +24,8 @@
         </p>
       </div>
 
-      <!-- Desktop Booking Form -->
-      <div class="bg-white/90 p-8 rounded-2xl shadow-xl max-w-5xl">
+      <!-- Desktop Booking Form - 80% width -->
+      <div class="bg-white/90 p-8 rounded-2xl shadow-xl" style="width: 80vw; max-width: 80vw;">
         <div class="grid grid-cols-4 gap-6">
           <div class="form-control">
             <label class="label" for="arrival-desktop">
@@ -79,9 +79,9 @@
     </div>
   </div>
 
-  <!-- Mobile & Tablet Layout: Stacked -->
+  <!-- Mobile & Tablet Layout: Text → Booking Form → Image -->
   <div class="lg:hidden">
-    <!-- Content Section -->
+    <!-- Text Content Section -->
     <div class="px-4 sm:px-6 md:px-8 py-16 sm:py-20">
       <div class="space-y-6 text-center sm:text-left max-w-4xl mx-auto">
         <div class="font-cursive1 text-[#0a3a8a] text-3xl sm:text-4xl md:text-5xl">
@@ -99,14 +99,8 @@
       </div>
     </div>
 
-    <!-- Image Section -->
-    <div class="relative h-64 sm:h-80 md:h-96">
-      <img src="/gate.png" alt="Luxury hotel room" class="w-full h-full object-cover" />
-      <div class="absolute inset-0 bg-black/20"></div>
-    </div>
-
     <!-- Mobile/Tablet Booking Form -->
-    <div class="px-4 sm:px-6 md:px-8 py-8 -mt-16 relative z-10">
+    <div class="px-4 sm:px-6 md:px-8 py-8">
       <div class="bg-white/95 p-6 sm:p-8 rounded-2xl shadow-xl max-w-2xl mx-auto">
         <div class="space-y-6">
           <div class="form-control">
@@ -152,6 +146,12 @@
           </button>
         </div>
       </div>
+    </div>
+
+    <!-- Image Section -->
+    <div class="relative h-64 sm:h-80 md:h-96">
+      <img src="/gate.png" alt="Luxury hotel room" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-black/20"></div>
     </div>
   </div>
 </section>
