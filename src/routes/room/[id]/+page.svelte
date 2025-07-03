@@ -81,7 +81,7 @@
     "VIP Parking"
   ];
 
-  $: currentRoom = rooms[roomId];
+  let currentRoom = $derived(rooms[roomId]);
 
   onMount(() => {
     roomId = parseInt($page.params.id);
