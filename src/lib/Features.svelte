@@ -27,10 +27,10 @@
 <section class="py-20 bg-freshCream">
   <div class="container mx-auto px-6">
     <div class="text-center mb-16">
-      <h2 class="new-icon-serif text-4xl md:text-5xl text-midnight mb-4">
+      <h2 class="new-icon-serif text-4xl md:text-7xl text-midnight mb-4">
         Exceptional Experiences
       </h2>
-      <p class="text-lg text-midnight max-w-2xl mx-auto">
+      <p class="text-lg md:text-2xl text-midnight max-w-2xl mx-auto">
         Every moment at Hotel Scape is carefully curated to create unforgettable
         memories
       </p>
@@ -50,11 +50,11 @@
           </figure>
           <div class="card-body p-8">
             <h3
-              class="card-title new-icon-serif text-4xl font-semibold text-midnight mb-4"
+              class="card-title new-icon-serif font-semibold text-midnight mb-4 text-4xl md:text-5xl"
             >
               {feature.title}
             </h3>
-            <p class="text-midnight text-[20px] leading-relaxed">
+            <p class="text-midnight text-[1.4rem] leading-relaxed">
               {feature.description}
             </p>
           </div>

@@ -4,101 +4,109 @@
   let guests = $state(2);
 </script>
 
-<section class="relative min-h-screen bg-seashellWhite">
-  <div class="flex flex-col lg:flex-row min-h-screen">
-    <!-- Left Side -->
-    <div class="w-full lg:w-1/2 flex items-center px-6 py-20">
-      <div class="space-y-8 w-full">
-        <!-- Headings -->
-        <div class="space-y-6">
-          <div class="script-font text-forestGreen text-3xl md:text-4xl">
-            Memorable
-          </div>
-          <h1
-            class="font-serif text-5xl md:text-7xl lg:text-8xl leading-tight text-midnight"
-          >
-            Hotels for<br />
-            moments
-            <span class="script-font text-forestGreen italic font-medium"
-              >Rich</span
-            ><br />
-            in emotions
-          </h1>
-          <p class="text-lg text-midnight max-w-md leading-relaxed">
-            Book now and get the best prices
-          </p>
+<section
+  class="relative min-h-screen bg-seashellWhite flex flex-col md:flex-row items-stretch overflow-hidden lg:pr-10"
+>
+  <!-- Left: Text and Booking Form (on top for mobile/tablet, left for desktop) -->
+  <div
+    class="relative z-10 flex flex-col justify-center items-start w-full lg:w-[100%] px-6 py-24 sm:-ml-18"
+  >
+    <div
+      class="space-y-6 text-left mb-8 w-full max-w-3xl self-start ml-0 md:ml-16"
+    >
+      <div
+        class="font-cursive1 text-[#0a3a8a] text-4xl mt-6 mb-5 md:mt-0 md:text-6xl"
+      >
+        Cherilyn Monta Resort
+      </div>
+      <h1
+        class="font-wasted font-light text-[2.7rem] lg:text-[5.5rem] leading-tight text-midnight drop-shadow-lg"
+      >
+        Where Luxury <br />Meets Nature in the<br />
+      </h1>
+      <span
+        class="font-cursive1 text-forest-green -mt-6 block text-5xl lg:text-[5.5rem]"
+      >
+        Heart of Konkan.
+      </span>
+      <p
+        class="text-lg md:text-2xl text-midnight max-w-full leading-relaxed drop-shadow"
+      >
+        Slow Down. Breathe Deep. Live Cherilyn.
+      </p>
+    </div>
+
+    <!-- Booking Form -->
+    <div
+      class="bg-white/90 w-full max-w-sm lg:min-w-[70rem] p-6 lg:p-8 lg:pr-16 rounded-2xl shadow-xl mx-auto lg:ml-12 sm:ml-20 sm:mr-15"
+    >
+      <div class="grid lg:grid-cols-4 gap-6 mb-3">
+        <!-- ...form fields... -->
+        <div class="form-control">
+          <label class="label" for="guests-arrival">
+            <span class="label-text font-medium text-forestGreen text-[1.35rem]"
+              >Arrival date</span
+            >
+          </label>
+          <input
+            id="guests-arrival"
+            type="date"
+            bind:value={arrivalDate}
+            class="input input-bordered w-full px-4 py-3 rounded-lg bg-cloudWhite text-midnight text-lg"
+            placeholder="06/04/2022"
+          />
         </div>
-
-        <!-- Booking Form -->
-        <div class="bg-white p-8 rounded-2xl shadow-xl max-w-2xl">
-          <div class="grid md:grid-cols-3 gap-6 mb-6">
-            <div class="form-control">
-              <label class="label" for="guests-arrival">
-                <span class="label-text font-medium text-forestGreen"
-                  >Arrival date</span
-                >
-              </label>
-              <input
-                id="guests-arrival"
-                type="date"
-                bind:value={arrivalDate}
-                class="input input-bordered w-full px-4 py-3 rounded-lg bg-cloudWhite text-midnight"
-                placeholder="06/04/2022"
-              />
-            </div>
-
-            <div class="form-control">
-              <label class="label" for="guests-departure">
-                <span class="label-text font-medium text-forestGreen"
-                  >Departure date</span
-                >
-              </label>
-              <input
-                id="guests-departure"
-                type="date"
-                bind:value={departureDate}
-                class="input input-bordered w-full px-4 py-3 rounded-lg bg-cloudWhite text-midnight"
-                placeholder="06/04/2022"
-              />
-            </div>
-
-            <div class="form-control">
-              <label class="label" for="guests-select">
-                <span class="label-text font-medium text-forestGreen"
-                  >Number of people</span
-                >
-              </label>
-              <select
-                id="guests-select"
-                bind:value={guests}
-                class="select input-bordered w-full rounded-lg bg-cloudWhite text-midnight"
-              >
-                <option value={1}>1 Guest</option>
-                <option value={2}>2 Guests</option>
-                <option value={3}>3 Guests</option>
-                <option value={4}>4 Guests</option>
-                <option value={5}>5+ Guests</option>
-              </select>
-            </div>
-          </div>
-
-          <button
-            class="btn btn-primary w-full text-white font-semibold py-4 h-auto"
-          >
-            BOOK A STAY
-          </button>
+        <div class="form-control">
+          <label class="label" for="guests-departure">
+            <span class="label-text font-medium text-forestGreen text-[1.35rem]"
+              >Departure date</span
+            >
+          </label>
+          <input
+            id="guests-departure"
+            type="date"
+            bind:value={departureDate}
+            class="input input-bordered w-full px-4 py-3 rounded-lg bg-cloudWhite text-midnight text-lg"
+            placeholder="06/04/2022"
+          />
         </div>
+        <div class="form-control">
+          <label class="label" for="guests-select">
+            <span class="label-text font-medium text-forestGreen text-[1.35rem]"
+              >Number of people</span
+            >
+          </label>
+          <select
+            id="guests-select"
+            bind:value={guests}
+            class="select input-bordered w-full rounded-lg bg-cloudWhite text-midnight text-lg"
+          >
+            <option value={1}>1 Guest</option>
+            <option value={2}>2 Guests</option>
+            <option value={3}>3 Guests</option>
+            <option value={4}>4 Guests</option>
+            <option value={5}>5+ Guests</option>
+          </select>
+        </div>
+        <button
+          class="btn btn-primary w-full md:w-68 text-white font-semibold py-5 h-auto mt-2 px-4"
+        >
+          <span class="text-lg">BOOK A STAY</span>
+        </button>
       </div>
     </div>
+  </div>
 
-    <!-- Right Side - Image -->
-    <div class="w-full lg:w-1/2 h-[500px] lg:h-auto">
-      <img
-        src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800"
-        alt="Luxury hotel room"
-        class="w-full h-full object-cover"
-      />
-    </div>
+  <!-- Right: Image (relative on mobile/tablet, absolute right 50% on lg+) -->
+  <div
+    class="w-full md:w-[80%] lg:w-1/2 h-72 md:h-auto relative lg:absolute lg:top-0 lg:right-0 lg:h-full lg:w-1/2 z-0"
+  >
+    <img
+      src="/gate.png"
+      alt="Luxury hotel room"
+      class="w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 bg-black/20"></div>
   </div>
 </section>
 

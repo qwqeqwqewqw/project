@@ -20,6 +20,22 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Wasted Vindey";
+  src: url("/Wasted-Vindey.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bergell";
+  src: url("/Bergell.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -43,6 +59,10 @@
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
+}
+
+.header-text {
+  font-size: 1.25rem;
 }
 
 .serif {

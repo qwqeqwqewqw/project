@@ -16,12 +16,10 @@
 </svelte:head>
 
 <div class="min-h-screen">
-  <Header />
   <main>
     <Hero />
     <LocalTalents />
     <Carousel />
     <Features />
   </main>
-  <Footer />
 </div>

@@ -32,7 +32,7 @@
 </script>
 
 <!-- Carousel Container -->
-<div class="w-full overflow-hidden px-3 py-15 bg-cloudWhite">
+<div class="w-full overflow-hidden px-3 py-15 bg-sky-blue">
   <!-- Sliding Row -->
   <div
     class="flex transition-transform duration-700 ease-in-out"
