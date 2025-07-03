@@ -146,7 +146,7 @@
 
               <!-- Book Now Button -->
               <div class="pt-4">
-                <a href={`/room/${room.id}`} class="inline-block">
+                <a href={`/book?room=${room.id}&type=${encodeURIComponent(room.name)}`} class="inline-block">
                   <button class="btn bg-forestGreen text-white border-0 hover:bg-sageGreen transition-all duration-300 hover:scale-105 px-8 py-3 text-lg">
                     Book {room.name}
                   </button>
@@ -170,9 +170,11 @@
           Book your perfect room today and create unforgettable memories at Cherilyn Monta Resort.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <button class="btn bg-forestGreen text-white border-0 hover:bg-sageGreen transition-all duration-300 hover:scale-105 px-8 py-3 text-lg">
-            Book Now
-          </button>
+          <a href="/book">
+            <button class="btn bg-forestGreen text-white border-0 hover:bg-sageGreen transition-all duration-300 hover:scale-105 px-8 py-3 text-lg">
+              Book Now
+            </button>
+          </a>
           <button class="btn btn-outline border-forestGreen text-forestGreen hover:bg-forestGreen hover:text-white transition-all duration-300 px-8 py-3 text-lg">
             Contact Us
           </button>
