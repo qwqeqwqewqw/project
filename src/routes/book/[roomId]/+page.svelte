@@ -377,7 +377,7 @@
                 <div class="text-sm text-stormCloud">per night</div>
               </div>
               
-              <form onsubmit|preventDefault={handleBooking} class="space-y-4">
+              <form onsubmit={handleBooking} class="space-y-4">
                 <!-- Name -->
                 <div class="form-control">
                   <label class="label" for="name">
