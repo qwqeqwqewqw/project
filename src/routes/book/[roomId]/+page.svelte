@@ -4,18 +4,9 @@
   
   let { data } = $props();
   
-  let roomType = $state('Standard Rooms');
-  let selectedRoom = $state('Luxury Rooms');
   let rating = $state(4.9);
   let reviewCount = $state(245);
-  let address = $state('2464 Royal Ln. Mesa, New Jersey 45463');
-  let pricePerNight = $state(150);
-  
-  // Room specifications
-  let bedCount = $state(1);
-  let bathCount = $state(1);
-  let sqft = $state(300);
-  let guestCount = $state(2);
+  let address = $state('Cherilyn Monta Resort, Konkan Coast, Maharashtra');
   
   // Form data
   let formData = $state({
@@ -29,58 +20,70 @@
     numberOfRooms: ''
   });
 
-  // Room data with images from carousel
-  const roomsData = {
+  // Comprehensive room data integrating your provided information
+  const rooms = {
     1: {
       name: "Suite",
       subtitle: "A blend of elegance and comfort",
-      image: "/suites.png",
-      price: 150,
+      images: ["/suites.png", "/hero.png", "/gate.png"],
+      description: "Experience luxury and comfort in our elegantly designed Suite. Perfect for couples seeking a romantic getaway with modern amenities and stunning views.",
+      size: "450 sq ft",
+      features: ["King Size Bed", "Private Balcony", "Mini Bar", "Free WiFi"],
+      price: "₹8,500",
+      phone: "+91-807-5000",
       beds: 1,
       baths: 1,
-      sqft: 450,
       guests: 2,
-      description: "Experience luxury and comfort in our elegantly designed Suite. Perfect for couples seeking a romantic getaway with modern amenities and stunning views."
+      amenities: ["Air Conditioning", "Flat-Screen TV", "High-Speed Wi-Fi", "Electronic Safe", "Mini Bar", "Private Balcony", "Room Service", "Daily Housekeeping"]
     },
     2: {
-      name: "Deluxe Suite", 
+      name: "Deluxe Suite",
       subtitle: "Enhanced luxury with premium amenities",
-      image: "/delux.png",
-      price: 200,
+      images: ["/delux.png", "/hero.png", "/gate.png"],
+      description: "Spacious deluxe suites offering enhanced comfort with premium amenities and stunning views of the surrounding landscape.",
+      size: "650 sq ft",
+      features: ["King Size Bed", "Separate Living Area", "Premium Mini Bar", "Free WiFi"],
+      price: "₹12,500",
+      phone: "+91-807-5000",
       beds: 1,
       baths: 1,
-      sqft: 650,
       guests: 3,
-      description: "Spacious deluxe suites offering enhanced comfort with premium amenities and stunning views of the surrounding landscape."
+      amenities: ["Premium Air Conditioning", "Smart TV", "High-Speed Wi-Fi", "In-room Safe", "Premium Mini Bar", "Separate Living Area", "24/7 Room Service", "Concierge Service"]
     },
     3: {
       name: "Super Deluxe Suite",
-      subtitle: "Ultimate luxury experience", 
-      image: "/superdelux.png",
-      price: 300,
+      subtitle: "Ultimate luxury experience",
+      images: ["/superdelux.png", "/hero.png", "/gate.png"],
+      description: "Our most luxurious suites featuring exceptional space, premium furnishings, and exclusive amenities for the ultimate experience.",
+      size: "850 sq ft",
+      features: ["King Size Bed", "Spacious Living Room", "Premium Bar", "Butler Service"],
+      price: "₹18,500",
+      phone: "+91-807-5000",
       beds: 1,
       baths: 2,
-      sqft: 850,
       guests: 4,
-      description: "Our most luxurious suites featuring exceptional space, premium furnishings, and exclusive amenities for the ultimate experience."
+      amenities: ["Climate Control", "Premium Entertainment System", "High-Speed Wi-Fi", "Personal Safe", "Premium Bar", "Spacious Living Room", "Butler Service", "Priority Check-in"]
     },
     4: {
       name: "Bungalow",
       subtitle: "Private sanctuary in nature",
-      image: "/Bunglow.png", 
-      price: 400,
+      images: ["/Bunglow.png"],
+      description: "Private bungalows offering complete privacy and independence with all modern amenities in a serene natural setting.",
+      size: "1200 sq ft",
+      features: ["Multiple Bedrooms", "Private Garden", "Full Kitchen", "Dedicated Staff"],
+      price: "₹25,000",
+      phone: "+91-807-5000",
       beds: 2,
       baths: 2,
-      sqft: 1200,
       guests: 6,
-      description: "Private bungalows offering complete privacy and independence with all modern amenities in a serene natural setting."
+      amenities: ["Central Air Conditioning", "Full Kitchen", "Private Garden", "Dedicated Staff", "Private Parking", "Multiple Bedrooms", "Complete Privacy", "24/7 Support"]
     }
   };
 
-  let currentRoomData = $state(null);
+  let currentRoom = $state(null);
   
-  // Room amenities
-  const amenities = [
+  // Additional amenities for display
+  const additionalAmenities = [
     { icon: '❄️', name: 'Air Conditioning' },
     { icon: '📺', name: 'Flat-Screen TV' },
     { icon: '📶', name: 'High-Speed Wi-Fi' },
@@ -108,18 +111,11 @@
   onMount(() => {
     const roomId = data.roomId;
     
-    if (roomId && roomsData[roomId]) {
-      currentRoomData = roomsData[roomId];
-      roomType = currentRoomData.name;
-      selectedRoom = currentRoomData.name;
-      pricePerNight = currentRoomData.price;
-      bedCount = currentRoomData.beds;
-      bathCount = currentRoomData.baths;
-      sqft = currentRoomData.sqft;
-      guestCount = currentRoomData.guests;
+    if (roomId && rooms[roomId]) {
+      currentRoom = rooms[roomId];
       
       // Pre-fill room type in form
-      formData.roomType = currentRoomData.name.toLowerCase().replace(' ', '-');
+      formData.roomType = currentRoom.name.toLowerCase().replace(' ', '-');
     }
   });
   
@@ -127,21 +123,27 @@
     console.log('Booking submitted:', formData);
     // Handle booking logic here
   }
+
+  function callRoom() {
+    if (currentRoom?.phone) {
+      window.location.href = `tel:${currentRoom.phone}`;
+    }
+  }
 </script>
 
 <svelte:head>
-  <title>{currentRoomData?.name || 'Book Room'} - Cherilyn Monta Resort</title>
-  <meta name="description" content="Book your {currentRoomData?.name || 'luxury room'} at Cherilyn Monta Resort. Choose from our premium accommodations." />
+  <title>{currentRoom?.name || 'Book Room'} - Cherilyn Monta Resort</title>
+  <meta name="description" content="Book your {currentRoom?.name || 'luxury room'} at Cherilyn Monta Resort. Choose from our premium accommodations." />
 </svelte:head>
 
 <main class="min-h-screen">
   <!-- Hero Section with Room Image -->
-  {#if currentRoomData}
+  {#if currentRoom}
     <section class="relative h-screen bg-midnight overflow-hidden">
       <div class="absolute inset-0">
         <img
-          src={currentRoomData.image}
-          alt={currentRoomData.name}
+          src={currentRoom.images[0]}
+          alt={currentRoom.name}
           class="w-full h-full object-cover"
         />
         <div class="absolute inset-0 bg-black/40"></div>
@@ -151,12 +153,15 @@
       <div class="relative z-10 flex items-center justify-center h-full">
         <div class="text-center text-white max-w-4xl px-6">
           <h1 class="new-icon-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-4">
-            {currentRoomData.name}
+            {currentRoom.name}
           </h1>
           <p class="text-lg sm:text-xl md:text-2xl mb-8 opacity-90">
-            {currentRoomData.subtitle}
+            {currentRoom.subtitle}
           </p>
-          <button class="btn bg-transparent border-2 border-white text-white hover:bg-white hover:text-midnight transition-all duration-300 px-8 py-3 text-lg">
+          <button 
+            onclick={() => document.getElementById('booking-form').scrollIntoView({ behavior: 'smooth' })}
+            class="btn bg-transparent border-2 border-white text-white hover:bg-white hover:text-midnight transition-all duration-300 px-8 py-3 text-lg"
+          >
             BOOK ROOM
           </button>
         </div>
@@ -176,7 +181,7 @@
   {/if}
 
   <!-- Main Content -->
-  {#if currentRoomData}
+  {#if currentRoom}
     <div class="bg-freshCream">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div class="grid lg:grid-cols-3 gap-8">
@@ -186,7 +191,7 @@
             <div class="bg-cloudWhite rounded-2xl p-6 shadow-lg">
               <div class="flex items-center justify-between mb-4">
                 <div class="flex items-center space-x-4">
-                  <h2 class="text-2xl sm:text-3xl font-bold text-midnight">{roomType}</h2>
+                  <h2 class="text-2xl sm:text-3xl font-bold text-midnight">{currentRoom.name}</h2>
                   <span class="bg-forestGreen text-white px-3 py-1 rounded-full text-sm font-medium">
                     Premium Room
                   </span>
@@ -206,7 +211,7 @@
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
                   <span class="font-semibold text-midnight">{rating}</span>
-                  <span class="text-stormCloud">({reviewCount} Review)</span>
+                  <span class="text-stormCloud">({reviewCount} Reviews)</span>
                 </div>
               </div>
               
@@ -218,37 +223,48 @@
                 <span class="text-stormCloud">{address}</span>
               </div>
               
-              <!-- Price -->
-              <div class="flex items-baseline space-x-2">
-                <span class="text-3xl font-bold text-midnight">${pricePerNight}</span>
-                <span class="text-stormCloud">/ night</span>
+              <!-- Price and Contact -->
+              <div class="flex items-center justify-between mb-6">
+                <div class="flex items-baseline space-x-2">
+                  <span class="text-3xl font-bold text-midnight">{currentRoom.price}</span>
+                  <span class="text-stormCloud">/ night</span>
+                </div>
+                <button 
+                  onclick={callRoom}
+                  class="flex items-center space-x-2 bg-forestGreen text-white px-4 py-2 rounded-lg hover:bg-sageGreen transition-colors"
+                >
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                  <span>{currentRoom.phone}</span>
+                </button>
               </div>
               
               <!-- Room Specs -->
-              <div class="grid grid-cols-4 gap-4 mt-6 pt-6 border-t border-skyBlue/30">
+              <div class="grid grid-cols-4 gap-4 pt-6 border-t border-skyBlue/30">
                 <div class="flex items-center space-x-2">
                   <svg class="w-5 h-5 text-forestGreen" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z" />
                   </svg>
-                  <span class="text-midnight">{bedCount} Bed{bedCount > 1 ? 's' : ''}</span>
+                  <span class="text-midnight">{currentRoom.beds} Bed{currentRoom.beds > 1 ? 's' : ''}</span>
                 </div>
                 <div class="flex items-center space-x-2">
                   <svg class="w-5 h-5 text-forestGreen" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10v11M20 10v11" />
                   </svg>
-                  <span class="text-midnight">{bathCount} Bath{bathCount > 1 ? 's' : ''}</span>
+                  <span class="text-midnight">{currentRoom.baths} Bath{currentRoom.baths > 1 ? 's' : ''}</span>
                 </div>
                 <div class="flex items-center space-x-2">
                   <svg class="w-5 h-5 text-forestGreen" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
                   </svg>
-                  <span class="text-midnight">{sqft} sqft</span>
+                  <span class="text-midnight">{currentRoom.size}</span>
                 </div>
                 <div class="flex items-center space-x-2">
                   <svg class="w-5 h-5 text-forestGreen" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
                   </svg>
-                  <span class="text-midnight">{guestCount} Guest{guestCount > 1 ? 's' : ''}</span>
+                  <span class="text-midnight">{currentRoom.guests} Guest{currentRoom.guests > 1 ? 's' : ''}</span>
                 </div>
               </div>
             </div>
@@ -256,9 +272,24 @@
             <!-- Overview -->
             <div class="bg-cloudWhite rounded-2xl p-6 shadow-lg">
               <h3 class="text-2xl font-bold text-midnight mb-4">Overview</h3>
-              <p class="text-stormCloud leading-relaxed">
-                {currentRoomData.description}
+              <p class="text-stormCloud leading-relaxed mb-6">
+                {currentRoom.description}
               </p>
+              
+              <!-- Key Features -->
+              <div>
+                <h4 class="text-lg font-semibold text-midnight mb-3">Key Features</h4>
+                <div class="grid sm:grid-cols-2 gap-3">
+                  {#each currentRoom.features as feature}
+                    <div class="flex items-center space-x-2">
+                      <svg class="w-4 h-4 text-forestGreen flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                      </svg>
+                      <span class="text-midnight">{feature}</span>
+                    </div>
+                  {/each}
+                </div>
+              </div>
             </div>
             
             <!-- Room Amenities -->
@@ -268,13 +299,32 @@
                 Enjoy premium amenities designed for your comfort and convenience during your stay at Cherilyn Monta Resort.
               </p>
               
-              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {#each amenities as amenity}
-                  <div class="flex items-center space-x-3 p-3 rounded-lg hover:bg-freshCream transition-colors">
-                    <span class="text-2xl">{amenity.icon}</span>
-                    <span class="text-midnight">{amenity.name}</span>
-                  </div>
-                {/each}
+              <!-- Premium Amenities from room data -->
+              <div class="mb-6">
+                <h4 class="text-lg font-semibold text-midnight mb-3">Premium Amenities</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {#each currentRoom.amenities as amenity}
+                    <div class="flex items-center space-x-2">
+                      <svg class="w-4 h-4 text-forestGreen flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                      </svg>
+                      <span class="text-midnight">{amenity}</span>
+                    </div>
+                  {/each}
+                </div>
+              </div>
+              
+              <!-- Additional Amenities -->
+              <div>
+                <h4 class="text-lg font-semibold text-midnight mb-3">Additional Amenities</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {#each additionalAmenities as amenity}
+                    <div class="flex items-center space-x-3 p-3 rounded-lg hover:bg-freshCream transition-colors">
+                      <span class="text-2xl">{amenity.icon}</span>
+                      <span class="text-midnight">{amenity.name}</span>
+                    </div>
+                  {/each}
+                </div>
               </div>
             </div>
             
@@ -318,8 +368,14 @@
           
           <!-- Right Column - Booking Form -->
           <div class="lg:col-span-1">
-            <div class="bg-cloudWhite rounded-2xl p-6 shadow-lg sticky top-24">
-              <h3 class="text-2xl font-bold text-midnight mb-6">Book Room</h3>
+            <div id="booking-form" class="bg-cloudWhite rounded-2xl p-6 shadow-lg sticky top-24">
+              <h3 class="text-2xl font-bold text-midnight mb-6">Book {currentRoom.name}</h3>
+              
+              <!-- Price Display -->
+              <div class="bg-freshCream p-4 rounded-lg mb-6 text-center">
+                <div class="text-3xl font-bold text-forestGreen">{currentRoom.price}</div>
+                <div class="text-sm text-stormCloud">per night</div>
+              </div>
               
               <form on:submit|preventDefault={handleBooking} class="space-y-4">
                 <!-- Name -->
@@ -383,7 +439,7 @@
                 <!-- Adults -->
                 <div class="form-control">
                   <label class="label" for="adults">
-                    <span class="label-text font-medium text-midnight">Adult *</span>
+                    <span class="label-text font-medium text-midnight">Adults *</span>
                   </label>
                   <select
                     id="adults"
@@ -396,25 +452,25 @@
                     <option value="2">2 Adults</option>
                     <option value="3">3 Adults</option>
                     <option value="4">4 Adults</option>
+                    <option value="5">5+ Adults</option>
                   </select>
                 </div>
                 
                 <!-- Children -->
                 <div class="form-control">
                   <label class="label" for="children">
-                    <span class="label-text font-medium text-midnight">Children *</span>
+                    <span class="label-text font-medium text-midnight">Children</span>
                   </label>
                   <select
                     id="children"
                     bind:value={formData.children}
                     class="select input-bordered w-full bg-freshCream border-skyBlue/30 focus:border-forestGreen"
-                    required
                   >
-                    <option value="">Select</option>
                     <option value="0">No Children</option>
                     <option value="1">1 Child</option>
                     <option value="2">2 Children</option>
                     <option value="3">3 Children</option>
+                    <option value="4">4+ Children</option>
                   </select>
                 </div>
                 
@@ -442,8 +498,20 @@
                   type="submit"
                   class="btn w-full bg-forestGreen text-white border-0 hover:bg-sageGreen transition-all duration-300 mt-6 py-3 text-lg font-semibold"
                 >
-                  Book Now
+                  Book {currentRoom.name}
                 </button>
+                
+                <!-- Contact Info -->
+                <div class="text-center mt-4 pt-4 border-t border-skyBlue/30">
+                  <p class="text-sm text-stormCloud mb-2">Need help? Call us directly</p>
+                  <button 
+                    type="button"
+                    onclick={callRoom}
+                    class="text-forestGreen hover:text-sageGreen font-semibold"
+                  >
+                    {currentRoom.phone}
+                  </button>
+                </div>
               </form>
             </div>
           </div>
