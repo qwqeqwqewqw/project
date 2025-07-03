@@ -32,8 +32,8 @@
     </div>
   </div>
 
-  <!-- Desktop Booking Form - 80% width, positioned below content -->
-  <div class="hidden lg:block absolute bottom-16 left-1/2 transform -translate-x-1/2 z-10" style="width: 80vw;">
+  <!-- Desktop Booking Form - 80% width, positioned to the left -->
+  <div class="hidden lg:block absolute bottom-16 left-8 z-10" style="width: 80vw;">
     <div class="bg-white/90 p-8 rounded-2xl shadow-xl">
       <div class="grid grid-cols-4 gap-6">
         <div class="form-control">
