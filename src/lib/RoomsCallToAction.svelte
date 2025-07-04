@@ -12,7 +12,7 @@
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <button
-          class="btn btn-outline border-forestGreen text-forestGreen hover:bg-forestGreen hover:text-white transition-all duration-300 px-8 py-3 text-lg"
+          class="btn btn-outline border-forestGreen text-forest-green hover:text-red-50 hover:bg-forest-green transition-all duration-300 px-8 py-3 text-lg"
         >
           Contact Us
         </button>
