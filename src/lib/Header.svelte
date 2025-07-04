@@ -1,5 +1,7 @@
 <script lang="ts">
   import { page } from "$app/stores";
+  import { IconMenu2 } from '@tabler/icons-svelte';
+  
   let isMenuOpen = $state(false);
   const hideBookNow = $derived(
     $page.url.pathname.startsWith("/rooms") ||
@@ -88,14 +90,7 @@
       aria-label="Open menu"
       onclick={() => (isMenuOpen = !isMenuOpen)}
     >
-      <svg class="w-6 h-6" fill="none" stroke="black" viewBox="0 0 24 24">
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M4 6h16M4 12h16M4 18h16"
-        />
-      </svg>
+      <IconMenu2 class="w-6 h-6" stroke="black" />
     </button>
   </div>
 
