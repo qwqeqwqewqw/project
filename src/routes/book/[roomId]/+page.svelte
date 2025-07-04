@@ -25,7 +25,7 @@
     numberOfRooms: "",
   });
 
-  // Comprehensive room data integrating your provided information
+  // Comprehensive room data with unique amenities and booking rules for each room
   const rooms = {
     1: {
       name: "Suite",
@@ -49,6 +49,29 @@
         "Private Balcony",
         "Room Service",
         "Daily Housekeeping",
+      ],
+      additionalAmenities: [
+        { icon: "❄️", name: "Climate Control" },
+        { icon: "📺", name: "32-inch Smart TV" },
+        { icon: "📶", name: "Complimentary Wi-Fi" },
+        { icon: "🔒", name: "In-room Safe" },
+        { icon: "☕", name: "Coffee/Tea Maker" },
+        { icon: "🪞", name: "Vanity Mirror" },
+        { icon: "🛁", name: "Premium Bathroom" },
+        { icon: "🪑", name: "Reading Chair" },
+        { icon: "⏰", name: "Wake-up Service" },
+      ],
+      checkInRules: [
+        "Check-in time: 3:00 PM onwards",
+        "Valid government ID required",
+        "Early check-in subject to availability (additional charges may apply)",
+        "Maximum 2 guests per suite",
+      ],
+      checkOutRules: [
+        "Check-out time: 11:00 AM",
+        "Late check-out until 2:00 PM (50% of room rate)",
+        "Express check-out available",
+        "Room inspection required before departure",
       ],
     },
     2: {
@@ -79,6 +102,30 @@
         "24/7 Room Service",
         "Concierge Service",
       ],
+      additionalAmenities: [
+        { icon: "❄️", name: "Dual Zone AC" },
+        { icon: "📺", name: "42-inch Smart TV" },
+        { icon: "📶", name: "High-Speed Wi-Fi" },
+        { icon: "🔒", name: "Digital Safe" },
+        { icon: "🍾", name: "Premium Mini Bar" },
+        { icon: "🛋️", name: "Living Area" },
+        { icon: "🛁", name: "Marble Bathroom" },
+        { icon: "☕", name: "Espresso Machine" },
+        { icon: "🌅", name: "Garden View" },
+      ],
+      checkInRules: [
+        "Check-in time: 2:00 PM onwards",
+        "Valid government ID and address proof required",
+        "Complimentary early check-in for loyalty members",
+        "Maximum 3 guests per deluxe suite",
+        "Welcome drink included",
+      ],
+      checkOutRules: [
+        "Check-out time: 12:00 PM",
+        "Late check-out until 3:00 PM (complimentary for stays 3+ nights)",
+        "Express check-out with mobile key",
+        "Complimentary luggage storage",
+      ],
     },
     3: {
       name: "Super Deluxe Suite",
@@ -107,6 +154,31 @@
         "Spacious Living Room",
         "Butler Service",
         "Priority Check-in",
+      ],
+      additionalAmenities: [
+        { icon: "❄️", name: "Smart Climate Control" },
+        { icon: "📺", name: "55-inch OLED TV" },
+        { icon: "📶", name: "Fiber Optic Wi-Fi" },
+        { icon: "🔒", name: "Biometric Safe" },
+        { icon: "🍸", name: "Premium Bar Setup" },
+        { icon: "🛋️", name: "Designer Furniture" },
+        { icon: "🛁", name: "Jacuzzi Bathtub" },
+        { icon: "🎵", name: "Sound System" },
+        { icon: "🌊", name: "Ocean View" },
+      ],
+      checkInRules: [
+        "Check-in time: 1:00 PM onwards",
+        "VIP check-in with dedicated concierge",
+        "Complimentary airport transfer (within 50km)",
+        "Maximum 4 guests per super deluxe suite",
+        "Welcome amenities and champagne included",
+      ],
+      checkOutRules: [
+        "Check-out time: 1:00 PM",
+        "Complimentary late check-out until 4:00 PM",
+        "Butler-assisted check-out",
+        "Complimentary departure transfer",
+        "Post-stay concierge follow-up",
       ],
     },
     4: {
@@ -137,36 +209,37 @@
         "Complete Privacy",
         "24/7 Support",
       ],
+      additionalAmenities: [
+        { icon: "❄️", name: "Central AC System" },
+        { icon: "📺", name: "Multiple Smart TVs" },
+        { icon: "📶", name: "Mesh Wi-Fi Network" },
+        { icon: "🔒", name: "Smart Lock System" },
+        { icon: "🍳", name: "Fully Equipped Kitchen" },
+        { icon: "🌳", name: "Private Garden" },
+        { icon: "🛁", name: "Master Bathroom Suite" },
+        { icon: "🚗", name: "Private Parking" },
+        { icon: "🏡", name: "Independent Villa" },
+      ],
+      checkInRules: [
+        "Check-in time: 12:00 PM onwards",
+        "Private check-in at bungalow",
+        "Dedicated staff orientation included",
+        "Maximum 6 guests per bungalow",
+        "Grocery pre-stocking service available",
+        "Pet-friendly accommodation (with prior notice)",
+      ],
+      checkOutRules: [
+        "Check-out time: 2:00 PM",
+        "Flexible check-out timing (up to 6:00 PM)",
+        "Staff-assisted packing and departure",
+        "Kitchen cleaning service included",
+        "Property inspection with guest walkthrough",
+        "Complimentary laundry service for extended stays",
+      ],
     },
   };
 
   let currentRoom = $state(null);
-
-  // Additional amenities for display
-  const additionalAmenities = [
-    { icon: "❄️", name: "Air Conditioning" },
-    { icon: "📺", name: "Flat-Screen TV" },
-    { icon: "📶", name: "High-Speed Wi-Fi" },
-    { icon: "🔒", name: "Electronic Safe" },
-    { icon: "🔊", name: "Sound System" },
-    { icon: "🪞", name: "Vanity mirror" },
-    { icon: "🛁", name: "Bathtubs" },
-    { icon: "🪑", name: "Seating area" },
-    { icon: "⏰", name: "Alarm clock" },
-  ];
-
-  // Booking rules
-  const checkInRules = [
-    "Check-in time: 3:00 PM onwards",
-    "Valid ID required at check-in",
-    "Early check-in subject to availability",
-  ];
-
-  const checkOutRules = [
-    "Check-out time: 11:00 AM",
-    "Late check-out available for additional fee",
-    "Express check-out available",
-  ];
 
   onMount(() => {
     const roomId = data.roomId;
@@ -255,10 +328,16 @@
             <RoomOverview room={currentRoom} />
 
             <!-- Room Amenities -->
-            <RoomAmenities room={currentRoom} {additionalAmenities} />
+            <RoomAmenities
+              room={currentRoom}
+              additionalAmenities={currentRoom.additionalAmenities}
+            />
 
             <!-- Booking Rules -->
-            <BookingRules {checkInRules} {checkOutRules} />
+            <BookingRules
+              checkInRules={currentRoom.checkInRules}
+              checkOutRules={currentRoom.checkOutRules}
+            />
           </div>
 
           <!-- Right Column - Booking Form -->
