@@ -1,4 +1,4 @@
-<section class="py-16 sm:py-20 lg:py-24 bg-cloudWhite">
+<section class="py-16 px-10 sm:pl-12 sm:py-20 lg:py-24 bg-cloudWhite">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
       <!-- Left Content -->

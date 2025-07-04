@@ -103,7 +103,7 @@
   <!-- Mobile & Tablet Layout: Text → Booking Form → Image -->
   <div class="lg:hidden">
     <!-- Text Content Section -->
-    <div class="px-4 md:px-8 py-10 sm:py-20 pt-25">
+    <div class="px-4 md:px-19 py-10 sm:py-10 sm:pt-30 pt-25">
       <div class="space-y-6 text-center sm:text-left max-w-4xl mx-auto">
         <div
           class="font-cursive1 text-[#0a3a8a] text-3xl sm:text-4xl md:text-5xl"

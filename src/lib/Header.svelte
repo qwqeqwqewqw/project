@@ -1,18 +1,27 @@
 <script lang="ts">
+  import { page } from "$app/stores";
   let isMenuOpen = $state(false);
+  const hideBookNow = $derived(
+    $page.url.pathname.startsWith("/rooms") ||
+      $page.url.pathname.startsWith("/book")
+  );
 </script>
 
 <header
-  class="fixed top-0 left-0 w-full z-50 bg-white/20 backdrop-blur-md shadow-md"
+  class="fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-md shadow-md"
 >
   <div class="w-full px-6 py-4 flex items-center justify-between">
     <!-- Left: Logo + Navigation -->
     <div class="flex items-center space-x-12">
       <!-- Logo -->
-      <div class="flex items-center space-x-2">
-        <a href="/" class="flex items-center space-x-2">
-          <img src="/logo.png" alt="Hotel Scape Logo" class="h-10 w-auto" />
-        </a>
+      <div class=" rounded px-5 py-2 -pr-20">
+        <a href="/"
+          ><img
+            src="/headerlogo.png"
+            alt="Hotel Scape Logo"
+            class="h-10 w-auto drop-shadow-md"
+          /></a
+        >
       </div>
 
       <!-- Nav Links -->
@@ -63,13 +72,15 @@
     </div>
 
     <!-- Right: Book Now Button -->
-    <div class="hidden lg:block lg:mr-15">
-      <button
-        class="btn bg-transparent border-2 border-rose-50 text-white transition-all duration-300 hover:scale-110 shadow-none p-5"
-      >
-        <span class="text-[1.1rem]">BOOK NOW</span>
-      </button>
-    </div>
+    {#if !hideBookNow}
+      <div class="hidden lg:block lg:mr-15">
+        <button
+          class="btn bg-transparent border-2 border-rose-50 text-white transition-all duration-300 hover:scale-110 shadow-none p-5"
+        >
+          <span class="text-[1.1rem]">BOOK NOW</span>
+        </button>
+      </div>
+    {/if}
 
     <!-- Mobile Menu Toggle -->
     <button
@@ -135,7 +146,9 @@
       >
         Contact us
       </a>
-      <button class="btn btn-primary w-full">BOOK NOW</button>
+      {#if !hideBookNow}
+        <button class="btn btn-primary w-full">BOOK NOW</button>
+      {/if}
     </div>
   {/if}
 </header>
