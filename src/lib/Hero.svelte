@@ -105,9 +105,7 @@
     <!-- Text Content Section -->
     <div class="px-4 md:px-19 py-10 sm:py-10 sm:pt-30 pt-25">
       <div class="space-y-6 text-center sm:text-left max-w-4xl mx-auto">
-        <div
-          class="font-cursive1 text-[#0a3a8a] text-3xl sm:text-4xl md:text-5xl"
-        >
+        <div class="font-cursive1 text-monta text-3xl sm:text-4xl md:text-5xl">
           Cherilyn Monta Resort
         </div>
         <h1

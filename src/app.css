@@ -68,9 +68,10 @@
   --fresh-cream: #f4efe6;
   --cloud-white: #fffcf6;
   --sky-blue: #d6e0e2;
-  --forest-green: #5e6c5b;
+  --forest-green: #546450;
   --storm-cloud: #686867;
   --midnight: #162a2c;
+  --monta: #0a3a8a;
 }
 
 body {
@@ -130,6 +131,7 @@ body {
 .bg-midnight {
   background-color: var(--midnight);
 }
+
 
 .text-seashellWhite {
   color: var(--seashell-white);

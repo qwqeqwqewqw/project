@@ -17,6 +17,7 @@ export default {
         "forest-green": "#5e6c5b",
         "storm-cloud": "#686867",
         midnight: "#162a2c",
+        monta: "#0a3a8a",
       },
       fontFamily: {
         serif: ["Playfair Display", "serif"],

@@ -113,7 +113,7 @@
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-4xl mx-auto">
         <div
-          class="font-cursive1 text-[#0a3a8a] text-3xl sm:text-4xl md:text-5xl mb-4"
+          class="font-cursive1 text-monta text-3xl sm:text-4xl md:text-5xl mb-4"
         >
           Cherilyn Monta Resort
         </div>

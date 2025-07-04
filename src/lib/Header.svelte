@@ -75,7 +75,7 @@
     {#if !hideBookNow}
       <div class="hidden lg:block lg:mr-15">
         <button
-          class="btn bg-transparent border-2 border-rose-50 text-white transition-all duration-300 hover:scale-110 shadow-none p-5"
+          class="btn bg-transparent border-2 border-rose-50 text-white hover:bg-rose-50 hover:text-forest-green transition-all duration-300 hover:scale-110 shadow-none p-5"
         >
           <span class="text-[1.1rem]">BOOK NOW</span>
         </button>
