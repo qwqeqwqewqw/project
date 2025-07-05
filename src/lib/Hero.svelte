@@ -9,21 +9,21 @@
   <div class="hidden lg:flex items-stretch min-h-screen">
     <!-- Left: Content and Booking Form -->
     <div class="flex-1 flex flex-col justify-center px-8 xl:px-16 py-24">
-      <div class="space-y-6 mb-12 max-w-4xl">
-        <div class="font-cursive1 text-[#0a3a8a] text-5xl xl:text-6xl">
+      <div class="space-y-6 mb-12 max-w-4xl xl:pl-0">
+        <div class="font-cursive1 text-[#0a3a8a] text-5xl xl:text-5xl">
           Cherilyn Monta Resort
         </div>
         <h1
-          class="font-wasted font-light text-5xl xl:text-8xl xl:max-w-[95%] leading-tight text-midnight"
+          class="font-wasted font-light text-5xl xl:text-6xl xl:max-w-[95%] leading-tight text-midnight"
         >
           Where Luxury <br />Meets Nature in the<br />
         </h1>
         <span
-          class="font-cursive1 text-konkan block text-5xl xl:text-7xl -mt-4"
+          class="font-cursive1 text-konkan block text-5xl xl:text-5xl -mt-4"
         >
           Heart of Konkan.
         </span>
-        <p class="text-xl xl:text-2xl text-midnight leading-relaxed max-w-2xl">
+        <p class="text-xl xl:text-xl text-midnight leading-relaxed max-w-2xl">
           Slow Down. Breathe Deep. Live Cherilyn.
         </p>
       </div>
@@ -43,13 +43,13 @@
   <!-- Desktop Booking Form - 80% width, positioned to the left -->
   <div
     class="hidden lg:block absolute bottom-16 left-16 z-10"
-    style="width: 80vw;"
+    style="width: 70vw;"
   >
     <div class="bg-white/90 p-8 rounded-2xl shadow-xl">
-      <div class="grid grid-cols-4 gap-6">
+      <div class="grid grid-cols-4 gap-4">
         <div class="form-control">
           <label class="label" for="arrival-desktop">
-            <span class="label-text font-medium text-forestGreen text-lg"
+            <span class="label-text font-medium text-forestGreen text-md"
               >Arrival date</span
             >
           </label>
@@ -62,7 +62,7 @@
         </div>
         <div class="form-control">
           <label class="label" for="departure-desktop">
-            <span class="label-text font-medium text-forestGreen text-lg"
+            <span class="label-text font-medium text-forestGreen text-md"
               >Departure date</span
             >
           </label>
@@ -75,7 +75,7 @@
         </div>
         <div class="form-control">
           <label class="label" for="guests-desktop">
-            <span class="label-text font-medium text-forestGreen text-lg"
+            <span class="label-text font-medium text-forestGreen text-md"
               >Number of people</span
             >
           </label>
@@ -92,7 +92,7 @@
           </select>
         </div>
         <button
-          class="btn btn-primary text-white font-semibold h-auto py-4 mt-4"
+          class="btn btn-primary text-white font-semibold h-auto py-4 mt-2"
         >
           <span class="text-lg">BOOK A STAY</span>
         </button>
@@ -103,8 +103,8 @@
   <!-- Mobile & Tablet Layout: Text → Booking Form → Image -->
   <div class="lg:hidden">
     <!-- Text Content Section -->
-    <div class="px-4 md:px-19 py-10 sm:py-10 sm:pt-30 pt-25">
-      <div class="space-y-6 text-center sm:text-left max-w-4xl mx-auto">
+    <div class="px-4 py-10 pt-30">
+      <div class="space-y-6 text-center max-w-4xl mx-auto">
         <div class="font-cursive1 text-monta text-3xl sm:text-4xl md:text-5xl">
           Cherilyn Monta Resort
         </div>

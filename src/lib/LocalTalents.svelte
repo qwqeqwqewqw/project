@@ -4,7 +4,7 @@
       <!-- Left Content -->
       <div class="space-y-0 sm:space-y-8 lg:text-left">
         <h2
-          class="font-wasted text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-midnight leading-tight"
+          class="font-wasted text-3xl sm:text-4xl xl:text-6xl text-midnight leading-tight"
         >
           Showcasing the Soul <br />of the Region
         </h2>
@@ -13,7 +13,7 @@
       <!-- Right Content -->
       <div class="space-y-6 sm:space-y-8">
         <div
-          class="text-base sm:text-lg lg:text-xl xl:text-2xl text-midnight leading-relaxed space-y-4"
+          class="text-base sm:text-lg xl:text-xl text-midnight leading-relaxed space-y-4"
         >
           <p>
             Here, tradition blends seamlessly with curated modern luxuries,

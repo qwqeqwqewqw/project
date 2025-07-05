@@ -14,9 +14,9 @@
 >
   <div class="w-full px-6 py-4 flex items-center justify-between">
     <!-- Left: Logo + Navigation -->
-    <div class="flex items-center space-x-12">
+    <div class="flex items-center space-x-5">
       <!-- Logo -->
-      <div class=" rounded px-5 py-2 -pr-20">
+      <div class=" rounded px-5 py-2 -pr-10">
         <a href="/"
           ><img
             src="/headerlogo.png"
@@ -27,7 +27,7 @@
       </div>
 
       <!-- Nav Links -->
-      <div class="hidden lg:flex items-center space-x-6 header-text">
+      <div class="hidden lg:flex items-center space-x-6 text-md">
         <a
           href="/rooms"
           class="text-midnight hover:text-primary font-medium transition duration-300"
@@ -77,9 +77,9 @@
     {#if !hideBookNow}
       <div class="hidden lg:block lg:mr-15">
         <button
-          class="btn bg-transparent border-2 border-rose-50 text-white hover:bg-rose-50 hover:text-forest-green transition-all duration-300 hover:scale-110 shadow-none p-5"
+          class="btn bg-sky-blue border-0 text-nautical-navy transition-all duration-300 hover:scale-110 shadow-none p-4.5"
         >
-          <span class="text-[1.1rem]">BOOK NOW</span>
+          <span class="text-md">BOOK NOW</span>
         </button>
       </div>
     {/if}
