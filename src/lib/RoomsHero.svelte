@@ -1,4 +1,6 @@
-<section class="relative py-20 sm:py-24 lg:py-32 bg-seashellWhite">
+<section
+  class="relative pt-30 pb-15 sm:py-24 lg:pb-10 lg:pt-30 bg-seashellWhite"
+>
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center max-w-4xl mx-auto">
       <div

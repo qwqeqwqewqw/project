@@ -1,18 +1,30 @@
 <script>
   import { onMount } from "svelte";
-  import RoomHero from "$lib/RoomHero.svelte";
+  import RoomHero from "$lib/BookingHero.svelte";
   import RoomDetails from "$lib/RoomDetails.svelte";
   import RoomOverview from "$lib/RoomOverview.svelte";
   import RoomAmenities from "$lib/RoomAmenities.svelte";
   import BookingRules from "$lib/BookingRules.svelte";
   import BookingForm from "$lib/BookingForm.svelte";
+  import BookingPictureCarousel from "$lib/BookingPictureCarousel.svelte";
 
   let { data } = $props();
 
   let rating = $state(4.9);
   let reviewCount = $state(245);
   let address = $state("Cherilyn Monta Resort, Konkan Coast, Maharashtra");
+  let showGallery = $state(false);
 
+  function handleViewPictures() {
+    showGallery = true;
+    console.log(showGallery);
+  }
+
+  console.log(showGallery);
+  function closeGallery() {
+    showGallery = false;
+    console.log(showGallery);
+  }
   // Form data
   let formData = $state({
     name: "",
@@ -28,9 +40,9 @@
   // Comprehensive room data with unique amenities and booking rules for each room
   const rooms = {
     1: {
-      name: "Suite",
+      name: "Studio",
       subtitle: "A blend of elegance and comfort",
-      images: ["/suites.png", "/hero.png", "/gate.png"],
+      images: ["/studio/studio2.png", "/hero.png", "/gate.png"],
       description:
         "Experience luxury and comfort in our elegantly designed Suite. Perfect for couples seeking a romantic getaway with modern amenities and stunning views.",
       size: "450 sq ft",
@@ -130,7 +142,17 @@
     3: {
       name: "Super Deluxe Suite",
       subtitle: "Ultimate luxury experience",
-      images: ["/superdelux.png", "/hero.png", "/gate.png"],
+      images: [
+        "/superdelux/superdelux1.png",
+        "/superdelux/superdelux2.png",
+        "/superdelux/superdelux3.png",
+        "/superdelux/superdelux4.png",
+        "/superdelux/superdelux5.png",
+        "/superdelux/superdelux6.png",
+        "/superdelux/superdelux7.png",
+        "/superdelux/superdelux8.png",
+        "/superdelux/superdelux9.png",
+      ],
       description:
         "Our most luxurious suites featuring exceptional space, premium furnishings, and exclusive amenities for the ultimate experience.",
       size: "850 sq ft",
@@ -285,7 +307,11 @@
 <main class="min-h-screen">
   <!-- Hero Section with Room Image -->
   {#if currentRoom}
-    <RoomHero room={currentRoom} onBookClick={scrollToBookingForm} />
+    <RoomHero
+      room={currentRoom}
+      onBookClick={scrollToBookingForm}
+      onViewPictures={handleViewPictures}
+    />
   {:else}
     <!-- Fallback hero for when no room data is available -->
     <section
@@ -306,6 +332,22 @@
         </a>
       </div>
     </section>
+  {/if}
+
+  {#if showGallery}
+    <div
+      class="fixed inset-0 z-50 flex items-center justify-center bg-black/70"
+    >
+      <div class="relative w-full h-full max-w-6xl mx-auto">
+        <button
+          class="absolute top-4 right-4 z-50 btn btn-sm btn-circle bg-white text-black hover:bg-gray-200"
+          onclick={closeGallery}
+        >
+          ✕
+        </button>
+        <BookingPictureCarousel images={currentRoom.images} />
+      </div>
+    </div>
   {/if}
 
   <!-- Main Content -->

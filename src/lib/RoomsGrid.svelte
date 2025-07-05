@@ -27,7 +27,7 @@
           <div class="space-y-6 {index % 2 === 1 ? 'lg:col-start-1' : ''}">
             <div>
               <h2
-                class="new-icon-serif text-3xl sm:text-4xl lg:text-5xl text-midnight mb-4"
+                class="font-wasted text-3xl sm:text-4xl lg:text-5xl text-midnight mb-4"
               >
                 {room.name}
               </h2>
@@ -37,15 +37,7 @@
             </div>
 
             <!-- Room Details -->
-            <div class="grid sm:grid-cols-3 gap-4 mb-6">
-              <div class="bg-cloudWhite p-4 rounded-lg text-center">
-                <div
-                  class="text-2xl sm:text-3xl font-bold text-forestGreen mb-1"
-                >
-                  {room.size}
-                </div>
-                <div class="text-sm text-midnight">Room Size</div>
-              </div>
+            <div class="grid sm:grid-cols-2 gap-4 mb-6">
               <div class="bg-cloudWhite p-4 rounded-lg text-center">
                 <div
                   class="text-2xl sm:text-3xl font-bold text-forestGreen mb-1"
@@ -60,7 +52,7 @@
                 >
                   {room.price}
                 </div>
-                <div class="text-sm text-midnight">Per Night</div>
+                <div class="text-sm text-midnight">Per Person, Per Night</div>
               </div>
             </div>
 
@@ -90,7 +82,7 @@
             </div>
 
             <!-- Amenities -->
-            <div class="mb-8">
+            <div class="mb-4">
               <h3 class="text-xl font-semibold text-midnight mb-3">
                 Amenities
               </h3>
@@ -115,6 +107,12 @@
                 </button>
               </a>
             </div>
+
+            {#if room.name.includes("Bungalow (2/3/4 BHK)")}
+              <p class="text-sm text-red-600 font-medium">
+                * Pools are only part of specific plans.
+              </p>
+            {/if}
           </div>
         </div>
       {/each}

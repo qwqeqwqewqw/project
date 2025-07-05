@@ -1,25 +1,21 @@
 <script>
   const features = [
     {
-      title: "Luxury Amenities",
-      description:
-        "Experience world-class facilities designed for your comfort and relaxation.",
-      image:
-        "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=600",
-    },
-    {
-      title: "Fine Dining",
-      description:
-        "Savor exquisite culinary experiences crafted by renowned local chefs.",
-      image:
-        "https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=600",
-    },
-    {
-      title: "Spa & Wellness",
+      title: "Yoga and Forest therapy",
       description:
         "Rejuvenate your mind and body with our comprehensive wellness services.",
-      image:
-        "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "yoga.png",
+    },
+    {
+      title: "Swimming Pool",
+      description:
+        "Take a dip in the waters of our swimming pool and relax on the lounge chairs.",
+      image: "/swimming.png",
+    },
+    {
+      title: "Traditional Konkan Cuisine",
+      description: "Relish traditional konkani cuisine made by local chefs",
+      image: "food.png",
     },
   ];
 </script>
@@ -28,15 +24,15 @@
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-12 sm:mb-16 lg:mb-20">
       <h2
-        class="new-icon-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-midnight mb-4 sm:mb-6"
+        class="font-wasted text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-midnight mb-4 sm:mb-6"
       >
         Exceptional Experiences
       </h2>
       <p
         class="text-base sm:text-lg md:text-xl lg:text-2xl text-midnight max-w-3xl mx-auto leading-relaxed"
       >
-        Every moment at Hotel Scape is carefully curated to create unforgettable
-        memories
+        Every moment at Cherilyn Monta is carefully curated to create
+        unforgettable memories
       </p>
     </div>
 
@@ -54,7 +50,7 @@
           </figure>
           <div class="card-body p-6 sm:p-8">
             <h3
-              class="card-title new-icon-serif font-semibold text-midnight mb-3 sm:mb-4 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl"
+              class="card-title font-semibold text-midnight mb-3 sm:mb-2 text-2xl sm:text-3xl lg:text-4xl xl:text-3xl"
             >
               {feature.title}
             </h3>

@@ -4,7 +4,7 @@
   let guests = $state(2);
 </script>
 
-<section class="relative min-h-screen bg-seashellWhite overflow-hidden">
+<section class="relative min-h-screen bg-cloud-white overflow-hidden">
   <!-- Desktop Layout: Content and Form stacked, Image on right -->
   <div class="hidden lg:flex items-stretch min-h-screen">
     <!-- Left: Content and Booking Form -->
@@ -14,12 +14,12 @@
           Cherilyn Monta Resort
         </div>
         <h1
-          class="font-wasted font-light text-5xl xl:text-7xl leading-tight text-midnight"
+          class="font-wasted font-light text-5xl xl:text-8xl xl:max-w-[95%] leading-tight text-midnight"
         >
           Where Luxury <br />Meets Nature in the<br />
         </h1>
         <span
-          class="font-cursive1 text-forest-green block text-5xl xl:text-7xl -mt-4"
+          class="font-cursive1 text-konkan block text-5xl xl:text-7xl -mt-4"
         >
           Heart of Konkan.
         </span>

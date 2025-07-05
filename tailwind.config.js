@@ -18,6 +18,7 @@ export default {
         "storm-cloud": "#686867",
         midnight: "#162a2c",
         monta: "#0a3a8a",
+        konkan: "#1e5128",
       },
       fontFamily: {
         serif: ["Playfair Display", "serif"],

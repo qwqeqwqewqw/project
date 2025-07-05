@@ -3,10 +3,10 @@
   let currentIndex = 0;
 
   const hotelRooms = [
-    { id: 1, name: "Suite", image: "/suites.png" },
-    { id: 2, name: "Deluxe Suite", image: "/delux.png" },
-    { id: 3, name: "Super Deluxe Suite", image: "/superdelux.png" },
-    { id: 4, name: "Bunglow", image: "/Bunglow.png" },
+    { id: 1, name: "Studio", image: "/studio/studio2.png" },
+    { id: 2, name: "Deluxe Suite", image: "/delux/delux2.png" },
+    { id: 3, name: "Super Deluxe Suite", image: "/superdelux/superdelux2.png" },
+    { id: 4, name: "Bunglow", image: "/bunglow/bunglow2.png" },
   ];
 
   let visibleCount = 3;
@@ -76,7 +76,7 @@
     <!-- Section Header -->
     <div class="text-center mb-12 sm:mb-16">
       <h2
-        class="new-icon-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-midnight mb-4"
+        class="font-wasted text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-midnight mb-4"
       >
         Our Rooms & Suites
       </h2>
@@ -96,9 +96,9 @@
         on:transitionend={handleTransitionEnd}
       >
         {#each slides as room}
-          <div class="flex-none px-2 sm:px-3" style="flex-basis: {cardBasis};">
+          <div class="flex-none px-2 sm:px-3" style="flex-basis: {cardBasis}; ">
             <div
-              class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 hover:border-b-monta hover:border-b-3"
             >
               <div class="aspect-[4/3] overflow-hidden">
                 <img
@@ -120,7 +120,7 @@
                   </div>
                   <a href={`/book/${room.id}`} class="w-full sm:w-auto">
                     <button
-                      class="btn bg-sageGreen text-white border-0 hover:bg-forestGreen transition-all duration-300 hover:scale-105 w-full sm:w-auto px-4 sm:px-6 py-2"
+                      class="btn bg-nautical-navy text-white border-0 transition-all duration-300 hover:scale-105 w-full sm:w-auto px-4 sm:px-6 py-2"
                     >
                       <span class="text-sm sm:text-base">Book Now</span>
                     </button>

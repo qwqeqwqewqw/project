@@ -72,6 +72,7 @@
   --storm-cloud: #686867;
   --midnight: #162a2c;
   --monta: #0a3a8a;
+  --konkan: #1e5128;
 }
 
 body {
@@ -131,7 +132,6 @@ body {
 .bg-midnight {
   background-color: var(--midnight);
 }
-
 
 .text-seashellWhite {
   color: var(--seashell-white);
@@ -206,6 +206,12 @@ body {
   background-color: var(--forest-green);
   color: var(--cloud-white);
   border-color: var(--forest-green);
+}
+
+.btn-navy {
+  background-color: var(--nautical-navy);
+  color: var(--cloud-white);
+  border-color: var(--nautical-navy);
 }
 
 .btn-primary:hover {
