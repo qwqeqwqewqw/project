@@ -16,10 +16,12 @@
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
       <!-- Megh Malhar -->
       <div class="group">
-        <div class="bg-freshCream rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+        <div
+          class="bg-freshCream rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+        >
           <div class="aspect-[4/3] overflow-hidden">
             <img
-              src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src="/megh-malhar.jpg"
               alt="Megh Malhar - Monsoon Festival"
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             />
@@ -29,7 +31,8 @@
               Megh Malhar
             </h3>
             <p class="text-midnight leading-relaxed">
-              Celebrate the monsoon season with traditional music, dance, and the beauty of rain-soaked Konkan landscapes.
+              Celebrate the monsoon season with traditional music, dance, and
+              the beauty of rain-soaked Konkan landscapes.
             </p>
           </div>
         </div>
@@ -37,10 +40,12 @@
 
       <!-- Diwali Celebrations -->
       <div class="group">
-        <div class="bg-freshCream rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+        <div
+          class="bg-freshCream rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+        >
           <div class="aspect-[4/3] overflow-hidden">
             <img
-              src="https://images.pexels.com/photos/1303081/pexels-photo-1303081.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src="/diwali.jpg"
               alt="Diwali Celebrations"
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             />
@@ -50,7 +55,8 @@
               Diwali Celebrations
             </h3>
             <p class="text-midnight leading-relaxed">
-              Experience the festival of lights with traditional decorations, cultural performances, and festive dining.
+              Experience the festival of lights with traditional decorations,
+              cultural performances, and festive dining.
             </p>
           </div>
         </div>
@@ -58,7 +64,9 @@
 
       <!-- New Year Celebrations -->
       <div class="group">
-        <div class="bg-freshCream rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+        <div
+          class="bg-freshCream rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+        >
           <div class="aspect-[4/3] overflow-hidden">
             <img
               src="https://images.pexels.com/photos/1387174/pexels-photo-1387174.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -71,7 +79,8 @@
               New Year Celebrations
             </h3>
             <p class="text-midnight leading-relaxed">
-              Welcome the new year with grand celebrations, live entertainment, and spectacular fireworks over the Konkan coast.
+              Welcome the new year with grand celebrations, live entertainment,
+              and spectacular fireworks over the Konkan coast.
             </p>
           </div>
         </div>
@@ -79,7 +88,9 @@
 
       <!-- Ranga Barase -->
       <div class="group">
-        <div class="bg-freshCream rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+        <div
+          class="bg-freshCream rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+        >
           <div class="aspect-[4/3] overflow-hidden">
             <img
               src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -92,7 +103,8 @@
               Ranga Barase
             </h3>
             <p class="text-midnight leading-relaxed">
-              A vibrant celebration of colors, music, and joy, bringing together guests in a festival of unity and happiness.
+              A vibrant celebration of colors, music, and joy, bringing together
+              guests in a festival of unity and happiness.
             </p>
           </div>
         </div>
@@ -100,7 +112,9 @@
 
       <!-- Mango Fest -->
       <div class="group">
-        <div class="bg-freshCream rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+        <div
+          class="bg-freshCream rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+        >
           <div class="aspect-[4/3] overflow-hidden">
             <img
               src="https://images.pexels.com/photos/918327/pexels-photo-918327.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -113,7 +127,8 @@
               Mango Fest
             </h3>
             <p class="text-midnight leading-relaxed">
-              Celebrate the king of fruits with mango-themed cuisine, tastings, and cultural activities during mango season.
+              Celebrate the king of fruits with mango-themed cuisine, tastings,
+              and cultural activities during mango season.
             </p>
           </div>
         </div>
@@ -121,10 +136,12 @@
 
       <!-- Cultural Heritage -->
       <div class="group">
-        <div class="bg-freshCream rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+        <div
+          class="bg-freshCream rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+        >
           <div class="aspect-[4/3] overflow-hidden">
             <img
-              src="https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src="/heritage.jpg"
               alt="Cultural Heritage Events"
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             />
@@ -134,7 +151,8 @@
               Cultural Heritage
             </h3>
             <p class="text-midnight leading-relaxed">
-              Experience authentic Konkan culture through folk performances, traditional crafts, and local storytelling sessions.
+              Experience authentic Konkan culture through folk performances,
+              traditional crafts, and local storytelling sessions.
             </p>
           </div>
         </div>
