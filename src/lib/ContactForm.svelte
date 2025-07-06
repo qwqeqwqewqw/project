@@ -4,28 +4,28 @@
       <!-- Left Content -->
       <div class="space-y-6">
         <div>
-          <div class="text-sm uppercase tracking-wider text-stormCloud mb-2">
+          <div class="text-sm uppercase tracking-wider text-stormCloud mb-2 font-light">
             Drop A Line
           </div>
-          <h2 class="text-3xl sm:text-4xl font-light text-midnight mb-6">
+          <h2 class="text-3xl sm:text-4xl font-light text-midnight mb-6 uppercase tracking-wide">
             SEND YOUR MESSAGE US
           </h2>
         </div>
-        <p class="text-stormCloud leading-relaxed">
+        <p class="text-stormCloud leading-relaxed font-light">
           Please feel free to get in touch using the form below. We'd love to hear for you.
         </p>
       </div>
 
       <!-- Contact Form -->
-      <div class="bg-cloudWhite p-8 rounded-lg shadow-lg">
+      <div class="bg-cloudWhite p-8 rounded-none shadow-lg">
         <form class="space-y-6">
           <!-- Name and Email Row -->
-          <div class="grid sm:grid-cols-2 gap-4">
+          <div class="grid sm:grid-cols-2 gap-6">
             <div class="form-control">
               <input
                 type="text"
                 placeholder="Your Name"
-                class="input w-full bg-transparent border-0 border-b border-stormCloud/30 rounded-none focus:border-forestGreen focus:outline-none pb-3"
+                class="input w-full bg-transparent border-0 border-b border-stormCloud/30 rounded-none focus:border-forestGreen focus:outline-none pb-3 font-light placeholder:text-stormCloud/60"
                 required
               />
             </div>
@@ -33,26 +33,26 @@
               <input
                 type="email"
                 placeholder="Email Address"
-                class="input w-full bg-transparent border-0 border-b border-stormCloud/30 rounded-none focus:border-forestGreen focus:outline-none pb-3"
+                class="input w-full bg-transparent border-0 border-b border-stormCloud/30 rounded-none focus:border-forestGreen focus:outline-none pb-3 font-light placeholder:text-stormCloud/60"
                 required
               />
             </div>
           </div>
 
           <!-- Phone and Subject Row -->
-          <div class="grid sm:grid-cols-2 gap-4">
+          <div class="grid sm:grid-cols-2 gap-6">
             <div class="form-control">
               <input
                 type="tel"
                 placeholder="Mob. Num"
-                class="input w-full bg-transparent border-0 border-b border-stormCloud/30 rounded-none focus:border-forestGreen focus:outline-none pb-3"
+                class="input w-full bg-transparent border-0 border-b border-stormCloud/30 rounded-none focus:border-forestGreen focus:outline-none pb-3 font-light placeholder:text-stormCloud/60"
               />
             </div>
             <div class="form-control">
               <input
                 type="text"
                 placeholder="General Enquiries"
-                class="input w-full bg-transparent border-0 border-b border-stormCloud/30 rounded-none focus:border-forestGreen focus:outline-none pb-3"
+                class="input w-full bg-transparent border-0 border-b border-stormCloud/30 rounded-none focus:border-forestGreen focus:outline-none pb-3 font-light placeholder:text-stormCloud/60"
               />
             </div>
           </div>
@@ -61,7 +61,7 @@
           <div class="form-control">
             <textarea
               placeholder="Message"
-              class="textarea w-full h-32 bg-transparent border-0 border-b border-stormCloud/30 rounded-none focus:border-forestGreen focus:outline-none resize-none pb-3"
+              class="textarea w-full h-32 bg-transparent border-0 border-b border-stormCloud/30 rounded-none focus:border-forestGreen focus:outline-none resize-none pb-3 font-light placeholder:text-stormCloud/60"
               required
             ></textarea>
           </div>
@@ -70,7 +70,7 @@
           <div class="pt-6">
             <button
               type="submit"
-              class="bg-midnight text-white px-8 py-3 text-sm uppercase tracking-wider hover:bg-forestGreen transition-colors"
+              class="bg-midnight text-white px-8 py-3 text-sm uppercase tracking-wider hover:bg-forestGreen transition-colors rounded-none font-light"
             >
               SEND MESSAGE
             </button>

@@ -2,11 +2,11 @@
   <!-- Background Image -->
   <div class="absolute inset-0">
     <img
-      src="/gate.png"
-      alt="Cherilyn Monta Resort"
+      src="/superdelux/superdelux2.png"
+      alt="Luxury bedroom at Cherilyn Monta Resort"
       class="w-full h-full object-cover"
     />
-    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="absolute inset-0 bg-black/50"></div>
   </div>
 
   <!-- Content Overlay -->
