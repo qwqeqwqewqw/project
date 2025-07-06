@@ -4,26 +4,26 @@
   let guests = $state(2);
 </script>
 
-<section class="relative min-h-screen bg-off-white overflow-hidden">
+<section class="relative min-h-screen bg-yellow-50 overflow-hidden">
   <!-- Desktop Layout: Content and Form stacked, Image on right -->
   <div class="hidden lg:flex items-stretch min-h-screen">
     <!-- Left: Content and Booking Form -->
     <div class="flex-1 flex flex-col justify-center px-8 xl:px-16 py-24">
       <div class="space-y-6 mb-12 max-w-4xl xl:pl-0">
-        <div class="font-cursive1 text-[#0a3a8a] text-9xl xl:text-6xl">
+        <div class="font-cursive1 text-blue-800 text-9xl xl:text-6xl">
           Cherilyn Monta Resort
         </div>
         <h1
-          class="font-wasted font-light text-5xl xl:text-6xl xl:max-w-[95%] leading-tight text-midnight"
+          class="font-wasted font-light text-5xl xl:text-6xl xl:max-w-[95%] leading-tight text-gray-900"
         >
           Where Luxury <br />Meets Nature in the<br />
         </h1>
         <span
-          class="font-cursive1 text-konkan block text-5xl xl:text-5xl -mt-4"
+          class="font-cursive1 text-green-800 block text-5xl xl:text-5xl -mt-4"
         >
           Heart of Konkan.
         </span>
-        <p class="text-xl xl:text-xl text-midnight leading-relaxed max-w-2xl">
+        <p class="text-xl xl:text-xl text-gray-900 leading-relaxed max-w-2xl">
           Slow Down. Breathe Deep. Live Cherilyn.
         </p>
       </div>
@@ -50,7 +50,7 @@
         <!-- Arrival Date -->
         <div class="form-control col-span-2">
           <label class="label" for="arrival-desktop">
-            <span class="label-text font-medium text-forestGreen text-md"
+            <span class="label-text font-medium text-green-700 text-md"
               >Arrival date</span
             >
           </label>
@@ -58,16 +58,16 @@
             id="arrival-desktop"
             type="date"
             bind:value={arrivalDate}
-            class="input w-full px-4 py-3 rounded-lg bg-cloudWhite text-midnight text-md"
+            class="input w-full px-4 py-3 rounded-lg bg-white text-gray-900 text-md"
           />
         </div>
 
         <!-- Divider + Departure Date -->
         <div
-          class="form-control col-span-2 border-l border-midnight/20 pl-4 ml-2"
+          class="form-control col-span-2 border-l border-gray-400 pl-4 ml-2"
         >
           <label class="label" for="departure-desktop">
-            <span class="label-text font-medium text-forestGreen text-md"
+            <span class="label-text font-medium text-green-700 text-md"
               >Departure date</span
             >
           </label>
@@ -75,23 +75,23 @@
             id="departure-desktop"
             type="date"
             bind:value={departureDate}
-            class="input w-full px-4 py-3 rounded-lg bg-cloudWhite text-midnight text-md"
+            class="input w-full px-4 py-3 rounded-lg bg-white text-gray-900 text-md"
           />
         </div>
 
         <!-- Divider + Guests -->
         <div
-          class="form-control col-span-2 border-l border-midnight/20 pl-4 ml-2"
+          class="form-control col-span-2 border-l border-gray-400 pl-4 ml-2"
         >
           <label class="label" for="guests-desktop">
-            <span class="label-text font-medium text-forestGreen text-md"
+            <span class="label-text font-medium text-green-700 text-md"
               >Number of people</span
             >
           </label>
           <select
             id="guests-desktop"
             bind:value={guests}
-            class="select w-full rounded-lg bg-cloudWhite text-midnight text-md"
+            class="select w-full rounded-lg bg-white text-gray-900 text-md"
           >
             <option value={1}>1 Guest</option>
             <option value={2}>2 Guests</option>
@@ -103,7 +103,7 @@
 
         <!-- Divider + Button -->
         <div
-          class="flex items-end col-span-2 border-l border-midnight/20 pl-4 ml-2"
+          class="flex items-end col-span-2 border-l border-gray-400 pl-4 ml-2"
         >
           <button
             class="btn btn-primary text-white font-semibold h-auto py-3 w-full mb-2"
@@ -121,20 +121,20 @@
     <!-- Text Content Section -->
     <div class="px-4 py-10 pt-30">
       <div class="space-y-6 text-center max-w-4xl mx-auto">
-        <div class="font-cursive1 text-monta text-9xl sm:text-4xl md:text-5xl">
+        <div class="font-cursive1 text-blue-800 text-9xl sm:text-4xl md:text-5xl">
           Cherilyn Monta Resort
         </div>
         <h1
-          class="font-wasted font-light text-3xl sm:text-4xl md:text-5xl leading-tight text-midnight"
+          class="font-wasted font-light text-3xl sm:text-4xl md:text-5xl leading-tight text-gray-900"
         >
           Where Luxury <br />Meets Nature in the<br />
         </h1>
         <span
-          class="font-cursive1 text-forest-green block text-3xl sm:text-4xl md:text-5xl -mt-2"
+          class="font-cursive1 text-green-800 block text-3xl sm:text-4xl md:text-5xl -mt-2"
         >
           Heart of Konkan.
         </span>
-        <p class="text-lg sm:text-xl md:text-2xl text-midnight leading-relaxed">
+        <p class="text-lg sm:text-xl md:text-2xl text-gray-900 leading-relaxed">
           Slow Down. Breathe Deep. Live Cherilyn.
         </p>
       </div>
@@ -148,7 +148,7 @@
         <div class="space-y-6">
           <div class="form-control">
             <label class="label" for="arrival-mobile">
-              <span class="label-text font-medium text-forestGreen text-lg"
+              <span class="label-text font-medium text-green-700 text-lg"
                 >Arrival date</span
               >
             </label>
@@ -156,12 +156,12 @@
               id="arrival-mobile"
               type="date"
               bind:value={arrivalDate}
-              class="input input-bordered w-full px-4 py-3 rounded-lg bg-cloudWhite text-midnight text-base"
+              class="input input-bordered w-full px-4 py-3 rounded-lg bg-white text-gray-900 text-base"
             />
           </div>
           <div class="form-control">
             <label class="label" for="departure-mobile">
-              <span class="label-text font-medium text-forestGreen text-lg"
+              <span class="label-text font-medium text-green-700 text-lg"
                 >Departure date</span
               >
             </label>
@@ -169,19 +169,19 @@
               id="departure-mobile"
               type="date"
               bind:value={departureDate}
-              class="input input-bordered w-full px-4 py-3 rounded-lg bg-cloudWhite text-midnight text-base"
+              class="input input-bordered w-full px-4 py-3 rounded-lg bg-white text-gray-900 text-base"
             />
           </div>
           <div class="form-control">
             <label class="label" for="guests-mobile">
-              <span class="label-text font-medium text-forestGreen text-lg"
+              <span class="label-text font-medium text-green-700 text-lg"
                 >Number of people</span
               >
             </label>
             <select
               id="guests-mobile"
               bind:value={guests}
-              class="select input-bordered w-full rounded-lg bg-cloudWhite text-midnight text-base"
+              class="select input-bordered w-full rounded-lg bg-white text-gray-900 text-base"
             >
               <option value={1}>1 Guest</option>
               <option value={2}>2 Guests</option>

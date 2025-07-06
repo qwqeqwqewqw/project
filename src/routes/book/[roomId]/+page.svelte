@@ -286,7 +286,7 @@
   }
 
   function scrollToBookingForm() {
-    const hero = document.querySelector(".relative.h-screen.bg-midnight");
+    const hero = document.querySelector(".relative.h-screen.bg-gray-900");
     if (hero) {
       const rect = hero.getBoundingClientRect();
       const scrollTop = window.scrollY + rect.bottom;
@@ -315,18 +315,18 @@
   {:else}
     <!-- Fallback hero for when no room data is available -->
     <section
-      class="relative h-96 bg-seashellWhite flex items-center justify-center pt-20"
+      class="relative h-96 bg-orange-100 flex items-center justify-center pt-20"
     >
       <div class="text-center">
-        <h1 class="new-icon-serif text-4xl sm:text-5xl text-midnight mb-4">
+        <h1 class="new-icon-serif text-4xl sm:text-5xl text-gray-900 mb-4">
           Room Not Found
         </h1>
-        <p class="text-lg text-midnight mb-6">
+        <p class="text-lg text-gray-900 mb-6">
           The room you're looking for doesn't exist.
         </p>
         <a
           href="/rooms"
-          class="btn bg-forestGreen text-white border-0 hover:bg-sageGreen transition-all duration-300 px-6 py-3"
+          class="btn bg-green-700 text-white border-0 hover:bg-green-600 transition-all duration-300 px-6 py-3"
         >
           View All Rooms
         </a>
@@ -352,7 +352,7 @@
 
   <!-- Main Content -->
   {#if currentRoom}
-    <div class="bg-freshCream">
+    <div class="bg-orange-50">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div class="grid lg:grid-cols-3 gap-8">
           <!-- Left Column - Room Details -->

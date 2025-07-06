@@ -1,4 +1,7 @@
-<section class="relative h-[35vh] min-h-[200px] bg-midnight overflow-hidden pt-20">
+<script>
+</script>
+
+<section class="relative h-[35vh] min-h-[200px] bg-gray-900 overflow-hidden pt-20">
   <!-- Background Image -->
   <div class="absolute inset-0">
     <img

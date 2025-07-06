@@ -1,4 +1,4 @@
-<section class="relative h-[60vh] min-h-[400px] bg-midnight overflow-hidden">
+<section class="relative h-[60vh] min-h-[400px] bg-gray-900 overflow-hidden">
   <!-- Background Image -->
   <div class="absolute inset-0">
     <img

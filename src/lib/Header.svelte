@@ -30,43 +30,43 @@
       <div class="hidden lg:flex items-center space-x-6 text-md">
         <a
           href="/rooms"
-          class="text-midnight hover:text-primary font-medium transition duration-300"
+          class="text-gray-900 hover:text-green-700 font-medium transition duration-300"
         >
           Rooms
         </a>
         <a
           href="/dining"
-          class="text-midnight hover:text-primary font-medium transition duration-300"
+          class="text-gray-900 hover:text-green-700 font-medium transition duration-300"
         >
           Dining
         </a>
         <a
           href="/events"
-          class="text-midnight hover:text-primary font-medium transition duration-300"
+          class="text-gray-900 hover:text-green-700 font-medium transition duration-300"
         >
           Events
         </a>
         <a
           href="/activities"
-          class="text-midnight hover:text-primary font-medium transition duration-300"
+          class="text-gray-900 hover:text-green-700 font-medium transition duration-300"
         >
           Activities
         </a>
         <a
           href="/attractions"
-          class="text-midnight hover:text-primary font-medium transition duration-300"
+          class="text-gray-900 hover:text-green-700 font-medium transition duration-300"
         >
           Attractions
         </a>
         <a
           href="/about-us"
-          class="text-midnight hover:text-primary font-medium transition duration-300"
+          class="text-gray-900 hover:text-green-700 font-medium transition duration-300"
         >
           About us
         </a>
         <a
           href="/contact-us"
-          class="text-midnight hover:text-primary font-medium transition duration-300"
+          class="text-gray-900 hover:text-green-700 font-medium transition duration-300"
         >
           Contact us
         </a>
@@ -77,7 +77,7 @@
     {#if !hideBookNow}
       <div class="hidden lg:block lg:mr-15">
         <button
-          class="btn bg-sky-blue border-0 text-nautical-navy transition-all duration-300 hover:scale-110 shadow-none p-4.5"
+          class="btn bg-blue-100 border-0 text-slate-700 transition-all duration-300 hover:scale-110 shadow-none p-4.5"
         >
           <span class="text-md">BOOK NOW</span>
         </button>
@@ -97,47 +97,47 @@
   <!-- Mobile Dropdown Menu -->
   {#if isMenuOpen}
     <div
-      class="lg:hidden bg-white/80 backdrop-blur-md text-midnight px-6 py-4 space-y-4 border-t border-gray-300"
+      class="lg:hidden bg-white/80 backdrop-blur-md text-gray-900 px-6 py-4 space-y-4 border-t border-gray-300"
     >
       <a
         href="/rooms"
-        class="block hover:text-primary font-medium transition duration-300"
+        class="block hover:text-green-700 font-medium transition duration-300"
       >
         Rooms
       </a>
       <a
         href="/dining"
-        class="block hover:text-primary font-medium transition duration-300"
+        class="block hover:text-green-700 font-medium transition duration-300"
       >
         Dining
       </a>
       <a
         href="/events"
-        class="block hover:text-primary font-medium transition duration-300"
+        class="block hover:text-green-700 font-medium transition duration-300"
       >
         Events
       </a>
       <a
         href="/activities"
-        class="block hover:text-primary font-medium transition duration-300"
+        class="block hover:text-green-700 font-medium transition duration-300"
       >
         Activities
       </a>
       <a
         href="/attractions"
-        class="block hover:text-primary font-medium transition duration-300"
+        class="block hover:text-green-700 font-medium transition duration-300"
       >
         Attractions
       </a>
       <a
         href="/about-us"
-        class="block hover:text-primary font-medium transition duration-300"
+        class="block hover:text-green-700 font-medium transition duration-300"
       >
         About us
       </a>
       <a
         href="/contact-us"
-        class="block hover:text-primary font-medium transition duration-300"
+        class="block hover:text-green-700 font-medium transition duration-300"
       >
         Contact us
       </a>
