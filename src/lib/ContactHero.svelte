@@ -1,21 +1,25 @@
-<section class="relative pt-30 pb-15 sm:py-24 lg:pb-10 lg:pt-30 bg-seashellWhite">
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center max-w-4xl mx-auto">
-      <div
-        class="font-cursive1 text-monta text-3xl sm:text-4xl md:text-5xl mb-4"
-      >
-        Cherilyn Monta Resort
+<section class="relative h-[60vh] min-h-[400px] bg-midnight overflow-hidden">
+  <!-- Background Image -->
+  <div class="absolute inset-0">
+    <img
+      src="/gate.png"
+      alt="Cherilyn Monta Resort"
+      class="w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 bg-black/60"></div>
+  </div>
+
+  <!-- Content Overlay -->
+  <div class="relative z-10 flex items-center justify-center h-full">
+    <div class="text-center text-white max-w-4xl px-6">
+      <div class="space-y-2 mb-8">
+        <div class="text-sm uppercase tracking-wider opacity-80">
+          HOME > CONTACT
+        </div>
       </div>
-      <h1
-        class="font-wasted text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-midnight mb-6 leading-tight"
-      >
-        Contact Us
+      <h1 class="new-icon-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6">
+        CONTACT
       </h1>
-      <p
-        class="text-lg sm:text-xl lg:text-2xl text-midnight leading-relaxed max-w-3xl mx-auto"
-      >
-        Get in touch with us to plan your perfect getaway or event at Cherilyn Monta Resort.
-      </p>
     </div>
   </div>
 </section>

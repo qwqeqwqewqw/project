@@ -1,6 +1,8 @@
 <script>
   import ContactHero from "$lib/ContactHero.svelte";
   import ContactInfo from "$lib/ContactInfo.svelte";
+  import ContactForm from "$lib/ContactForm.svelte";
+  import ContactMap from "$lib/ContactMap.svelte";
 </script>
 
 <svelte:head>
@@ -17,4 +19,10 @@
 
   <!-- Contact Information -->
   <ContactInfo />
+
+  <!-- Contact Form -->
+  <ContactForm />
+
+  <!-- Map Section -->
+  <ContactMap />
 </main>
