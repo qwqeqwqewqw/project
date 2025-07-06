@@ -8,5 +8,5 @@
     "strict": false,
     "noEmit": true
   },
-  "include": ["vite.config.js"]
+  "files": ["vite.config.js"]
 }

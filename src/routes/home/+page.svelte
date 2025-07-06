@@ -5,6 +5,7 @@
   import Features from "$lib/Features.svelte";
   import Footer from "$lib/Footer.svelte";
   import Carousel from "$lib/Carousel.svelte";
+  import MasonryCollage from "$lib/MasonryCollage.svelte";
 </script>
 
 <svelte:head>
@@ -18,8 +19,10 @@
 <div class="min-h-screen">
   <main>
     <Hero />
+
     <LocalTalents />
     <Carousel />
-    <Features />
+
+    <MasonryCollage />
   </main>
 </div>

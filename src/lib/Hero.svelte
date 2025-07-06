@@ -4,13 +4,13 @@
   let guests = $state(2);
 </script>
 
-<section class="relative min-h-screen bg-cloud-white overflow-hidden">
+<section class="relative min-h-screen bg-off-white overflow-hidden">
   <!-- Desktop Layout: Content and Form stacked, Image on right -->
   <div class="hidden lg:flex items-stretch min-h-screen">
     <!-- Left: Content and Booking Form -->
     <div class="flex-1 flex flex-col justify-center px-8 xl:px-16 py-24">
       <div class="space-y-6 mb-12 max-w-4xl xl:pl-0">
-        <div class="font-cursive1 text-[#0a3a8a] text-5xl xl:text-5xl">
+        <div class="font-cursive1 text-[#0a3a8a] text-9xl xl:text-6xl">
           Cherilyn Monta Resort
         </div>
         <h1
@@ -45,9 +45,10 @@
     class="hidden lg:block absolute bottom-16 left-16 z-10"
     style="width: 70vw;"
   >
-    <div class="bg-white/90 p-8 rounded-2xl shadow-xl">
-      <div class="grid grid-cols-4 gap-4">
-        <div class="form-control">
+    <div class="bg-white p-9 rounded-2xl shadow-xl">
+      <div class="grid grid-cols-8 gap-4">
+        <!-- Arrival Date -->
+        <div class="form-control col-span-2">
           <label class="label" for="arrival-desktop">
             <span class="label-text font-medium text-forestGreen text-md"
               >Arrival date</span
@@ -57,10 +58,14 @@
             id="arrival-desktop"
             type="date"
             bind:value={arrivalDate}
-            class="input input-bordered w-full px-4 py-3 rounded-lg bg-cloudWhite text-midnight text-base"
+            class="input w-full px-4 py-3 rounded-lg bg-cloudWhite text-midnight text-md"
           />
         </div>
-        <div class="form-control">
+
+        <!-- Divider + Departure Date -->
+        <div
+          class="form-control col-span-2 border-l border-midnight/20 pl-4 ml-2"
+        >
           <label class="label" for="departure-desktop">
             <span class="label-text font-medium text-forestGreen text-md"
               >Departure date</span
@@ -70,10 +75,14 @@
             id="departure-desktop"
             type="date"
             bind:value={departureDate}
-            class="input input-bordered w-full px-4 py-3 rounded-lg bg-cloudWhite text-midnight text-base"
+            class="input w-full px-4 py-3 rounded-lg bg-cloudWhite text-midnight text-md"
           />
         </div>
-        <div class="form-control">
+
+        <!-- Divider + Guests -->
+        <div
+          class="form-control col-span-2 border-l border-midnight/20 pl-4 ml-2"
+        >
           <label class="label" for="guests-desktop">
             <span class="label-text font-medium text-forestGreen text-md"
               >Number of people</span
@@ -82,7 +91,7 @@
           <select
             id="guests-desktop"
             bind:value={guests}
-            class="select input-bordered w-full rounded-lg bg-cloudWhite text-midnight text-base"
+            class="select w-full rounded-lg bg-cloudWhite text-midnight text-md"
           >
             <option value={1}>1 Guest</option>
             <option value={2}>2 Guests</option>
@@ -91,21 +100,28 @@
             <option value={5}>5+ Guests</option>
           </select>
         </div>
-        <button
-          class="btn btn-primary text-white font-semibold h-auto py-4 mt-2"
+
+        <!-- Divider + Button -->
+        <div
+          class="flex items-end col-span-2 border-l border-midnight/20 pl-4 ml-2"
         >
-          <span class="text-lg">BOOK A STAY</span>
-        </button>
+          <button
+            class="btn btn-primary text-white font-semibold h-auto py-3 w-full mb-2"
+          >
+            <span class="text-md">BOOK A STAY</span>
+          </button>
+        </div>
       </div>
     </div>
   </div>
+  <hr class="border-t-2 border-black/20" />
 
   <!-- Mobile & Tablet Layout: Text → Booking Form → Image -->
   <div class="lg:hidden">
     <!-- Text Content Section -->
     <div class="px-4 py-10 pt-30">
       <div class="space-y-6 text-center max-w-4xl mx-auto">
-        <div class="font-cursive1 text-monta text-3xl sm:text-4xl md:text-5xl">
+        <div class="font-cursive1 text-monta text-9xl sm:text-4xl md:text-5xl">
           Cherilyn Monta Resort
         </div>
         <h1
