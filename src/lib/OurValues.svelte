@@ -1,5 +1,5 @@
 <script>
-  import { IconRocket, IconHeart, IconScale, IconUsersGroup, IconHeartHandshake, IconLightbulb } from '@tabler/icons-svelte';
+  import { IconRocket, IconHeart, IconScale, IconUsersGroup, IconHeartHandshake, IconBulb } from '@tabler/icons-svelte';
 </script>
 
 <section class="py-16 sm:py-20 lg:py-24 bg-cloudWhite">
@@ -109,7 +109,7 @@
           <div
             class="w-12 h-12 bg-forestGreen/10 rounded-full flex items-center justify-center mx-auto mb-4"
           >
-            <IconLightbulb class="w-6 h-6 text-forestGreen" />
+            <IconBulb class="w-6 h-6 text-forestGreen" />
           </div>
           <h3 class="text-xl sm:text-2xl font-semibold text-midnight mb-3">
             Innovation
