@@ -3,7 +3,7 @@
 @config '../tailwind.config.js';
 @import "tailwindcss";
 
-/* Custom font faces for New Icon fonts */
+/* Custom font faces for New Icon fonts - Load asynchronously */
 @font-face {
   font-family: "New Icon Serif";
   src: url("/New-Icon-Serif.otf") format("opentype");
