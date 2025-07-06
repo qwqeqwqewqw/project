@@ -3,7 +3,6 @@
   import OurStory from "$lib/OurStory.svelte";
   import OurValues from "$lib/OurValues.svelte";
   import Timeline from "$lib/Timeline.svelte";
-  import Features from "$lib/Features.svelte";
 </script>
 
 <svelte:head>
@@ -26,7 +25,4 @@
 
   <!-- Timeline -->
   <Timeline />
-
-  <!-- Features -->
-  <Features />
 </main>
