@@ -51,17 +51,17 @@
   });
 </script>
 
-<section class="py-16 sm:py-20 lg:py-12 bg-skyBlue">
+<section class="py-16 sm:py-20 lg:py-12 bg-blue-100">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Section Header -->
     <div class="text-center mb-12 sm:mb-16">
       <h2
-        class="font-wasted text-3xl sm:text-4xl md:text-5xl lg:text-5xl text-midnight mb-4"
+        class="font-wasted text-3xl sm:text-4xl md:text-5xl lg:text-5xl text-gray-900 mb-4"
       >
         Our Rooms & Suites
       </h2>
       <p
-        class="text-base sm:text-lg lg:text-lg text-midnight max-w-2xl mx-auto"
+        class="text-base sm:text-lg lg:text-lg text-gray-900 max-w-2xl mx-auto"
       >
         Discover comfort and luxury in every carefully designed space
       </p>
@@ -85,7 +85,7 @@
                 class="grid grid-cols-10 space-x-1 bg-transparent p-4 text-center"
               >
                 <div class="col-span-6">
-                  <h3 class="text-lg font-semibold text-midnight">
+                  <h3 class="text-lg font-semibold text-gray-900">
                     {room.name}
                   </h3>
                   <p class="text-sm text-gray-600 mt-1">
@@ -95,7 +95,7 @@
                 <div class="col-span-1"></div>
                 <a href={`/book/${room.id}`} class="col-span-3">
                   <button
-                    class="btn bg-light-blue border-0 mt-1 px-3 shadow-none text-md"
+                    class="btn bg-cyan-500 border-0 mt-1 px-3 shadow-none text-md"
                     >Book Now</button
                   >
                 </a>
@@ -122,7 +122,7 @@
 
             <!-- Fade-in Overlay -->
             <div
-              class="absolute inset-0 bg-light-blue flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-1000"
+              class="absolute inset-0 bg-cyan-500 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-1000"
             >
               <!-- Moving Button -->
               <a
@@ -138,7 +138,7 @@
 
           <!-- Text Below the Image -->
           <div class="bg-transparent p-4">
-            <h3 class="text-lg font-semibold text-midnight">{room.name}</h3>
+            <h3 class="text-lg font-semibold text-gray-900">{room.name}</h3>
             <p class="text-sm text-gray-600 mt-1">
               {room.guests} Guests · {room.size} Size
             </p>

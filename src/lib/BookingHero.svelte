@@ -3,7 +3,7 @@
   console.log(room);
 </script>
 
-<section class="relative h-screen bg-midnight overflow-hidden">
+<section class="relative h-screen bg-gray-900 overflow-hidden">
   <!-- Background Image -->
   <div class="absolute inset-0">
     <img
@@ -29,14 +29,14 @@
       <div class="grid grid-rows-2">
         <button
           onclick={onBookClick}
-          class="btn bg-transparent border-2 border-white text-white hover:bg-white hover:text-midnight transition-all duration-300 px-8 py-3 text-lg mb-4"
+          class="btn bg-transparent border-2 border-white text-white hover:bg-white hover:text-gray-900 transition-all duration-300 px-8 py-3 text-lg mb-4"
         >
           BOOK ROOM
         </button>
 
         <button
           onclick={onViewPictures}
-          class="btn bg-transparent border-2 border-white text-white hover:bg-white hover:text-midnight transition-all duration-300 px-8 py-3 text-lg mb-4"
+          class="btn bg-transparent border-2 border-white text-white hover:bg-white hover:text-gray-900 transition-all duration-300 px-8 py-3 text-lg mb-4"
         >
           VIEW PICTURES{#if room.name.includes("Bungalow")}
             &nbsp 2 BHK{/if}
@@ -44,13 +44,13 @@
         {#if room.name.includes("Bungalow")}
           <button
             onclick={onViewPictures}
-            class="btn bg-transparent border-2 border-white text-white hover:bg-white hover:text-midnight transition-all duration-300 px-8 py-3 text-lg mb-4"
+            class="btn bg-transparent border-2 border-white text-white hover:bg-white hover:text-gray-900 transition-all duration-300 px-8 py-3 text-lg mb-4"
           >
             VIEW PICTURES 3 BHK
           </button>
           <button
             onclick={onViewPictures}
-            class="btn bg-transparent border-2 border-white text-white hover:bg-white hover:text-midnight transition-all duration-300 px-8 py-3 text-lg mb-4"
+            class="btn bg-transparent border-2 border-white text-white hover:bg-white hover:text-gray-900 transition-all duration-300 px-8 py-3 text-lg mb-4"
           >
             VIEW PICTURES 4 BHK
           </button>

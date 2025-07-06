@@ -1,31 +1,31 @@
-<section class="py-16 sm:py-20 lg:py-24 bg-freshCream">
+<section class="py-16 sm:py-20 lg:py-24 bg-orange-50">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
       <!-- Left Content -->
       <div class="space-y-6 lg:space-y-8">
         <h2
-          class="new-icon-serif text-3xl sm:text-4xl lg:text-5xl text-midnight leading-tight"
+          class="new-icon-serif text-3xl sm:text-4xl lg:text-5xl text-gray-900 leading-tight"
         >
           Destination Weddings in Konkan
         </h2>
-        <div class="space-y-4 text-base sm:text-lg text-midnight leading-relaxed">
+        <div class="space-y-4 text-base sm:text-lg text-gray-900 leading-relaxed">
           <p>
             Planning for a destination wedding in Konkan? We understand that you want to make your social event as memorable as possible. Be it weddings, pre-wedding ceremonies, anniversaries, birthday parties or any social event for that matter, Cherilyn Monta Resort is the best place to celebrate your special moments.
           </p>
           <p>
-            The event hall continuing into the green lawns can accommodate people up to a capacity of <span class="font-semibold text-forestGreen">300 guests</span>. Additionally, we offer wedding planning services such as floral decorations done by experts, on-demand entertainment and a customizable lip-smacking menu.
+            The event hall continuing into the green lawns can accommodate people up to a capacity of <span class="font-semibold text-green-700">300 guests</span>. Additionally, we offer wedding planning services such as floral decorations done by experts, on-demand entertainment and a customizable lip-smacking menu.
           </p>
         </div>
         
         <!-- Event Capacity Cards -->
         <div class="grid sm:grid-cols-2 gap-4 mt-8">
-          <div class="bg-cloudWhite p-6 rounded-xl shadow-md text-center">
-            <div class="text-3xl font-bold text-forestGreen mb-2">300</div>
-            <div class="text-midnight">Guest Capacity</div>
+          <div class="bg-white p-6 rounded-xl shadow-md text-center">
+            <div class="text-3xl font-bold text-green-700 mb-2">300</div>
+            <div class="text-gray-900">Guest Capacity</div>
           </div>
-          <div class="bg-cloudWhite p-6 rounded-xl shadow-md text-center">
-            <div class="text-3xl font-bold text-forestGreen mb-2">24/7</div>
-            <div class="text-midnight">Event Support</div>
+          <div class="bg-white p-6 rounded-xl shadow-md text-center">
+            <div class="text-3xl font-bold text-green-700 mb-2">24/7</div>
+            <div class="text-gray-900">Event Support</div>
           </div>
         </div>
       </div>

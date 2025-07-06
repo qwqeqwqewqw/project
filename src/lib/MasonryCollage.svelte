@@ -50,12 +50,12 @@
 </script>
 
 <!-- Desktop Layout (show on sm and up) -->
-<section class="hidden sm:block bg-[#cccccc] text-[#333333] pt-10 pb-15 px-4">
+<section class="hidden sm:block bg-gray-200 text-gray-700 pt-10 pb-15 px-4">
   <div class="text-center mb-5">
-    <h2 class="font-wasted text-3xl sm:text-4xl md:text-5xl text-midnight mb-4">
+    <h2 class="font-wasted text-3xl sm:text-4xl md:text-5xl text-gray-900 mb-4">
       Activity Highlights
     </h2>
-    <p class="text-base sm:text-lg text-midnight max-w-2xl mx-auto">
+    <p class="text-base sm:text-lg text-gray-900 max-w-2xl mx-auto">
       Discover a variety of exciting activities for all ages at our resort.
     </p>
   </div>
@@ -86,10 +86,10 @@
 </section>
 
 <!-- Mobile Layout (show below sm) -->
-<section class="block sm:hidden bg-[#cccccc] text-[#333333] py-16 px-4">
+<section class="block sm:hidden bg-gray-200 text-gray-700 py-16 px-4">
   <div class="text-center mb-8">
-    <h2 class="font-wasted text-2xl text-midnight mb-2">Our Rooms & Suites</h2>
-    <p class="text-base text-midnight max-w-full mx-auto">
+    <h2 class="font-wasted text-2xl text-gray-900 mb-2">Our Rooms & Suites</h2>
+    <p class="text-base text-gray-900 max-w-full mx-auto">
       Discover comfort and luxury in every carefully designed space
     </p>
   </div>
