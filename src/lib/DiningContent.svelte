@@ -5,9 +5,9 @@
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Content Grid -->
     <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-      <!-- Left Images -->
-      <div class="space-y-6">
-        <!-- Top Image -->
+      <!-- Left Images - Overlapping Layout -->
+      <div class="relative">
+        <!-- Background Image (Table Setting) -->
         <div class="aspect-[4/3] rounded-lg overflow-hidden">
           <img
             src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=800"
@@ -16,8 +16,8 @@
           />
         </div>
         
-        <!-- Bottom Image -->
-        <div class="aspect-[4/3] rounded-lg overflow-hidden">
+        <!-- Overlapping Image (Cocktails) - positioned over the bottom right -->
+        <div class="absolute bottom-0 right-0 w-3/5 aspect-square rounded-lg overflow-hidden shadow-xl transform translate-x-4 translate-y-4">
           <img
             src="https://images.pexels.com/photos/1283219/pexels-photo-1283219.jpeg?auto=compress&cs=tinysrgb&w=800"
             alt="Signature cocktails"
