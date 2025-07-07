@@ -3,7 +3,7 @@
     <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start relative">
       <!-- Left Image - Made taller -->
       <div class="relative lg:order-1">
-        <div class=" rounded-2xl overflow-hidden shadow-xl h-100">
+        <div class=" rounded-2xl overflow-hidden shadow-xl h-300">
           <img
             src="/gate.png"
             alt="Cherilyn Monta Resort entrance"
