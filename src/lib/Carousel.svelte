@@ -51,7 +51,7 @@
   });
 </script>
 
-<section class="py-16 sm:py-20 lg:py-12 bg-blue-100">
+<section class="py-16 sm:py-20 lg:py-12 bg-off-white">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Section Header -->
     <div class="text-center mb-12 sm:mb-16">

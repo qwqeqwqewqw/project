@@ -1,5 +1,5 @@
 <script>
-  import AboutHero from "$lib/AboutHero.svelte";
+  import AboutHero from "$lib/ContactAboutHero.svelte";
   import OurStory from "$lib/OurStory.svelte";
   import OurValues from "$lib/OurValues.svelte";
   import Timeline from "$lib/Timeline.svelte";

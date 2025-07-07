@@ -2,12 +2,12 @@
   let { rooms } = $props();
 </script>
 
-<section class="py-16 sm:py-20 lg:py-24 bg-orange-50">
+<section class="py-15 bg-orange-50">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="space-y-16 lg:space-y-24">
+    <div class="space-y-14 lg:space-y-20">
       {#each rooms as room, index}
         <div
-          class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center {index % 2 ===
+          class="grid lg:grid-cols-2 gap-6 lg:gap-10 items-center {index % 2 ===
           1
             ? 'lg:grid-flow-col-dense'
             : ''}"
@@ -24,48 +24,46 @@
           </div>
 
           <!-- Content -->
-          <div class="space-y-6 {index % 2 === 1 ? 'lg:col-start-1' : ''}">
+          <div class="space-y-5 {index % 2 === 1 ? 'lg:col-start-1' : ''}">
             <div>
               <h2
-                class="font-wasted text-3xl sm:text-4xl lg:text-5xl text-gray-900 mb-4"
+                class="font-wasted text-xl sm:text-2xl lg:text-3xl text-gray-900 mb-3"
               >
                 {room.name}
               </h2>
-              <p class="text-lg sm:text-xl text-gray-900 leading-relaxed mb-6">
+              <p
+                class="text-sm sm:text-base text-gray-900 leading-relaxed mb-4"
+              >
                 {room.description}
               </p>
             </div>
 
             <!-- Room Details -->
-            <div class="grid sm:grid-cols-2 gap-4 mb-6">
+            <div class="grid sm:grid-cols-2 gap-4 mb-5">
               <div class="bg-white p-4 rounded-lg text-center">
-                <div
-                  class="text-2xl sm:text-3xl font-bold text-green-700 mb-1"
-                >
+                <div class="text-lg sm:text-xl font-bold text-green-700 mb-1">
                   {room.capacity}
                 </div>
-                <div class="text-sm text-gray-900">Capacity</div>
+                <div class="text-xs text-gray-900">Capacity</div>
               </div>
               <div class="bg-white p-4 rounded-lg text-center">
-                <div
-                  class="text-2xl sm:text-3xl font-bold text-green-700 mb-1"
-                >
+                <div class="text-lg sm:text-xl font-bold text-green-700 mb-1">
                   {room.price}
                 </div>
-                <div class="text-sm text-gray-900">Per Person, Per Night</div>
+                <div class="text-xs text-gray-900">Per Person, Per Night</div>
               </div>
             </div>
 
             <!-- Features -->
-            <div class="mb-6">
-              <h3 class="text-xl font-semibold text-gray-900 mb-3">
+            <div class="mb-5">
+              <h3 class="text-base font-semibold text-gray-900 mb-2">
                 Key Features
               </h3>
               <div class="grid sm:grid-cols-2 gap-2">
                 {#each room.features as feature}
                   <div class="flex items-center space-x-2">
                     <svg
-                      class="w-5 h-5 text-green-700 flex-shrink-0"
+                      class="w-4 h-4 text-green-700 flex-shrink-0"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -75,21 +73,21 @@
                         clip-rule="evenodd"
                       />
                     </svg>
-                    <span class="text-gray-900">{feature}</span>
+                    <span class="text-sm text-gray-900">{feature}</span>
                   </div>
                 {/each}
               </div>
             </div>
 
             <!-- Amenities -->
-            <div class="mb-4">
-              <h3 class="text-xl font-semibold text-gray-900 mb-3">
+            <div class="mb-3">
+              <h3 class="text-base font-semibold text-gray-900 mb-2">
                 Amenities
               </h3>
               <div class="flex flex-wrap gap-2">
                 {#each room.amenities as amenity}
                   <span
-                    class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm"
+                    class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs"
                   >
                     {amenity}
                   </span>
@@ -98,10 +96,10 @@
             </div>
 
             <!-- Book Now Button -->
-            <div class="pt-4">
+            <div class="pt-3">
               <a href={`/book/${room.id}`} class="inline-block">
                 <button
-                  class="btn bg-green-700 text-white border-0 hover:bg-green-600 transition-all duration-300 hover:scale-105 px-8 py-3 text-lg"
+                  class="btn bg-green-700 text-white border-0 hover:bg-green-600 transition-all duration-300 hover:scale-105 px-5 py-2 text-sm"
                 >
                   Book {room.name}
                 </button>
@@ -109,7 +107,7 @@
             </div>
 
             {#if room.name.includes("Bungalow (2/3/4 BHK)")}
-              <p class="text-sm text-red-600 font-medium">
+              <p class="text-xs text-red-600 font-medium mt-2">
                 * Pools are only part of specific plans.
               </p>
             {/if}

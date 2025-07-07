@@ -4,13 +4,13 @@
   let guests = $state(2);
 </script>
 
-<section class="relative min-h-screen bg-yellow-50 overflow-hidden">
+<section class="relative min-h-screen bg-off-white overflow-hidden">
   <!-- Desktop Layout: Content and Form stacked, Image on right -->
   <div class="hidden lg:flex items-stretch min-h-screen">
     <!-- Left: Content and Booking Form -->
     <div class="flex-1 flex flex-col justify-center px-8 xl:px-16 py-24">
       <div class="space-y-6 mb-12 max-w-4xl xl:pl-0">
-        <div class="font-cursive1 text-blue-800  xl:text-6xl">
+        <div class="font-cursive1 text-blue-800 xl:text-6xl">
           Cherilyn Monta Resort
         </div>
         <h1
@@ -63,9 +63,7 @@
         </div>
 
         <!-- Divider + Departure Date -->
-        <div
-          class="form-control col-span-2 border-l border-gray-400 pl-4 ml-2"
-        >
+        <div class="form-control col-span-2 border-l border-gray-400 pl-4 ml-2">
           <label class="label" for="departure-desktop">
             <span class="label-text font-medium text-green-700 text-md"
               >Departure date</span
@@ -80,9 +78,7 @@
         </div>
 
         <!-- Divider + Guests -->
-        <div
-          class="form-control col-span-2 border-l border-gray-400 pl-4 ml-2"
-        >
+        <div class="form-control col-span-2 border-l border-gray-400 pl-4 ml-2">
           <label class="label" for="guests-desktop">
             <span class="label-text font-medium text-green-700 text-md"
               >Number of people</span
@@ -105,11 +101,13 @@
         <div
           class="flex items-end col-span-2 border-l border-gray-400 pl-4 ml-2"
         >
-          <button
-            class="btn btn-primary text-white font-semibold h-auto py-3 w-full mb-2"
-          >
-            <span class="text-md">BOOK A STAY</span>
-          </button>
+          <a href="/rooms" class="w-full">
+            <button
+              class="btn bg-forest-green border-0 hover:scale-105 text-white font-semibold h-auto py-3 w-full mb-2"
+            >
+              <span class="text-md">BOOK A STAY</span>
+            </button>
+          </a>
         </div>
       </div>
     </div>
@@ -121,7 +119,9 @@
     <!-- Text Content Section -->
     <div class="px-4 py-10 pt-30">
       <div class="space-y-6 text-center max-w-4xl mx-auto">
-        <div class="font-cursive1 text-blue-800 text-3xl sm:text-4xl md:text-5xl">
+        <div
+          class="font-cursive1 text-blue-800 text-3xl sm:text-4xl md:text-5xl"
+        >
           Cherilyn Monta Resort
         </div>
         <h1
