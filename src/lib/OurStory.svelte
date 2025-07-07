@@ -10,7 +10,7 @@
             class="w-full h-full object-cover"
           />
           <!-- Dark overlay for better text readability -->
-          <div class="absolute inset-0 bg-black/30"></div>
+          
         </div>
         
         <!-- Watch Video Button - positioned at bottom left of image -->
