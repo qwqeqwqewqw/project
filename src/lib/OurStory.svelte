@@ -57,7 +57,7 @@
         </div>
 
         <!-- Statistics positioned outside the image, below the content box -->
-        <div class="mt-8 lg:mt-12 grid grid-cols-2 gap-8 lg:mr-16">
+        <div class="mt-8 lg:mt-12 grid grid-cols-2 gap-8 lg:mr-16 mt-18">
           <div class="text-center lg:text-right">
             <div class="text-3xl sm:text-4xl font-light text-gray-900 mb-1">25 +</div>
             <div class="text-xs sm:text-sm text-gray-600 uppercase tracking-wide">Years of Experience</div>
