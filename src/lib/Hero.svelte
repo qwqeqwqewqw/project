@@ -10,7 +10,7 @@
     <!-- Left: Content and Booking Form -->
     <div class="flex-1 flex flex-col justify-center px-8 xl:px-16 py-24">
       <div class="space-y-6 mb-12 max-w-4xl xl:pl-0">
-        <div class="font-cursive1 text-blue-800 text-9xl xl:text-6xl">
+        <div class="font-cursive1 text-blue-800  xl:text-6xl">
           Cherilyn Monta Resort
         </div>
         <h1
@@ -121,7 +121,7 @@
     <!-- Text Content Section -->
     <div class="px-4 py-10 pt-30">
       <div class="space-y-6 text-center max-w-4xl mx-auto">
-        <div class="font-cursive1 text-blue-800 text-9xl sm:text-4xl md:text-5xl">
+        <div class="font-cursive1 text-blue-800 text-3xl sm:text-4xl md:text-5xl">
           Cherilyn Monta Resort
         </div>
         <h1
