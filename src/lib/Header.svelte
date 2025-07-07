@@ -69,7 +69,7 @@
     <button
       class="block lg:hidden btn btn-ghost !bg-transparent !border-transparent"
       aria-label="Open menu"
-      on:click={() => (isMenuOpen = !isMenuOpen)}
+      onclick={() => (isMenuOpen = !isMenuOpen)}
     >
       <IconMenu2 class="w-6 h-6" stroke="black" color="black" />
     </button>
