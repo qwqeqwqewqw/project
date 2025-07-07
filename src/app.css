@@ -67,16 +67,16 @@ body {
 
 /* Form input styles */
 .input-bordered {
-  border-color: rgb(214 224 226 / 0.5);
+  border-color: #d6e0e2;
 }
 
 .input:focus,
 .select:focus {
-  border-color: var(--forest-green);
-  box-shadow: 0 0 0 2px rgb(94 108 91 / 0.2);
+  border-color: #5E6C5B;
+  box-shadow: 0 0 0 2px rgba(94, 108, 91, 0.2);
 }
 
 /* Card styles */
 .card {
-  background-color: var(--cloud-white);
+  background-color: #FFFCF6;
 }
