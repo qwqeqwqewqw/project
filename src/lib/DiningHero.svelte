@@ -1,8 +1,18 @@
 <script>
 </script>
 
-<section class="relative h-screen bg-forest-green overflow-hidden">
-  <!-- Content positioned on the left -->
+<section class="relative h-screen bg-gray-900 overflow-hidden">
+  <!-- Background Image -->
+  <div class="absolute inset-0">
+    <img
+      src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1200"
+      alt="Fine dining at Cherilyn Monta Resort"
+      class="w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 bg-black/50"></div>
+  </div>
+
+  <!-- Content Overlay -->
   <div class="relative z-10 flex items-center h-full">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-2xl">
@@ -24,14 +34,5 @@
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Image positioned on the top right, taking 2/3 of the space -->
-  <div class="absolute top-0 right-0 w-2/3 h-2/3">
-    <img
-      src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1200"
-      alt="Fine dining at Cherilyn Monta Resort"
-      class="w-full h-full object-cover rounded-bl-3xl"
-    />
   </div>
 </section>
