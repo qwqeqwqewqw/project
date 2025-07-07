@@ -3,14 +3,6 @@
 
 <section class="py-16 sm:py-20 lg:py-24 bg-white">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <!-- Main Heading -->
-    <div class="text-center mb-16">
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-light text-gray-900 leading-tight mb-8 uppercase tracking-wide">
-        VARIOUS QUALITY SPECIALTIES MADE<br />
-        WITH A PERSONAL TOUCH
-      </h2>
-    </div>
-
     <!-- Content Grid -->
     <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
       <!-- Left Images -->
