@@ -50,34 +50,11 @@
 
         <div class="space-y-6 text-gray-600 leading-relaxed">
           <p>
-            One of the most interesting aspects of our resort is the food. The in-house Ratnagiri restaurant at Cherilyn Monta Resort boasts of a dining area on one side and a bar embedded with a pool table on the other side.
+            The in-house Ratnagiri restaurant at Cherilyn Monta Resort features a dining area and a bar with a pool table. Our multi-cuisine restaurant offers the best of Konkan cuisine.
           </p>
           <p>
-            The multi-cuisine restaurant in Ratnagiri features a wide spectrum of culinary offerings that reflect the best of Konkan cuisine. Located adjacent to the swimming pool is The Lounge and The Coffee shop, where avid readers can find a library and workaholics who prefer to work remotely can find separate work stations.
+            Located adjacent to the swimming pool, The Lounge and Coffee shop provide a perfect space with a library for readers and work stations for remote workers, offering beverages and light snacks.
           </p>
-          <p>
-            The café offers beverages, light snacks, and light hors d'oeuvres. You can hang out with your loved ones and sip on your favorite beverage, catch up on reading or work while appreciating the panoramic landscape.
-          </p>
-        </div>
-
-        <!-- Features Grid -->
-        <div class="grid sm:grid-cols-2 gap-6 mt-8">
-          <div class="bg-orange-50 p-6 rounded-lg text-center">
-            <div class="text-2xl font-bold text-green-700 mb-2">Multi-Cuisine</div>
-            <div class="text-sm text-gray-900">Restaurant</div>
-          </div>
-          <div class="bg-orange-50 p-6 rounded-lg text-center">
-            <div class="text-2xl font-bold text-green-700 mb-2">Poolside</div>
-            <div class="text-sm text-gray-900">Dining</div>
-          </div>
-          <div class="bg-orange-50 p-6 rounded-lg text-center">
-            <div class="text-2xl font-bold text-green-700 mb-2">Coffee Shop</div>
-            <div class="text-sm text-gray-900">& Library</div>
-          </div>
-          <div class="bg-orange-50 p-6 rounded-lg text-center">
-            <div class="text-2xl font-bold text-green-700 mb-2">Bar & Lounge</div>
-            <div class="text-sm text-gray-900">with Pool Table</div>
-          </div>
         </div>
 
         <!-- Call to Action -->
