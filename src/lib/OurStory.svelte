@@ -14,7 +14,7 @@
         </div>
         
         <!-- Watch Video Button - positioned over image -->
-        <div class="absolute bottom-6 left-6">
+        <div class="absolute bottom-6 left-6 z-20">
           <button class="flex items-center space-x-3 bg-white rounded-full px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 group">
             <div class="w-12 h-12 bg-gray-900 rounded-full flex items-center justify-center">
               <svg class="w-5 h-5 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
@@ -25,8 +25,8 @@
           </button>
         </div>
 
-        <!-- Statistics on background image -->
-        <div class="absolute bottom-6 right-6 grid grid-cols-2 gap-8">
+        <!-- Statistics on background image with higher z-index -->
+        <div class="absolute bottom-6 right-6 grid grid-cols-2 gap-8 z-20">
           <div class="text-center">
             <div class="text-3xl sm:text-4xl font-light text-white mb-1">25 +</div>
             <div class="text-xs sm:text-sm text-white/90 uppercase tracking-wide">Years of Experience</div>
