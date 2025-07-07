@@ -1,9 +1,9 @@
 <section class="py-16 sm:py-20 lg:py-24 bg-orange-50">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center relative">
-      <!-- Left Image -->
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start relative">
+      <!-- Left Image - Made taller -->
       <div class="relative lg:order-1">
-        <div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
+        <div class="aspect-[3/4] rounded-2xl overflow-hidden shadow-xl">
           <img
             src="/gate.png"
             alt="Cherilyn Monta Resort entrance"
@@ -13,7 +13,7 @@
           <div class="absolute inset-0 bg-black/30"></div>
         </div>
         
-        <!-- Watch Video Button - positioned over image -->
+        <!-- Watch Video Button - positioned at bottom left of image -->
         <div class="absolute bottom-6 left-6 z-20">
           <button class="flex items-center space-x-3 bg-white rounded-full px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 group">
             <div class="w-12 h-12 bg-gray-900 rounded-full flex items-center justify-center">
@@ -25,21 +25,21 @@
           </button>
         </div>
 
-        <!-- Statistics on background image with higher z-index -->
-        <div class="absolute bottom-6 right-6 grid grid-cols-2 gap-8 z-20">
-          <div class="text-center">
+        <!-- Statistics positioned at bottom right of image -->
+        <div class="absolute bottom-6 right-6 grid grid-cols-1 gap-6 z-20">
+          <div class="text-right">
             <div class="text-3xl sm:text-4xl font-light text-white mb-1">25 +</div>
             <div class="text-xs sm:text-sm text-white/90 uppercase tracking-wide">Years of Experience</div>
           </div>
-          <div class="text-center">
+          <div class="text-right">
             <div class="text-3xl sm:text-4xl font-light text-white mb-1">1,250 +</div>
             <div class="text-xs sm:text-sm text-white/90 uppercase tracking-wide">Projects Completed</div>
           </div>
         </div>
       </div>
 
-      <!-- Right Content - overlapping the image -->
-      <div class="relative lg:order-2 lg:-ml-16 z-10">
+      <!-- Right Content - positioned at top right, overlapping the image -->
+      <div class="relative lg:order-2 lg:-ml-16 lg:-mt-8 z-10">
         <div class="bg-white p-8 lg:p-12 rounded-2xl shadow-xl">
           <!-- Small heading -->
           <div class="text-sm uppercase tracking-wider text-gray-500 mb-4 font-light">
