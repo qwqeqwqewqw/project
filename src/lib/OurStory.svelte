@@ -1,37 +1,69 @@
 <section class="py-16 sm:py-20 lg:py-24 bg-orange-50">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-      <!-- Left Content -->
-      <div class="space-y-6 lg:space-y-8">
-        <h2
-          class="new-icon-serif text-3xl sm:text-4xl lg:text-5xl text-gray-900 leading-tight"
-        >
-          Our Story
-        </h2>
-        <div class="space-y-4 text-base sm:text-lg text-gray-900 leading-relaxed">
-          <p>
-            Cherilyn Monta – We have established a reputation as real estate developers who have built not just homes but lifestyles. A reputation based on a track record of promoting and marketing innovative real estate projects and completing them within the promised time and cost.
-          </p>
-          <p>
-            Since <span class="font-semibold text-green-700">1997</span> we have track record for our steadfast commitment to building Top Class Landmarks – Refined in Appearance with an emphasis on Quality and Concern for the Environment.
-          </p>
-          <p>
-            Regardless of your purpose of stay – be it corporate, leisure, or social – we have you covered with everything you need at one of the best coastal resorts in Maharashtra.
-          </p>
-          <p class="text-xl font-semibold text-green-700">
-            Come, experience life differently at Cherilyn Monta Resort. Because you deserve it!
-          </p>
-        </div>
-      </div>
-
-      <!-- Right Image -->
-      <div class="relative">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center relative">
+      <!-- Left Image -->
+      <div class="relative lg:order-1">
         <div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
           <img
             src="/gate.png"
             alt="Cherilyn Monta Resort entrance"
             class="w-full h-full object-cover"
           />
+        </div>
+        
+        <!-- Watch Video Button - positioned over image -->
+        <div class="absolute bottom-6 left-6">
+          <button class="flex items-center space-x-3 bg-white rounded-full px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 group">
+            <div class="w-12 h-12 bg-gray-900 rounded-full flex items-center justify-center">
+              <svg class="w-5 h-5 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"/>
+              </svg>
+            </div>
+            <span class="text-gray-900 font-medium">WATCH VIDEO</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Content - overlapping the image -->
+      <div class="relative lg:order-2 lg:-ml-16 z-10">
+        <div class="bg-white p-8 lg:p-12 rounded-2xl shadow-xl">
+          <!-- Small heading -->
+          <div class="text-sm uppercase tracking-wider text-gray-500 mb-4 font-light">
+            WELCOME TO CHERILYN MONTA
+          </div>
+          
+          <!-- Main heading -->
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-light text-gray-900 leading-tight mb-6 uppercase tracking-wide">
+            EXCEPTIONAL HOSPITALITY<br />
+            TIMELESS ELEGANCE
+          </h2>
+          
+          <!-- Description -->
+          <div class="text-gray-600 leading-relaxed mb-8 space-y-4">
+            <p>
+              Cherilyn Monta – We have established a reputation as real estate developers who have built not just homes but lifestyles. A reputation based on a track record of promoting and marketing innovative real estate projects.
+            </p>
+            <p>
+              Since 1997 we have track record for our steadfast commitment to building Top Class Landmarks – Refined in Appearance with an emphasis on Quality and Concern for the Environment.
+            </p>
+          </div>
+
+          <!-- Read More Button -->
+          <button class="bg-gray-900 text-white px-8 py-3 text-sm uppercase tracking-wider hover:bg-green-700 transition-colors rounded-none font-light mb-12">
+            READ MORE
+          </button>
+
+          <!-- Statistics -->
+          <div class="grid grid-cols-2 gap-8 pt-8 border-t border-gray-200">
+            <div class="text-center">
+              <div class="text-4xl font-light text-gray-900 mb-2">25 +</div>
+              <div class="text-sm text-gray-600 uppercase tracking-wide">Years of Experience</div>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-light text-gray-900 mb-2">1,250 +</div>
+              <div class="text-sm text-gray-600 uppercase tracking-wide">Projects Completed</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
