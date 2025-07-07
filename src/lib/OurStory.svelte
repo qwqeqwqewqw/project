@@ -27,7 +27,7 @@
       </div>
 
       <!-- Right Content - positioned at top right, overlapping the image -->
-      <div class="relative lg:order-2 lg:-ml-56 lg:-mt-8 z-10">
+      <div class="relative lg:order-2 lg:-ml-56 lg:-mt-0 z-10">
         <div class="bg-white p-8 lg:p-12 rounded-2xl shadow-xl">
           <!-- Small heading -->
           <div class="text-sm uppercase tracking-wider text-gray-500 mb-4 font-light">
