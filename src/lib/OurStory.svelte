@@ -9,6 +9,8 @@
             alt="Cherilyn Monta Resort entrance"
             class="w-full h-full object-cover"
           />
+          <!-- Dark overlay for better text readability -->
+          <div class="absolute inset-0 bg-black/30"></div>
         </div>
         
         <!-- Watch Video Button - positioned over image -->
@@ -21,6 +23,18 @@
             </div>
             <span class="text-gray-900 font-medium">WATCH VIDEO</span>
           </button>
+        </div>
+
+        <!-- Statistics on background image -->
+        <div class="absolute bottom-6 right-6 grid grid-cols-2 gap-8">
+          <div class="text-center">
+            <div class="text-3xl sm:text-4xl font-light text-white mb-1">25 +</div>
+            <div class="text-xs sm:text-sm text-white/90 uppercase tracking-wide">Years of Experience</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl sm:text-4xl font-light text-white mb-1">1,250 +</div>
+            <div class="text-xs sm:text-sm text-white/90 uppercase tracking-wide">Projects Completed</div>
+          </div>
         </div>
       </div>
 
@@ -49,21 +63,9 @@
           </div>
 
           <!-- Read More Button -->
-          <button class="bg-gray-900 text-white px-8 py-3 text-sm uppercase tracking-wider hover:bg-green-700 transition-colors rounded-none font-light mb-12">
+          <button class="bg-gray-900 text-white px-8 py-3 text-sm uppercase tracking-wider hover:bg-green-700 transition-colors rounded-none font-light">
             READ MORE
           </button>
-
-          <!-- Statistics -->
-          <div class="grid grid-cols-2 gap-8 pt-8 border-t border-gray-200">
-            <div class="text-center">
-              <div class="text-4xl font-light text-gray-900 mb-2">25 +</div>
-              <div class="text-sm text-gray-600 uppercase tracking-wide">Years of Experience</div>
-            </div>
-            <div class="text-center">
-              <div class="text-4xl font-light text-gray-900 mb-2">1,250 +</div>
-              <div class="text-sm text-gray-600 uppercase tracking-wide">Projects Completed</div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
