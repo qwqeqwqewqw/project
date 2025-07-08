@@ -20,12 +20,12 @@
 
   function getCategoryColor(category) {
     const colors = {
-      'beaches': 'bg-blue-100 text-blue-700 border-blue-200',
-      'temple': 'bg-orange-100 text-orange-700 border-orange-200',
-      'fort': 'bg-gray-100 text-gray-700 border-gray-200',
-      'sightseeing': 'bg-green-100 text-green-700 border-green-200'
+      'beaches': 'bg-blue-500',
+      'temple': 'bg-orange-500',
+      'fort': 'bg-gray-600',
+      'sightseeing': 'bg-green-500'
     };
-    return colors[category] || 'bg-gray-100 text-gray-700 border-gray-200';
+    return colors[category] || 'bg-gray-500';
   }
 
   function getCategoryName(category) {
@@ -36,6 +36,34 @@
       'sightseeing': 'Sightseeing'
     };
     return names[category] || category;
+  }
+
+  function getRating(category) {
+    // Generate consistent ratings based on category
+    const ratings = {
+      'beaches': 4.8,
+      'temple': 4.9,
+      'fort': 4.7,
+      'sightseeing': 4.6
+    };
+    return ratings[category] || 4.5;
+  }
+
+  function getReviewCount(id) {
+    // Generate review counts based on ID for consistency
+    const counts = [45, 67, 89, 123, 156, 78, 234, 98];
+    return counts[id % counts.length] || 50;
+  }
+
+  function getPrice(category) {
+    // Generate prices based on category
+    const prices = {
+      'beaches': '₹150',
+      'temple': '₹50',
+      'fort': '₹100',
+      'sightseeing': '₹75'
+    };
+    return prices[category] || '₹100';
   }
 </script>
 
@@ -60,53 +88,77 @@
     {#if filteredExperiences.length > 0}
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {#each filteredExperiences as experience (experience.id)}
-          <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 hover:border-green-200">
-            <!-- Image -->
-            <div class="aspect-[4/3] overflow-hidden relative">
+          <div class="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
+            <!-- Image Container -->
+            <div class="relative aspect-[4/3] overflow-hidden">
               <img
                 src={experience.image}
                 alt={experience.name}
-                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 loading="lazy"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              
+              <!-- Gradient Overlay -->
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
               
               <!-- Distance Badge -->
-              <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1">
-                <span class="text-sm font-bold text-green-700">
+              <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-lg px-2 py-1">
+                <span class="text-xs font-bold text-gray-800">
                   {experience.distance}
                 </span>
               </div>
-            </div>
 
-            <!-- Content -->
-            <div class="p-6">
               <!-- Category Badge -->
-              <div class="flex items-center justify-between mb-4">
-                <span class="inline-flex items-center space-x-2 px-3 py-1 rounded-full text-xs font-medium border {getCategoryColor(experience.category)}">
-                  <span>{getCategoryIcon(experience.category)}</span>
-                  <span>{getCategoryName(experience.category)}</span>
+              <div class="absolute top-3 left-3 {getCategoryColor(experience.category)} text-white rounded-lg px-2 py-1">
+                <span class="text-xs font-medium">
+                  {getCategoryIcon(experience.category)} {getCategoryName(experience.category)}
                 </span>
               </div>
 
-              <!-- Name -->
-              <h3 class="text-lg font-bold text-gray-900 mb-3 group-hover:text-green-700 transition-colors">
-                {experience.name}
-              </h3>
+              <!-- Bottom Content Overlay -->
+              <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                <div class="flex items-center text-xs text-gray-200 mb-1">
+                  <span>{experience.distance}</span>
+                  <span class="mx-1">•</span>
+                  <span>{getCategoryName(experience.category)}</span>
+                </div>
+                <h3 class="font-bold text-lg leading-tight mb-2">
+                  {experience.name}
+                </h3>
+              </div>
+            </div>
 
-              <!-- Description -->
-              <p class="text-gray-600 text-sm leading-relaxed mb-6">
-                {experience.description}
-              </p>
+            <!-- Card Content -->
+            <div class="p-4">
+              <!-- Rating -->
+              <div class="flex items-center mb-3">
+                <div class="flex items-center">
+                  <svg class="w-4 h-4 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                  </svg>
+                  <span class="ml-1 text-sm font-bold text-gray-900">
+                    {getRating(experience.category)}
+                  </span>
+                  <span class="ml-1 text-sm text-gray-500">
+                    ({getReviewCount(experience.id)})
+                  </span>
+                </div>
+              </div>
 
-              <!-- Action Button -->
-              <button class="w-full btn bg-green-700 text-white border-0 hover:bg-green-600 transition-all duration-300 text-sm py-3 font-semibold group-hover:scale-105">
-                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                </svg>
-                Get Directions
-              </button>
+              <!-- Price -->
+              <div class="flex items-center justify-between">
+                <div>
+                  <span class="text-xl font-bold text-gray-900">
+                    {getPrice(experience.category)}
+                  </span>
+                  <span class="text-sm text-gray-500 ml-1">per person</span>
+                </div>
+                
+                <!-- Action Button -->
+                <button class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200">
+                  Book Now
+                </button>
+              </div>
             </div>
           </div>
         {/each}
