@@ -45,25 +45,25 @@
   }
 </script>
 
-<section class="py-16 bg-gray-50">
+<section class="py-8 bg-gray-50">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Header -->
-    <div class="text-center mb-12">
-      <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+    <div class="text-center mb-8">
+      <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">
         Bring more epic to your everyday
       </h1>
-      <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
         Find and book the best adventure activities around Cherilyn Monta Resort
       </p>
     </div>
 
     <!-- Main Content Grid -->
-    <div class="grid lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+    <div class="grid lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
       <!-- Left: Large Hero Card -->
       <div class="lg:col-span-2">
         <button
           onclick={handleViewAll}
-          class="group relative w-full h-80 lg:h-96 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]"
+          class="group relative w-full h-64 lg:h-72 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]"
         >
           <!-- Background Image -->
           <img
@@ -76,17 +76,17 @@
           <div class="absolute inset-0 bg-gradient-to-r from-blue-600/80 via-blue-500/60 to-transparent"></div>
           
           <!-- Content -->
-          <div class="absolute inset-0 flex flex-col justify-center px-8 lg:px-12 text-white">
+          <div class="absolute inset-0 flex flex-col justify-center px-6 lg:px-8 text-white">
             <div class="max-w-md">
               <div class="text-sm font-medium mb-2 opacity-90">
                 over 8 experiences
               </div>
-              <h2 class="text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight mb-6">
+              <h2 class="text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight mb-4">
                 Find and book<br />
                 activities near you.
               </h2>
-              <div class="inline-flex items-center px-6 py-3 bg-white/20 backdrop-blur-sm rounded-full border border-white/30 hover:bg-white/30 transition-all duration-300">
-                <span class="text-lg font-medium mr-2">View All</span>
+              <div class="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full border border-white/30 hover:bg-white/30 transition-all duration-300">
+                <span class="text-base font-medium mr-2">View All</span>
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                 </svg>
@@ -97,11 +97,11 @@
       </div>
 
       <!-- Right: Category Cards Grid -->
-      <div class="grid grid-cols-2 gap-4">
+      <div class="grid grid-cols-2 gap-3">
         {#each filterCategories as category}
           <button
             onclick={() => handleFilterClick(category.id)}
-            class="group relative h-36 lg:h-44 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 {category.bgColor}"
+            class="group relative h-32 lg:h-36 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 {category.bgColor}"
           >
             <!-- Background Pattern/Texture -->
             <div class="absolute inset-0 opacity-20">
@@ -109,15 +109,15 @@
             </div>
             
             <!-- Content -->
-            <div class="relative h-full flex flex-col justify-between p-4 text-white">
+            <div class="relative h-full flex flex-col justify-between p-3 text-white">
               <!-- Icon -->
-              <div class="text-2xl lg:text-3xl">
+              <div class="text-xl lg:text-2xl">
                 {category.icon}
               </div>
               
               <!-- Bottom Content -->
               <div class="text-left">
-                <h3 class="font-bold text-lg lg:text-xl mb-1">
+                <h3 class="font-bold text-base lg:text-lg mb-1">
                   {category.title}
                 </h3>
                 <p class="text-sm opacity-90">
@@ -126,7 +126,7 @@
               </div>
 
               <!-- Arrow Icon -->
-              <div class="absolute top-4 right-4 opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300">
+              <div class="absolute top-3 right-3 opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                 </svg>
@@ -149,7 +149,7 @@
 
     <!-- Active Filter Indicator -->
     {#if activeFilter !== 'all'}
-      <div class="text-center mt-8">
+      <div class="text-center mt-6">
         <div class="inline-flex items-center px-4 py-2 bg-white rounded-full shadow-md border border-gray-200">
           <span class="text-sm text-gray-600 mr-2">Showing:</span>
           <span class="text-sm font-semibold text-gray-900 capitalize">{activeFilter}</span>
