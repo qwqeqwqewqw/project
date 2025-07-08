@@ -2,90 +2,167 @@
   let { onFilterChange, activeFilter } = $props();
 
   const filterCategories = [
-    { id: 'beaches', title: 'Beaches', icon: '🏖️', description: 'Pristine coastal beauty' },
-    { id: 'temple', title: 'Temples', icon: '🛕', description: 'Sacred spiritual sites' },
-    { id: 'fort', title: 'Forts', icon: '🏰', description: 'Historic monuments' },
-    { id: 'sightseeing', title: 'Sightseeing', icon: '👁️', description: 'Natural wonders' }
+    { 
+      id: 'beaches', 
+      title: 'Beaches', 
+      icon: '🏖️', 
+      count: '4 places',
+      color: 'from-orange-400 to-orange-500',
+      bgColor: 'bg-gradient-to-br from-orange-400 to-orange-500'
+    },
+    { 
+      id: 'temple', 
+      title: 'Temples', 
+      icon: '🛕', 
+      count: '1 place',
+      color: 'from-green-400 to-green-500',
+      bgColor: 'bg-gradient-to-br from-green-400 to-green-500'
+    },
+    { 
+      id: 'fort', 
+      title: 'Forts', 
+      icon: '🏰', 
+      count: '1 place',
+      color: 'from-blue-400 to-blue-500',
+      bgColor: 'bg-gradient-to-br from-blue-400 to-blue-500'
+    },
+    { 
+      id: 'sightseeing', 
+      title: 'Sightseeing', 
+      icon: '👁️', 
+      count: '2 places',
+      color: 'from-purple-400 to-purple-500',
+      bgColor: 'bg-gradient-to-br from-purple-400 to-purple-500'
+    }
   ];
 
   function handleFilterClick(filterId) {
     onFilterChange(filterId);
   }
+
+  function handleViewAll() {
+    onFilterChange('all');
+  }
 </script>
 
-<section class="py-16 bg-orange-50">
+<section class="py-16 bg-gray-50">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
-      <!-- Left: Large Image with Overlay Content -->
-      <div class="relative">
-        <div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+        Bring more epic to your everyday
+      </h1>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+        Find and book the best adventure activities around Cherilyn Monta Resort
+      </p>
+    </div>
+
+    <!-- Main Content Grid -->
+    <div class="grid lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <!-- Left: Large Hero Card -->
+      <div class="lg:col-span-2">
+        <button
+          onclick={handleViewAll}
+          class="group relative w-full h-80 lg:h-96 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]"
+        >
+          <!-- Background Image -->
           <img
-            src="https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg?auto=compress&cs=tinysrgb&w=800"
-            alt="Konkan Experiences"
-            class="w-full h-full object-cover"
+            src="https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg?auto=compress&cs=tinysrgb&w=1200"
+            alt="Konkan Adventures"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-          <div class="absolute bottom-8 left-8 text-white">
-            <h2 class="new-icon-serif text-2xl sm:text-3xl lg:text-4xl mb-3">
-              Discover Konkan
-            </h2>
-            <p class="text-base sm:text-lg opacity-90 max-w-sm">
-              Explore the beauty and heritage around our resort
-            </p>
+          
+          <!-- Gradient Overlay -->
+          <div class="absolute inset-0 bg-gradient-to-r from-blue-600/80 via-blue-500/60 to-transparent"></div>
+          
+          <!-- Content -->
+          <div class="absolute inset-0 flex flex-col justify-center px-8 lg:px-12 text-white">
+            <div class="max-w-md">
+              <div class="text-sm font-medium mb-2 opacity-90">
+                over 8 experiences
+              </div>
+              <h2 class="text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight mb-6">
+                Find and book<br />
+                activities near you.
+              </h2>
+              <div class="inline-flex items-center px-6 py-3 bg-white/20 backdrop-blur-sm rounded-full border border-white/30 hover:bg-white/30 transition-all duration-300">
+                <span class="text-lg font-medium mr-2">View All</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </div>
+            </div>
           </div>
-        </div>
+        </button>
       </div>
 
-      <!-- Right: Filter Cards -->
-      <div class="space-y-8">
-        <div class="text-center lg:text-left">
-          <h3 class="font-wasted text-2xl sm:text-3xl text-gray-900 mb-4">
-            Choose Your Adventure
-          </h3>
-          <p class="text-gray-600 text-base leading-relaxed">
-            Filter experiences by category to find your perfect day out in the beautiful Konkan region
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {#each filterCategories as category}
-            <button
-              onclick={() => handleFilterClick(category.id)}
-              class="group relative bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-2 text-left {activeFilter === category.id ? 'border-green-700 bg-green-50 scale-105' : 'border-transparent hover:border-green-200 hover:scale-102'}"
-            >
-              <div class="flex items-start space-x-4">
-                <div class="text-3xl">{category.icon}</div>
-                <div class="flex-1">
-                  <h4 class="text-lg font-semibold text-gray-900 group-hover:text-green-700 transition-colors mb-1">
-                    {category.title}
-                  </h4>
-                  <p class="text-sm text-gray-600">{category.description}</p>
-                </div>
+      <!-- Right: Category Cards Grid -->
+      <div class="grid grid-cols-2 gap-4">
+        {#each filterCategories as category}
+          <button
+            onclick={() => handleFilterClick(category.id)}
+            class="group relative h-36 lg:h-44 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 {category.bgColor}"
+          >
+            <!-- Background Pattern/Texture -->
+            <div class="absolute inset-0 opacity-20">
+              <div class="w-full h-full bg-gradient-to-br from-white/20 to-transparent"></div>
+            </div>
+            
+            <!-- Content -->
+            <div class="relative h-full flex flex-col justify-between p-4 text-white">
+              <!-- Icon -->
+              <div class="text-2xl lg:text-3xl">
+                {category.icon}
               </div>
+              
+              <!-- Bottom Content -->
+              <div class="text-left">
+                <h3 class="font-bold text-lg lg:text-xl mb-1">
+                  {category.title}
+                </h3>
+                <p class="text-sm opacity-90">
+                  {category.count}
+                </p>
+              </div>
+
+              <!-- Arrow Icon -->
+              <div class="absolute top-4 right-4 opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </div>
+
+              <!-- Active State Indicator -->
               {#if activeFilter === category.id}
-                <div class="absolute top-3 right-3 w-6 h-6 bg-green-700 rounded-full flex items-center justify-center">
-                  <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <div class="absolute inset-0 border-4 border-white rounded-2xl"></div>
+                <div class="absolute top-2 left-2 w-6 h-6 bg-white rounded-full flex items-center justify-center">
+                  <svg class="w-4 h-4 text-gray-800" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                   </svg>
                 </div>
               {/if}
-            </button>
-          {/each}
-        </div>
+            </div>
+          </button>
+        {/each}
+      </div>
+    </div>
 
-        <!-- Show All Button -->
-        <div class="text-center lg:text-left pt-4">
+    <!-- Active Filter Indicator -->
+    {#if activeFilter !== 'all'}
+      <div class="text-center mt-8">
+        <div class="inline-flex items-center px-4 py-2 bg-white rounded-full shadow-md border border-gray-200">
+          <span class="text-sm text-gray-600 mr-2">Showing:</span>
+          <span class="text-sm font-semibold text-gray-900 capitalize">{activeFilter}</span>
           <button
             onclick={() => handleFilterClick('all')}
-            class="btn {activeFilter === 'all' ? 'bg-green-700 text-white border-green-700' : 'btn-outline border-green-700 text-green-700 hover:bg-green-700 hover:text-white'} transition-all duration-300 px-8 py-3 text-base font-semibold"
+            class="ml-3 text-gray-400 hover:text-gray-600 transition-colors"
           >
-            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
             </svg>
-            Show All Experiences
           </button>
         </div>
       </div>
-    </div>
+    {/if}
   </div>
 </section>
