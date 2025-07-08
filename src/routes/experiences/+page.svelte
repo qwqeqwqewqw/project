@@ -2,6 +2,7 @@
   import ExperiencesPageHeader from "$lib/ExperiencesPageHeader.svelte";
   import ExperiencesHero from "$lib/ExperiencesHero.svelte";
   import ExperiencesGrid from "$lib/ExperiencesGrid.svelte";
+  import ResortActivities from "$lib/ResortActivities.svelte";
 
   let activeFilter = $state('all');
 
@@ -101,4 +102,7 @@
 
   <!-- Experiences Grid -->
   <ExperiencesGrid {experiences} {activeFilter} />
+
+  <!-- Resort Activities -->
+  <ResortActivities />
 </main>
