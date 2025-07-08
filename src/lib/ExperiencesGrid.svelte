@@ -69,20 +69,7 @@
 
 <section class="py-16 bg-white">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <!-- Results Header -->
-    <div class="text-center mb-12">
-      <h2 class="new-icon-serif text-2xl sm:text-3xl lg:text-4xl text-gray-900 mb-4">
-        {#if activeFilter === 'all'}
-          All Experiences
-        {:else}
-          {getCategoryName(activeFilter)} Experiences
-        {/if}
-      </h2>
-      <p class="text-gray-600 text-base">
-        Showing {filteredExperiences.length} experience{filteredExperiences.length !== 1 ? 's' : ''} 
-        {#if activeFilter !== 'all'}in {getCategoryName(activeFilter).toLowerCase()}{/if}
-      </p>
-    </div>
+
 
     <!-- Experiences Grid -->
     {#if filteredExperiences.length > 0}
