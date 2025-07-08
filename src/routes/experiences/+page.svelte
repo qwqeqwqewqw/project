@@ -75,7 +75,13 @@
 
   function handleFilterChange(filterId) {
     activeFilter = filterId;
+    console.log('Filter changed to:', filterId);
+    console.log('Experiences array:', experiences);
   }
+
+  // Debug log
+  console.log('Initial experiences:', experiences);
+  console.log('Initial activeFilter:', activeFilter);
 </script>
 
 <svelte:head>
