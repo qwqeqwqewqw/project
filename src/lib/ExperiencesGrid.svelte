@@ -1,10 +1,12 @@
 <script>
   let { experiences, activeFilter } = $props();
 
-  // Filter experiences based on active filter
-  $: filteredExperiences = activeFilter === 'all' 
-    ? experiences 
-    : experiences.filter(exp => exp.category === activeFilter);
+  // Filter experiences based on active filter using Svelte 5 $derived()
+  const filteredExperiences = $derived(
+    activeFilter === 'all' 
+      ? experiences 
+      : experiences.filter(exp => exp.category === activeFilter)
+  );
 
   function getCategoryIcon(category) {
     const icons = {
@@ -52,13 +54,6 @@
         Showing {filteredExperiences.length} experience{filteredExperiences.length !== 1 ? 's' : ''} 
         {#if activeFilter !== 'all'}in {getCategoryName(activeFilter).toLowerCase()}{/if}
       </p>
-    </div>
-
-    <!-- Debug Info (remove this after testing) -->
-    <div class="mb-4 p-4 bg-gray-100 rounded text-sm">
-      <p>Total experiences: {experiences.length}</p>
-      <p>Active filter: {activeFilter}</p>
-      <p>Filtered experiences: {filteredExperiences.length}</p>
     </div>
 
     <!-- Experiences Grid -->
