@@ -9,7 +9,7 @@
   const navLinks = [
     { href: "/rooms", label: "Rooms" },
     { href: "/dining", label: "Dining" },
-    { href: "/events", label: "Events" }
+    { href: "/events", label: "Events" },
     { href: "/experiences", label: "experiences" },
     { href: "/about-us", label: "About us" },
     { href: "/contact-us", label: "Contact us" },
