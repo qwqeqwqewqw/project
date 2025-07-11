@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
+@config '../tailwind.config.js';
 
 /* Custom font faces for New Icon fonts - Load asynchronously */
 @font-face {
@@ -70,11 +71,11 @@ body {
 
 .input:focus,
 .select:focus {
-  border-color: #5E6C5B;
+  border-color: #5e6c5b;
   box-shadow: 0 0 0 2px rgba(94, 108, 91, 0.2);
 }
 
 /* Card styles */
 .card {
-  background-color: #FFFCF6;
+  background-color: #fffcf6;
 }
