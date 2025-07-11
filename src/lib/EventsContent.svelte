@@ -75,9 +75,9 @@
 
 <section class="py-16 bg-white">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+    <div class="space-y-12">
       <!-- Left Content -->
-      <div class="space-y-8">
+      <div class="space-y-8 max-w-4xl">
         <!-- Main Headline -->
         <div>
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-light text-gray-900 leading-tight mb-6">
@@ -131,10 +131,12 @@
         </div>
       </div>
 
-      <!-- Right Gallery -->
-      <div class="grid grid-cols-2 gap-4">
+      <!-- Gallery Section -->
+      <div class="mt-12">
+        <h3 class="text-2xl font-light text-gray-900 mb-6 font-cursive1">Gallery</h3>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
         {#each currentData.images as image, index}
-          <div class="aspect-square overflow-hidden {index === 0 ? 'col-span-2 aspect-[2/1]' : ''}">
+          <div class="aspect-square overflow-hidden rounded-lg {index === 0 ? 'col-span-2 sm:col-span-2 lg:col-span-2 aspect-[2/1]' : ''}">
             <img
               src={image}
               alt="Event venue {index + 1}"
@@ -143,6 +145,7 @@
             />
           </div>
         {/each}
+      </div>
       </div>
     </div>
   </div>
