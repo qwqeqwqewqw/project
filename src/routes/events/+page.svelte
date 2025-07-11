@@ -1,40 +1,26 @@
 <script>
-  import EventsHero from "$lib/EventsHero.svelte";
-  import EventsOverview from "$lib/EventsOverview.svelte";
-  import EventTypes from "$lib/EventTypes.svelte";
-  import CorporateEvents from "$lib/CorporateEvents.svelte";
-  import EventFacilities from "$lib/EventFacilities.svelte";
-  import SpecialEvents from "$lib/SpecialEvents.svelte";
-  import EventsCallToAction from "$lib/EventsCallToAction.svelte";
+  import EventsPageHero from "$lib/EventsPageHero.svelte";
+  import EventsContent from "$lib/EventsContent.svelte";
+
+  let activeTab = $state('weddings');
+
+  function handleTabChange(tabId) {
+    activeTab = tabId;
+  }
 </script>
 
 <svelte:head>
-  <title>Weddings & Events - Cherilyn Monta Resort</title>
+  <title>Events - Cherilyn Monta Resort</title>
   <meta
     name="description"
-    content="Plan your dream destination wedding or corporate event at Cherilyn Monta Resort in Konkan. Comprehensive event planning services with venues for up to 300 guests."
+    content="Plan your perfect event at Cherilyn Monta Resort. From destination weddings to corporate conferences and festival celebrations in the heart of Konkan."
   />
 </svelte:head>
 
 <main class="min-h-screen">
-  <!-- Hero Section -->
-  <EventsHero />
+  <!-- Hero Section with Tab Navigation -->
+  <EventsPageHero {activeTab} onTabChange={handleTabChange} />
 
-  <!-- Events Overview -->
-  <EventsOverview />
-
-  <!-- Event Types -->
-  <EventTypes />
-
-  <!-- Corporate Events -->
-  <CorporateEvents />
-
-  <!-- Event Facilities -->
-  <EventFacilities />
-
-  <!-- Special Events -->
-  <SpecialEvents />
-
-  <!-- Call to Action -->
-  <EventsCallToAction />
+  <!-- Dynamic Content Based on Active Tab -->
+  <EventsContent {activeTab} />
 </main>
