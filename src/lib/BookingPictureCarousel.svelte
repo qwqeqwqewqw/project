@@ -1,28 +1,45 @@
-<script>
-  let { images } = $props();
+<script lang="ts">
+  export let images: string[] = []; // props from parent
+  let currentIndex = 0;
+
+  function prev() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+  }
+
+  function next() {
+    currentIndex = (currentIndex + 1) % images.length;
+  }
 </script>
 
-<div class="carousel w-full h-full">
+<div class="relative w-full h-full overflow-hidden">
   {#each images as img, i (img)}
-    <div id={`slide${i + 1}`} class="carousel-item relative w-full h-full">
+    <div
+      class="absolute top-0 left-0 w-full h-full transition-opacity duration-500"
+      class:opacity-100={i === currentIndex}
+      class:opacity-0={i !== currentIndex}
+    >
       <img
         src={img}
         alt={`Room image ${i + 1}`}
         class="w-full h-full object-cover"
       />
-      <div
-        class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
-      >
-        <a href={`#slide${i === 0 ? images.length : i}`} class="btn btn-circle">
-          ❮
-        </a>
-        <a
-          href={`#slide${i === images.length - 1 ? 1 : i + 2}`}
-          class="btn btn-circle"
-        >
-          ❯
-        </a>
-      </div>
     </div>
   {/each}
+
+  <div
+    class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between z-10"
+  >
+    <button
+      on:click={prev}
+      class="btn btn-circle bg-white bg-opacity-70 hover:bg-opacity-100"
+    >
+      ❮
+    </button>
+    <button
+      on:click={next}
+      class="btn btn-circle bg-white bg-opacity-70 hover:bg-opacity-100"
+    >
+      ❯
+    </button>
+  </div>
 </div>

@@ -2,7 +2,7 @@
   let { rooms } = $props();
 </script>
 
-<section class="py-15 bg-orange-50">
+<section class="py-15 bg-white">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="space-y-14 lg:space-y-20">
       {#each rooms as room, index}
@@ -27,7 +27,7 @@
           <div class="space-y-5 {index % 2 === 1 ? 'lg:col-start-1' : ''}">
             <div>
               <h2
-                class="font-wasted text-xl sm:text-2xl lg:text-3xl text-gray-900 mb-3"
+                class="font-wasted text-xl sm:text-2xl lg:text-3xl text-gray-900 mb-1"
               >
                 {room.name}
               </h2>
@@ -40,14 +40,18 @@
 
             <!-- Room Details -->
             <div class="grid sm:grid-cols-2 gap-4 mb-5">
-              <div class="bg-white p-4 rounded-lg text-center">
-                <div class="text-lg sm:text-xl font-bold text-green-700 mb-1">
+              <div class="bg-off-white p-4 rounded-lg text-center">
+                <div
+                  class="text-lg sm:text-xl font-bold text-almaris-gold mb-1"
+                >
                   {room.capacity}
                 </div>
                 <div class="text-xs text-gray-900">Capacity</div>
               </div>
-              <div class="bg-white p-4 rounded-lg text-center">
-                <div class="text-lg sm:text-xl font-bold text-green-700 mb-1">
+              <div class="bg-off-white p-4 rounded-lg text-center">
+                <div
+                  class="text-lg sm:text-xl font-bold text-almaris-gold mb-1"
+                >
                   {room.price}
                 </div>
                 <div class="text-xs text-gray-900">Per Person, Per Night</div>
@@ -63,7 +67,7 @@
                 {#each room.features as feature}
                   <div class="flex items-center space-x-2">
                     <svg
-                      class="w-4 h-4 text-green-700 flex-shrink-0"
+                      class="w-4 h-4 text-almaris-gold flex-shrink-0"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -87,7 +91,7 @@
               <div class="flex flex-wrap gap-2">
                 {#each room.amenities as amenity}
                   <span
-                    class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs"
+                    class="bg-off-white font-bold text-almaris-gold px-3 py-1 rounded-full text-xs"
                   >
                     {amenity}
                   </span>
@@ -99,7 +103,7 @@
             <div class="pt-3">
               <a href={`/book/${room.id}`} class="inline-block">
                 <button
-                  class="btn bg-green-700 text-white border-0 hover:bg-green-600 transition-all duration-300 hover:scale-105 px-5 py-2 text-sm"
+                  class="btn bg-almaris-blue text-white border-0 duration-300 hover:scale-105 px-5 py-2 text-sm"
                 >
                   Book {room.name}
                 </button>

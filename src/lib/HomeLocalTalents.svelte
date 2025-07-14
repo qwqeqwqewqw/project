@@ -1,11 +1,9 @@
-<section class="relative bg-off-white px-10 sm:pl-12">
+<section class="relative bg-white px-10 sm:pl-12">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div
-      class="relative grid lg:grid-cols-2 gap-12 lg:gap-16 items-center pb-15 pt-20"
-    >
+    <div class="relative grid lg:grid-cols-2 gap-12 items-center py-14">
       <!-- Vertical Divider using <hr> -->
       <hr
-        class="hidden lg:block absolute top-0 left-1/2 h-full w-0.5 bg-black/20 -translate-x-1 rotate-0 border-0"
+        class="hidden lg:block absolute top-0 left-1/2 h-full w-0.5 bg-almaris-gold -translate-x-1 rotate-0 border-0"
       />
 
       <!-- Left Content -->
@@ -18,9 +16,9 @@
       </div>
 
       <!-- Right Content -->
-      <div class="relative z-10 space-y-6 sm:space-y-8">
+      <div class="relative z-10 space-y-6">
         <div
-          class="text-base xl:text-lg text-gray-900 leading-relaxed space-y-4"
+          class="text-base xl:text-lg text-midnight leading-relaxed space-y-4"
         >
           <p>
             Here, tradition blends seamlessly with curated modern luxuries,
@@ -30,10 +28,10 @@
           </p>
         </div>
 
-        <div class="pt-4 sm:pt-6 lg:pt-3">
+        <div>
           <a href="/about-us">
             <button
-              class="btn bg-gray-900 hover:scale-102 w-full sm:w-auto text-white font-semibold py-4 px-8 h-auto"
+              class="btn bg-black hover:scale-102 w-full sm:w-auto text-white font-semibold py-3 px-13 h-auto border-0"
             >
               <span class="text-lg">Discover our story</span>
             </button>
@@ -43,4 +41,4 @@
     </div>
   </div>
 </section>
-<hr class="h-1 -mt-0.5 bg-[#c6c4ba]" />
+<hr class="h-1 -mt-0.5 bg-almaris-gold" />

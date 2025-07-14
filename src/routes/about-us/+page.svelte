@@ -1,8 +1,8 @@
 <script>
   import AboutHero from "$lib/ContactAboutHero.svelte";
-  import OurStory from "$lib/OurStory.svelte";
-  import OurValues from "$lib/OurValues.svelte";
-  import Timeline from "$lib/Timeline.svelte";
+  import OurStory from "$lib/AboutusOurStory.svelte";
+  import OurValues from "$lib/AboutusOurValues.svelte";
+  import Timeline from "$lib/AboutusTimeline.svelte";
 </script>
 
 <svelte:head>

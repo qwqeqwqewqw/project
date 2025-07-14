@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { page } from "$app/stores";
+  import { page } from "$app/state";
   import { onMount } from "svelte";
   import { IconMenu2 } from "@tabler/icons-svelte";
 
@@ -17,9 +17,11 @@
 
   // Hide book now for specific pages
   const hideBookNow = $derived(
-    $page.url.pathname.startsWith("/rooms") ||
-      $page.url.pathname.startsWith("/book")
+    page.url.pathname.startsWith("/rooms") ||
+      page.url.pathname.startsWith("/book")
   );
+
+  const colorchange = $derived(page.url.pathname.startsWith("/book"));
 </script>
 
 <header
@@ -43,7 +45,7 @@
         {#each navLinks as { href, label }}
           <a
             {href}
-            class="text-midnight hover:text-green-700 font-medium transition duration-300"
+            class={`${colorchange ? "text-white" : "text-midnight"} hover:text-almaris-gold font-medium transition duration-300`}
           >
             {label}
           </a>
@@ -56,7 +58,7 @@
       <div class="hidden lg:block lg:mr-15">
         <a href="/rooms">
           <button
-            class="btn bg-blue-100 border-0 text-slate-700 transition-all duration-300 hover:scale-110 shadow-none p-4.5"
+            class="btn bg-almaris-blue border-0 text-white transition-all duration-300 hover:scale-110 shadow-none p-4.5"
           >
             <span class="text-md">BOOK NOW</span>
           </button>
@@ -82,13 +84,13 @@
       {#each navLinks as { href, label }}
         <a
           {href}
-          class="block hover:text-green-700 font-medium transition duration-300"
+          class="block hover:text-almaris-gold font-medium transition duration-300"
         >
           {label}
         </a>
       {/each}
       {#if !hideBookNow}
-        <button class="btn btn-primary w-full">BOOK NOW</button>
+        <button class="btn bg-almaris-blue border-0 w-full">BOOK NOW</button>
       {/if}
     </div>
   {/if}

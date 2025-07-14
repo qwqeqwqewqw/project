@@ -1,9 +1,9 @@
 <script>
   import { onMount } from "svelte";
   import RoomHero from "$lib/BookingHero.svelte";
-  import RoomDetails from "$lib/RoomDetails.svelte";
-  import RoomOverview from "$lib/RoomOverview.svelte";
-  import RoomAmenities from "$lib/RoomAmenities.svelte";
+  import RoomDetails from "$lib/BookingDetails.svelte";
+  import RoomOverview from "$lib/BookingOverview.svelte";
+  import RoomAmenities from "$lib/BookingAmenities.svelte";
   import BookingRules from "$lib/BookingRules.svelte";
   import BookingForm from "$lib/BookingForm.svelte";
   import BookingPictureCarousel from "$lib/BookingPictureCarousel.svelte";
@@ -206,7 +206,7 @@
     4: {
       name: "Bungalow",
       subtitle: "Private sanctuary in nature",
-      images: ["/Bunglow.png"],
+      images: ["/bunglow/bunglow2.png", "/bunglow/Bunglow.png"],
       description:
         "Private bungalows offering complete privacy and independence with all modern amenities in a serene natural setting.",
       size: "1200 sq ft",
@@ -352,7 +352,7 @@
 
   <!-- Main Content -->
   {#if currentRoom}
-    <div class="bg-orange-50">
+    <div class="bg-off-white">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div class="grid lg:grid-cols-3 gap-8">
           <!-- Left Column - Room Details -->

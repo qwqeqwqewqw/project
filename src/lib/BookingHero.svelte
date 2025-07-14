@@ -17,9 +17,7 @@
   <!-- Content Overlay -->
   <div class="relative z-10 flex items-center justify-center h-full">
     <div class="text-center text-white max-w-4xl px-6">
-      <h1
-        class="new-icon-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-4"
-      >
+      <h1 class="font-wasted text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
         {room.name}
       </h1>
       <p class="text-lg sm:text-xl md:text-2xl mb-8 opacity-90">

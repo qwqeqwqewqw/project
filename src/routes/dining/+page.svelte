@@ -12,9 +12,6 @@
 </svelte:head>
 
 <main class="min-h-screen">
-  <!-- Hero Section -->
   <DiningHero />
-
-  <!-- Content Section -->
   <DiningContent />
 </main>

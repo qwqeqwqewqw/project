@@ -1,4 +1,4 @@
-<section class="py-15 bg-blue-100">
+<section class="py-15 bg-light-blue">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
     <div class="max-w-2xl mx-auto">
       <h2
@@ -12,7 +12,7 @@
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <button
-          class="btn btn-outline border-slate-700 text-slate-700 hover:text-white hover:bg-slate-700 transition-all duration-300 px-6 py-2 text-base rounded-md"
+          class="btn btn-outline border-almaris-blue text-almaris-blue hover:text-white hover:bg-almaris-blue transition-all duration-300 px-6 py-2 text-base rounded-md"
         >
           Contact Us
         </button>

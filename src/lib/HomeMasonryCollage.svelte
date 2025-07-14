@@ -50,7 +50,7 @@
 </script>
 
 <!-- Desktop Layout (show on sm and up) -->
-<section class="hidden sm:block bg-gray-200 text-gray-700 pt-10 pb-15 px-4">
+<section class="hidden sm:block bg-light-blue text-black pt-10 pb-15 px-4">
   <div class="text-center mb-5">
     <h2 class="font-wasted text-3xl sm:text-4xl md:text-5xl text-gray-900 mb-4">
       Activity Highlights
@@ -86,9 +86,9 @@
 </section>
 
 <!-- Mobile Layout (show below sm) -->
-<section class="block sm:hidden bg-gray-200 text-gray-700 py-16 px-4">
+<section class="block sm:hidden bg-light-blue text-gray-700 py-10 px-4">
   <div class="text-center mb-8">
-    <h2 class="font-wasted text-2xl text-gray-900 mb-2">Our Rooms & Suites</h2>
+    <h2 class="font-wasted text-3xl text-gray-900 mb-2">Our Rooms & Suites</h2>
     <p class="text-base text-gray-900 max-w-full mx-auto">
       Discover comfort and luxury in every carefully designed space
     </p>

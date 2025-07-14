@@ -1,10 +1,10 @@
 <script>
   import Header from "$lib/Header.svelte";
-  import Hero from "$lib/Hero.svelte";
-  import LocalTalents from "$lib/LocalTalents.svelte";
+  import Hero from "$lib/HomeHero.svelte";
+  import LocalTalents from "$lib/HomeLocalTalents.svelte";
   import Footer from "$lib/Footer.svelte";
-  import Carousel from "$lib/Carousel.svelte";
-  import MasonryCollage from "$lib/MasonryCollage.svelte";
+  import Carousel from "$lib/HomeRooms.svelte";
+  import MasonryCollage from "$lib/HomeMasonryCollage.svelte";
 </script>
 
 <svelte:head>

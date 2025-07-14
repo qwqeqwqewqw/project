@@ -20,7 +20,9 @@ export default {
         monta: "#0a3a8a",
         konkan: "#1e5128",
         "off-white": "#f7f5e9",
-        "light-blue": "#30a1bd",
+        "light-blue": "#d5eef1",
+        "almaris-blue": "#30a1bd",
+        "almaris-gold": "#ab8965",
       },
       fontFamily: {
         serif: ["Playfair Display", "serif"],

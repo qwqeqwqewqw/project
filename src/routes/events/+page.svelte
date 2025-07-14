@@ -1,12 +1,6 @@
 <script>
-  import EventsPageHero from "$lib/EventsPageHero.svelte";
   import EventsContent from "$lib/EventsContent.svelte";
-
-  let activeTab = $state('weddings');
-
-  function handleTabChange(tabId) {
-    activeTab = tabId;
-  }
+  import Hero from "$lib/ContactAboutHero.svelte";
 </script>
 
 <svelte:head>
@@ -18,9 +12,5 @@
 </svelte:head>
 
 <main class="min-h-screen">
-  <!-- Hero Section with Tab Navigation -->
-  <EventsPageHero {activeTab} onTabChange={handleTabChange} />
-
-  <!-- Dynamic Content Based on Active Tab -->
-  <EventsContent {activeTab} />
+  <EventsContent />
 </main>

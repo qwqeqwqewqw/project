@@ -1,8 +1,7 @@
-
 @import "tailwindcss";
 @config '../tailwind.config.js';
 
-/* Custom font faces for New Icon fonts - Load asynchronously 
+/* Custom font faces for New Icon fonts - Load asynchronously  */
 @font-face {
   font-family: "Wasted Vindey";
   src: url("/Wasted-Vindey.ttf") format("truetype");
@@ -18,7 +17,7 @@
   font-style: normal;
   font-display: swap;
 }
-*/
+
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -30,7 +29,6 @@ body {
   margin: 0;
   font-family: "Inter", sans-serif;
 }
-
 
 /* Form input styles */
 .input-bordered {

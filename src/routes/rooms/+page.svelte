@@ -9,7 +9,7 @@
       name: "Studio",
       image: "/studio/studio2.png",
       description:
-        "Chalet-style suites feature eco-friendly bamboo furnishings, yellow ambient lighting, and large windows with forest views. Designed for comfort and serenity, they suit individuals, nature lovers, and couples.",
+        "Chalet-style suites feature eco-friendly bamboo furnishings, yellow ambient lighting, and large windows with forest views. Designed for comfort and serenity.",
       features: [
         "1 Queen Size Bed",
         "2 Single Beds",
@@ -31,7 +31,7 @@
       name: "Deluxe Suite",
       image: "/delux/delux2.png",
       description:
-        "Deluxe Suites are spacious, chalet-style rooms ideal for families or groups, featuring separate beds for kids and ample amenities. With a front veranda and natural ventilation, they offer a cozy stay amid nature.",
+        "Deluxe Suites are spacious, chalet-style rooms ideal for families or groups, featuring separate beds for kids. Include a front veranda and natural ventilation.",
       features: [
         "Queen Size Bed",
         "Free WiFi",
@@ -54,7 +54,7 @@
       name: "Super Deluxe Suite",
       image: "/superdelux/superdelux2.png",
       description:
-        "Super Deluxe Suites are perfect for large families, with colorful interiors and garden-view balconies. Blending Konkan charm with luxury, they include a kids’ play area, baby pool, and toddler-friendly amenities.",
+        "Super Deluxe Suites are perfect for large families, with colorful interiors and garden-view balconies. Blends Konkan charm with luxury.",
       features: [
         "Queen Size Bed",
         "Spacious Living Space",
