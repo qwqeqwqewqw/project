@@ -3,14 +3,14 @@
 </script>
 
 <section
-  class="relative bg-off-white px-6 sm:px-12 lg:px-20 pt-20 sm:py-32 md:py-40 overflow-hidden"
+  class="relative bg-off-white px-6 sm:px-12 lg:px-20 pt-20 sm:py-32  overflow-hidden"
 >
   <!-- Top-Right Image (absolute, but responsive visibility control) -->
   <div
-    class="relative md:absolute bottom-2 md:top-0 md:mr-0 md:right-0 md:w-[55vw] md:h-[70vh] overflow-hidden shadow-xl order-1 rounded-md"
+    class="relative md:absolute bottom-2 md:top-0 md:mr-0 md:right-0 md:w-[55vw] md:h-[70vh] overflow-hidden shadow-xl order-1 border-l-2 border-almaris-gold"
   >
     <img
-      src="dining1.png"
+      src="Dining/dining1.png"
       alt="Fine dining at Cherilyn Monta Resort"
       class="w-full h-full object-cover"
     />
@@ -19,8 +19,7 @@
 
   <!-- Content Block -->
   <div class="relative z-10 max-w-xl text-black p-3 pt-8 md:pt-0 order-2">
-    <div class="text-sm tracking-wider text-green-400 mb-2">Ambient</div>
-    <h1 class="font-wasted text-4xl sm:text-5xl md:text-6xl leading-tight">
+    <h1 class="font-wasted text-xl sm:text-5xl md:text-7xl leading-tight">
       Fine Dining
     </h1>
     <div class="flex items-start text-md opacity-90 mt-4">
@@ -30,5 +29,14 @@
         swimming pool.
       </p>
     </div>
+    <div class="pt-4">
+      <button
+        class="px-6 py-3 border border-almaris-blue text-almaris-blue hover:bg-almaris-blue hover:text-white transition text-sm"
+      >
+        Explore our menu →
+      </button>
+    </div>
   </div>
 </section>
+
+<hr class="border-t-2 border-almaris-gold " />

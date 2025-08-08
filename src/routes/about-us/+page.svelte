@@ -1,8 +1,8 @@
 <script>
-  import AboutHero from "$lib/ContactAboutHero.svelte";
-  import OurStory from "$lib/AboutusOurStory.svelte";
-  import OurValues from "$lib/AboutusOurValues.svelte";
-  import Timeline from "$lib/AboutusTimeline.svelte";
+  import AboutHero from "$lib/Components/ContactAboutHero.svelte";
+  import OurStory from "$lib/Components/AboutusOurStory.svelte";
+  import OurValues from "$lib/Components/AboutusOurValues.svelte";
+  import Timeline from "$lib/Components/AboutusTimeline.svelte";
 </script>
 
 <svelte:head>
@@ -15,7 +15,7 @@
 
 <main class="min-h-screen">
   <!-- Hero Section -->
-  <AboutHero />
+  <AboutHero subtitle="" description="" />
 
   <!-- Our Story -->
   <OurStory />

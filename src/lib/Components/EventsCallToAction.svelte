@@ -25,7 +25,6 @@
           Plan Your Event
         </a>
         <a
-          href=""
           download="CherilynMonta_Brochure.pdf"
           class="btn btn-outline border-green-700 text-green-700 hover:text-white hover:bg-green-700 transition-all duration-300 px-6 py-2 text-sm inline-block text-center"
         >

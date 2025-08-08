@@ -2,39 +2,39 @@
   import { IconMapPin, IconMail, IconPhoneDone } from "@tabler/icons-svelte";
 </script>
 
-<section class="bg-gray-100 py-8 px-4">
+<section class="bg-light-blue py-8 px-4">
   <div class="max-w-5xl mx-auto space-y-6">
     <!-- Contact Info Cards -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
       <!-- Phone -->
       <div class="bg-white shadow rounded-md p-4 flex items-center space-x-3">
-        <div class="bg-blue-500 text-white p-2 rounded-full">
-          <IconPhoneDone size={24} stroke={2} class="text-black" />
+        <div class="bg-off-white text-white p-2 rounded-full">
+          <IconPhoneDone size={24} stroke={2} class="text-almaris-gold" />
         </div>
         <div>
-          <p class="text-xs text-gray-500">Phone</p>
+          <p class="text-xs text-almaris-blue font-bold">Phone</p>
           <p class="text-sm font-medium text-black">(+91) 98765-43210</p>
         </div>
       </div>
 
       <!-- Email -->
       <div class="bg-white shadow rounded-md p-4 flex items-center space-x-3">
-        <div class="bg-blue-500 text-white p-2 rounded-full">
-          <IconMail size={24} stroke={2} class="text-black" />
+        <div class="bg-off-white text-white p-2 rounded-full">
+          <IconMail size={24} stroke={2} class="text-almaris-gold" />
         </div>
         <div>
-          <p class="text-xs text-gray-500">Email</p>
+          <p class="text-xs text-almaris-blue font-bold">Email</p>
           <p class="text-sm font-medium text-black">info@cherilynmonta.com</p>
         </div>
       </div>
 
       <!-- Location -->
       <div class="bg-white shadow rounded-md p-4 flex items-center space-x-3">
-        <div class="bg-blue-500 text-black p-2 rounded-full">
-          <IconMapPin size={24} stroke={2} class="text-black" />
+        <div class="bg-off-white text-black p-2 rounded-full">
+          <IconMapPin size={24} stroke={2} class="text-almaris-gold" />
         </div>
         <div>
-          <p class="text-xs text-gray-500">Location</p>
+          <p class="text-xs text-almaris-blue font-bold">Location</p>
           <p class="text-sm font-medium text-black">
             Plot No. 305 (B), Gorulewadi, Ozer Junction Oni, Tal, Rajapur,
             Maharashtra 440067

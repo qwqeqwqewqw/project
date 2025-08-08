@@ -1,17 +1,19 @@
 <script>
-  import Header from "$lib/Header.svelte";
-  import Hero from "$lib/HomeHero.svelte";
-  import LocalTalents from "$lib/HomeLocalTalents.svelte";
-  import Footer from "$lib/Footer.svelte";
-  import Carousel from "$lib/HomeRooms.svelte";
-  import MasonryCollage from "$lib/HomeMasonryCollage.svelte";
+  import Header from "$lib/Components/Header.svelte";
+  import Hero from "$lib/Components/HomeHero.svelte";
+  import LocalTalents from "$lib/Components/HomeLocalTalents.svelte";
+  import Footer from "$lib/Components/Footer.svelte";
+  import HomeRooms from "$lib/Components/HomeRooms.svelte";
+  import MasonryCollage from "$lib/Components/HomeMasonryCollage.svelte";
 </script>
 
 <svelte:head>
-  <title>Hotel Scape - Memorable Hotels for Moments Rich in Emotions</title>
+  <title
+    >Hotel Cherilyn Monta - Memorable Hotel for Moments Rich in Emotions</title
+  >
   <meta
     name="description"
-    content="Experience luxury hospitality at Hotel Scape, where every stay becomes a cherished memory. Book now for the best prices on our premium accommodations."
+    content="Experience luxury hospitality at Hotel Cherilyn Monta, where every stay becomes a cherished memory. Book now for the best prices on our premium accommodations."
   />
 </svelte:head>
 
@@ -20,7 +22,7 @@
     <Hero />
 
     <LocalTalents />
-    <Carousel />
+    <HomeRooms />
 
     <MasonryCollage />
   </main>

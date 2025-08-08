@@ -22,7 +22,7 @@
             class="flex items-center space-x-3 bg-white rounded-full px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 group"
           >
             <div
-              class="w-12 h-12 bg-light-blue rounded-full flex items-center justify-center"
+              class="w-12 h-12 bg-almaris-blue rounded-full flex items-center justify-center"
             >
               <IconPlayerPlayFilled size={24} stroke={2} class="text-white" />
             </div>
@@ -36,20 +36,20 @@
         <div class="bg-white p-8 lg:p-8 rounded-2xl shadow-xl">
           <!-- Small heading -->
           <div
-            class="text-sm uppercase tracking-wider text-gray-500 mb-4 font-light"
+            class="text-sm uppercase tracking-wider text-almaris-gold mb-3 font-light"
           >
             WELCOME TO CHERILYN MONTA
           </div>
 
           <!-- Main heading -->
           <h2
-            class="text-3xl sm:text-4xl lg:text-4xl font-light text-gray-900 leading-tight mb-6 uppercase tracking-wide"
+            class="text-3xl sm:text-4xl lg:text-4xl font-wasted text-almaris-blue leading-tight mb-6"
           >
-            EXCEPTIONAL HOSPITALITY TIMELESS ELEGANCE
+            Exceptional Hospitality Timeless Elegance
           </h2>
 
           <!-- Description -->
-          <div class="text-gray-600 leading-relaxed space-y-4">
+          <div class="text-gray-900 leading-relaxed space-y-4">
             <p>
               Cherilyn Monta – We have established a reputation as real estate
               developers who have built not just homes but lifestyles. A
@@ -67,18 +67,16 @@
         <!-- Statistics positioned outside the image, below the content box -->
         <div class="mt-8 lg:mt-15 grid grid-cols-2 gap-8 lg:ml-15">
           <div class="text-center">
-            <div class="text-3xl font-bold text-gray-900 mb-1">25 +</div>
-            <div
-              class="text-xs sm:text-sm text-gray-600 uppercase tracking-wide"
-            >
+            <div class="text-3xl font-bold text-almaris-gold mb-1">25 +</div>
+            <div class="text-xs sm:text-sm text-black uppercase tracking-wide">
               Years of Hospitality Excellence
             </div>
           </div>
           <div class="text-center">
-            <div class="text-3xl font-bold text-gray-900 mb-1">10 Acres</div>
-            <div
-              class="text-xs sm:text-sm text-gray-600 uppercase tracking-wide"
-            >
+            <div class="text-3xl font-bold text-almaris-gold mb-1">
+              10 Acres
+            </div>
+            <div class="text-xs sm:text-sm text-black uppercase tracking-wide">
               of Lush Green Property
             </div>
           </div>

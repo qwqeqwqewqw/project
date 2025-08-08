@@ -21,11 +21,16 @@
       page.url.pathname.startsWith("/book")
   );
 
-  const colorchange = $derived(page.url.pathname.startsWith("/book"));
+  const colorchange = $derived(
+    page.url.pathname.startsWith("/book") ||
+      page.url.pathname.startsWith("/about") ||
+      page.url.pathname.startsWith("/contact") ||
+      page.url.pathname.startsWith("/events")
+  );
 </script>
 
 <header
-  class="fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-md shadow-md transition-colors duration-300"
+  class={`fixed top-0 left-0 w-full z-50 ${colorchange ? "bg-white/30" : "bg-white/10"} backdrop-blur-md shadow-md transition-colors duration-300`}
 >
   <div class="w-full px-6 py-1 flex items-center justify-between">
     <!-- Logo + Nav -->
@@ -45,7 +50,7 @@
         {#each navLinks as { href, label }}
           <a
             {href}
-            class={`${colorchange ? "text-white" : "text-midnight"} hover:text-almaris-gold font-medium transition duration-300`}
+            class="text-midnight hover:text-almaris-blue font-medium transition duration-300"
           >
             {label}
           </a>

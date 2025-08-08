@@ -1,6 +1,6 @@
 <script>
   let { experiences, activeFilter } = $props();
-
+  import { activityCategories } from "$lib/Data/data";
   // Filter experiences based on active filter using Svelte 5 $derived()
   const filteredExperiences = $derived(
     activeFilter === 'all' 

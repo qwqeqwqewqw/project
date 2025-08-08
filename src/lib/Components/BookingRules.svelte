@@ -1,6 +1,6 @@
 <script>
-  import { IconCheck } from '@tabler/icons-svelte';
-  
+  import { IconCheck } from "@tabler/icons-svelte";
+
   let { checkInRules, checkOutRules } = $props();
 </script>
 
@@ -14,7 +14,7 @@
       <div class="space-y-3">
         {#each checkInRules as rule}
           <div class="flex items-start space-x-3">
-            <IconCheck class="w-5 h-5 text-green-700 mt-0.5 flex-shrink-0" />
+            <IconCheck class="w-5 h-5 text-almaris-gold mt-0.5 flex-shrink-0" />
             <span class="text-gray-600">{rule}</span>
           </div>
         {/each}
@@ -27,7 +27,7 @@
       <div class="space-y-3">
         {#each checkOutRules as rule}
           <div class="flex items-start space-x-3">
-            <IconCheck class="w-5 h-5 text-green-700 mt-0.5 flex-shrink-0" />
+            <IconCheck class="w-5 h-5 text-almaris-gold mt-0.5 flex-shrink-0" />
             <span class="text-gray-600">{rule}</span>
           </div>
         {/each}

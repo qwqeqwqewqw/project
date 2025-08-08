@@ -1,39 +1,8 @@
 <script>
   import { onMount } from "svelte";
-
+  import { roomlist } from "$lib/Data/data";
   let currentIndex = 0;
   let interval;
-
-  const hotelRooms = [
-    {
-      id: 1,
-      name: "Studio",
-      image: "/studio/studio2.png",
-      guests: 2,
-      size: "25 Feet",
-    },
-    {
-      id: 2,
-      name: "Deluxe Suite",
-      image: "/delux/delux2.png",
-      guests: 2,
-      size: "30 Feet",
-    },
-    {
-      id: 3,
-      name: "Super Deluxe Suite",
-      image: "/superdelux/superdelux2.png",
-      guests: 3,
-      size: "35 Feet",
-    },
-    {
-      id: 4,
-      name: "Bungalow",
-      image: "/bunglow/bunglow2.png",
-      guests: 4,
-      size: "40 Feet",
-    },
-  ];
 
   onMount(() => {
     // Only rotate if mobile
@@ -41,7 +10,7 @@
 
     if (isMobile) {
       interval = setInterval(() => {
-        currentIndex = (currentIndex + 1) % hotelRooms.length;
+        currentIndex = (currentIndex + 1) % roomlist.length;
       }, 4000);
     }
 
@@ -73,7 +42,7 @@
         class="flex transition-transform duration-700 ease-in-out"
         style="transform: translateX(-{currentIndex * 100}%)"
       >
-        {#each hotelRooms as room}
+        {#each roomlist as room}
           <div class="w-full flex-shrink-0 px-2">
             <div class="bg-transparent rounded-2xl">
               <img
@@ -89,7 +58,7 @@
                     {room.name}
                   </h3>
                   <p class="text-sm text-gray-600 mt-1">
-                    {room.guests} Guests · {room.size} Size
+                    {room.capacity} Guests · From {room.price}
                   </p>
                 </div>
                 <div class="col-span-1"></div>
@@ -110,7 +79,7 @@
     <div
       class="hidden sm:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 lg:px-6"
     >
-      {#each hotelRooms as room}
+      {#each roomlist as room}
         <div class="bg-transparent rounded-2xl text-center">
           <div class="relative group aspect-[10/9] rounded-2xl overflow-hidden">
             <!-- Image -->
@@ -140,7 +109,7 @@
           <div class="bg-transparent p-4">
             <h3 class="text-lg font-semibold text-gray-900">{room.name}</h3>
             <p class="text-sm text-gray-600 mt-1">
-              {room.guests} Guests · {room.size} Size
+              {room.capacity} Guests · From {room.price}
             </p>
           </div>
         </div>

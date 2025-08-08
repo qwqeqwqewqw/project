@@ -1,13 +1,13 @@
-<section class="py-15 bg-blue-100">
+<section class="py-15 bg-light-blue">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-12 sm:mb-16">
       <h2
-        class="new-icon-serif text-3xl sm:text-4xl md:text-5xl lg:text-5xl text-gray-900 mb-4"
+        class="font-wasted text-3xl sm:text-4xl md:text-5xl lg:text-5xl text-gray-900 mb-4"
       >
         Our Journey
       </h2>
       <p
-        class="text-base sm:text-lg lg:text-xl text-gray-900 max-w-2xl mx-auto"
+        class="text-base sm:text-md lg:text-md text-gray-900 max-w-2xl mx-auto"
       >
         From humble beginnings to becoming one of Maharashtra's premier coastal
         resorts
@@ -18,7 +18,7 @@
       <div class="relative">
         <!-- Timeline line -->
         <div
-          class="absolute left-8 top-0 bottom-0 w-0.5 bg-green-700 hidden sm:block"
+          class="absolute left-8 top-0 bottom-0 w-0.5 bg-blue-400 hidden sm:block"
         ></div>
 
         <!-- Timeline items -->
@@ -26,12 +26,12 @@
           <!-- 1997 -->
           <div class="relative flex items-start">
             <div
-              class="flex-shrink-0 w-16 h-16 bg-green-700 rounded-full flex items-center justify-center text-white font-bold text-lg"
+              class="flex-shrink-0 w-16 h-16 bg-almaris-blue rounded-full flex items-center justify-center text-white font-bold text-lg"
             >
               1997
             </div>
             <div class="ml-8 bg-white p-6 rounded-lg shadow-md flex-1">
-              <h3 class="text-xl font-semibold text-gray-900 mb-2">
+              <h3 class="text-xl font-semibold text-almaris-gold mb-2">
                 Foundation
               </h3>
               <p class="text-gray-900">
@@ -45,12 +45,12 @@
           <!-- 2000s -->
           <div class="relative flex items-start">
             <div
-              class="flex-shrink-0 w-16 h-16 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-sm"
+              class="flex-shrink-0 w-16 h-16 bg-blue-700 rounded-full flex items-center justify-center text-white font-bold text-sm"
             >
               2000s
             </div>
             <div class="ml-8 bg-white p-6 rounded-lg shadow-md flex-1">
-              <h3 class="text-xl font-semibold text-gray-900 mb-2">
+              <h3 class="text-xl font-semibold text-almaris-gold mb-2">
                 Growth & Recognition
               </h3>
               <p class="text-gray-900">
@@ -64,12 +64,12 @@
           <!-- 2010s -->
           <div class="relative flex items-start">
             <div
-              class="flex-shrink-0 w-16 h-16 bg-green-700 rounded-full flex items-center justify-center text-white font-bold text-sm"
+              class="flex-shrink-0 w-16 h-16 bg-blue-800 rounded-full flex items-center justify-center text-white font-bold text-sm"
             >
               2010s
             </div>
             <div class="ml-8 bg-white p-6 rounded-lg shadow-md flex-1">
-              <h3 class="text-xl font-semibold text-gray-900 mb-2">
+              <h3 class="text-xl font-semibold text-almaris-gold mb-2">
                 Resort Development
               </h3>
               <p class="text-gray-900">
@@ -88,7 +88,7 @@
               Today
             </div>
             <div class="ml-8 bg-white p-6 rounded-lg shadow-md flex-1">
-              <h3 class="text-xl font-semibold text-gray-900 mb-2">
+              <h3 class="text-xl font-semibold text-almaris-gold mb-2">
                 Premier Destination
               </h3>
               <p class="text-gray-900">

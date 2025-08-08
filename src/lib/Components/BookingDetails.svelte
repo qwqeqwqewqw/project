@@ -76,7 +76,7 @@
     <div class="relative">
       <button
         bind:this={toggleBtnRef}
-        class="flex items-center space-x-2 text-green-700 hover:text-green-600 transition-colors"
+        class="flex items-center space-x-2 text-almaris-gold font-bold transition-colors"
         onclick={toggleShareBox}
       >
         <IconShare class="w-5 h-5" />
@@ -91,7 +91,7 @@
           <p class="text-sm text-gray-700 break-all">{textToCopy}</p>
           <button
             onclick={copyToClipboard}
-            class="w-full flex items-center justify-center space-x-2 px-3 py-2 text-sm font-medium text-white bg-green-700 hover:bg-green-600 rounded-lg"
+            class="w-full flex items-center justify-center space-x-2 px-3 py-2 text-sm font-medium text-white bg-almaris-blue rounded-lg"
           >
             {#if copied}
               <IconCheck class="w-4 h-4" />
@@ -117,7 +117,7 @@
 
   <!-- Address -->
   <div class="flex items-center space-x-2 mb-6">
-    <IconMapPin class="w-5 h-5 text-green-700" />
+    <IconMapPin class="w-5 h-5 text-almaris-gold" />
     <span class="text-gray-600">{address}</span>
   </div>
 
@@ -129,7 +129,7 @@
     </div>
     <button
       onclick={onCallRoom}
-      class="flex items-center space-x-2 -mr-3 sm:mr-0 lg:mr-0 bg-green-700 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors"
+      class="flex items-center space-x-2 -mr-3 sm:mr-0 lg:mr-0 bg-almaris-blue text-white px-4 py-2 rounded-lg"
     >
       <IconPhone class="w-4 h-4" />
       <span class="text-sm lg:text-lg">{room.phone}</span>
@@ -139,23 +139,23 @@
   <!-- Room Specs -->
   <div class="grid grid-cols-4 gap-4 pt-6 border-t border-blue-200">
     <div class="flex items-center space-x-2">
-      <IconBed class="w-5 h-5 text-green-700" />
+      <IconBed class="w-5 h-5 text-almaris-gold" />
       <span class="text-gray-900"
         >{room.beds} Bed{room.beds > 1 ? "s" : ""}</span
       >
     </div>
     <div class="flex items-center space-x-2">
-      <IconBath class="w-5 h-5 text-green-700" />
+      <IconBath class="w-5 h-5 text-almaris-gold" />
       <span class="text-gray-900"
         >{room.baths} Bath{room.baths > 1 ? "s" : ""}</span
       >
     </div>
     <div class="flex items-center space-x-2">
-      <IconMaximize class="w-5 h-5 text-green-700" />
+      <IconMaximize class="w-5 h-5 text-almaris-gold" />
       <span class="text-gray-900">{room.size}</span>
     </div>
     <div class="flex items-center space-x-2">
-      <IconUsers class="w-5 h-5 text-green-700" />
+      <IconUsers class="w-5 h-5 text-almaris-gold" />
       <span class="text-gray-900"
         >{room.guests} Guest{room.guests > 1 ? "s" : ""}</span
       >

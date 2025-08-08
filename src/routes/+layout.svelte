@@ -1,8 +1,8 @@
 <script>
   import "../app.css";
   import { onMount, onDestroy } from "svelte";
-  import Header from "../lib/Header.svelte";
-  import Footer from "../lib/Footer.svelte";
+  import Header from "$lib/Components/Header.svelte";
+  import Footer from "$lib/Components/Footer.svelte";
   let { children } = $props();
   onMount(async () => {});
 </script>

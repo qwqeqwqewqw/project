@@ -1,8 +1,8 @@
 <script>
-  import ContactHero from "$lib/ContactAboutHero.svelte";
+  import ContactHero from "$lib/Components/ContactAboutHero.svelte";
 
-  import ContactForm from "$lib/ContactForm.svelte";
-  import ContactMap from "$lib/ContactMap.svelte";
+  import ContactForm from "$lib/Components/ContactForm.svelte";
+  import ContactMap from "$lib/Components/ContactMap.svelte";
 </script>
 
 <svelte:head>
@@ -15,7 +15,7 @@
 
 <main class="min-h-screen">
   <!-- Hero Section -->
-  <ContactHero title="Contact Us" description="Get in touch with us" />
+  <ContactHero title="Contact Us" description="" subtitle="" />
 
   <!-- Contact Form -->
   <ContactForm />

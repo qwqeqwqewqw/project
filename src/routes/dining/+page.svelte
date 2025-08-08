@@ -1,6 +1,6 @@
 <script>
-  import DiningHero from "$lib/DiningHero.svelte";
-  import DiningContent from "$lib/DiningContent.svelte";
+  import DiningHero from "$lib/Components/DiningHero.svelte";
+  import DiningContent from "$lib/Components/DiningContent.svelte";
 </script>
 
 <svelte:head>

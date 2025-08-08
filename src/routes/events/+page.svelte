@@ -1,6 +1,6 @@
 <script>
-  import EventsContent from "$lib/EventsContent.svelte";
-  import Hero from "$lib/ContactAboutHero.svelte";
+  import EventsContent from "$lib/Components/EventsContent.svelte";
+  import Hero from "$lib/Components/ContactAboutHero.svelte";
 </script>
 
 <svelte:head>
