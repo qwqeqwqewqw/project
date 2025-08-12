@@ -5,16 +5,16 @@
   import { get } from "svelte/store";
   import { rooms } from "../Data/data";
 
-  let room3 = null;
+  let room3 = rooms;
 
-  async function getRoomData() {
-    const data = await callServerApi("getVillaInfo", {}, {});
-    room3 = rooms;
-  }
+  // async function getRoomData() {
+  //   const data = await callServerApi("getVillaInfo", {}, {});
+  //   room3 = rooms;
+  // }
 
-  onMount(() => {
-    getRoomData();
-  });
+  // onMount(() => {
+  //   getRoomData();
+  // });
 
   function bookVilla(villa) {
     selectedVilla.set(villa);
