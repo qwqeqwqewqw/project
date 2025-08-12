@@ -30,7 +30,7 @@
 </script>
 
 <header
-  class={`fixed top-0 left-0 w-full z-50 ${colorchange ? "bg-white/30" : "bg-white/10"} backdrop-blur-md shadow-md transition-colors duration-300`}
+  class={`fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-md shadow-md transition-colors duration-300`}
 >
   <div class="w-full px-6 py-1 flex items-center justify-between">
     <!-- Logo + Nav -->

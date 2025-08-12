@@ -1,7 +1,26 @@
-<script lang="ts">
+<script>
+  import { onMount, onDestroy } from "svelte";
   let arrivalDate = $state("");
   let departureDate = $state("");
   let guests = $state(2);
+
+  let carouselImages = [
+    "/home.jpg",
+    "/home2.jpg",
+    "/home3.jpg",
+    "/home4.jpg",
+    "/home5.jpg",
+  ];
+
+  let current = $state(0);
+  let interval;
+
+  onMount(() => {
+    interval = setInterval(() => {
+      current = (current + 1) % carouselImages.length;
+    }, 3000); // Change every 3 seconds
+  });
+  onDestroy(() => clearInterval(interval));
 </script>
 
 <section class="relative min-h-screen bg-off-white overflow-hidden">
@@ -31,11 +50,16 @@
 
     <!-- Right: Image -->
     <div class="w-1/2 relative">
-      <img
-        src="/gate.png"
-        alt="Luxury hotel room"
-        class="w-full h-full object-cover"
-      />
+      {#each carouselImages as img, i}
+        <img
+          src={`homehero${img}`}
+          alt="Carousel"
+          class="w-full h-full object-cover absolute inset-0 transition-opacity duration-700"
+          style="opacity: {current === i ? 1 : 0}; z-index: {current === i
+            ? 1
+            : 0};"
+        />
+      {/each}
       <div class="absolute inset-0 bg-black/20"></div>
     </div>
   </div>
@@ -202,12 +226,18 @@
     </div>
 
     <!-- Image Section -->
-    <div class="relative h-64 sm:h-80 md:h-96">
-      <img
-        src="/gate.png"
-        alt="Luxury hotel room"
-        class="w-full h-full object-cover"
-      />
+    <!-- Mobile/Tablet Carousel Image Section -->
+    <div class="relative h-64 sm:h-80 md:h-96 overflow-hidden">
+      {#each carouselImages as img, i}
+        <img
+          src={`homehero${img}`}
+          alt="Carousel"
+          class="w-full h-full object-cover absolute inset-0 transition-opacity duration-700"
+          style="opacity: {current === i ? 1 : 0}; z-index: {current === i
+            ? 1
+            : 0};"
+        />
+      {/each}
       <div class="absolute inset-0 bg-black/20"></div>
     </div>
   </div>

@@ -1,0 +1,346 @@
+{
+  "1": {
+    "id": 1,
+    "name": "Studio",
+    "subtitle": "A blend of elegance and comfort",
+    "poster": "/studio/studio.png",
+    "image": "/studio/studio.png",
+    "images": [
+      "/studio/studio.png",
+      "/studio/studio2.png",
+      "/studio/studio3.png",
+      "/studio/studio4.png",
+      "/studio/studio5.png",
+      "/studio/studio6.png",
+      "/studio/studio7.png"
+    ],
+    "description": "Chalet-style suites feature eco-friendly bamboo furnishings, yellow ambient lighting, and large windows with forest views. Designed for comfort and serenity. Experience luxury and comfort in our elegantly designed Suite. Perfect for couples seeking a romantic getaway with modern amenities and stunning views.",
+    "size": "450 sq ft",
+    "features": [
+      "1 Queen Size Bed",
+      "2 Single Beds",
+      "Free WiFi",
+      "Room Service",
+      "King Size Bed",
+      "Private Balcony",
+      "Mini Bar"
+    ],
+    "capacity": "4 Guests",
+    "price": "₹3,500 / ₹8,500",
+    "phone": "+91 7719036036",
+    "beds": 1,
+    "baths": 1,
+    "guests": 2,
+    "amenities": [
+      "Air Conditioning",
+      "Flat Screen TV",
+      "Safe",
+      "Bathrobe & Slippers",
+      "Toiletries",
+      "Flat-Screen TV",
+      "High-Speed Wi-Fi",
+      "Electronic Safe",
+      "Mini Bar",
+      "Private Balcony",
+      "Room Service",
+      "Daily Housekeeping"
+    ],
+    "additionalAmenities": [
+      {
+        "icon": "<svg  xmlns=\"http://www.w3.org/2000/svg\"  width=\"24\"  height=\"24\"  viewBox=\"0 0 24 24\"  fill=\"none\"  stroke=\"currentColor\"  stroke-width=\"2\"  stroke-linecap=\"round\"  stroke-linejoin=\"round\"  class=\"icon icon-tabler icons-tabler-outline icon-tabler-air-conditioning text-almaris-gold\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M8 16a3 3 0 0 1 -3 3\" /><path d=\"M16 16a3 3 0 0 0 3 3\" /><path d=\"M12 16v4\" /><path d=\"M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z\" /><path d=\"M7 13v-3a1 1 0 0 1 1 -1h8a1 1 0 0 1 1 1v3\" /></svg>",
+        "name": "Climate Control"
+      },
+      {
+        "icon": "<svg  xmlns=\"http://www.w3.org/2000/svg\"  width=\"24\"  height=\"24\"  viewBox=\"0 0 24 24\"  fill=\"none\"  stroke=\"currentColor\"  stroke-width=\"2\"  stroke-linecap=\"round\"  stroke-linejoin=\"round\"  class=\"icon icon-tabler icons-tabler-outline icon-tabler-device-tv-old text-almaris-gold\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z\" /><path d=\"M16 3l-4 4l-4 -4\" /><path d=\"M15 7v13\" /><path d=\"M18 15v.01\" /><path d=\"M18 12v.01\" /></svg>",
+        "name": "32-inch Smart TV"
+      },
+      { "icon": "📶", "name": "Complimentary Wi-Fi" },
+      { "icon": "🔒", "name": "In-room Safe" },
+      { "icon": "☕", "name": "Coffee/Tea Maker" },
+      { "icon": "🪞", "name": "Vanity Mirror" },
+      { "icon": "🛁", "name": "Premium Bathroom" },
+      { "icon": "🪑", "name": "Reading Chair" },
+      { "icon": "⏰", "name": "Wake-up Service" }
+    ],
+    "checkInRules": [
+      "Check-in time: 3:00 PM onwards",
+      "Valid government ID required",
+      "Early check-in subject to availability (additional charges may apply)",
+      "Maximum 2 guests per suite"
+    ],
+    "checkOutRules": [
+      "Check-out time: 11:00 AM",
+      "Late check-out until 2:00 PM (50% of room rate)",
+      "Express check-out available",
+      "Room inspection required before departure"
+    ]
+  },
+  "2": {
+    "id": 2,
+    "name": "Deluxe Suite",
+    "subtitle": "Enhanced luxury with premium amenities",
+    "poster": "/delux/delux2.png",
+    "image": "/delux/delux2.png",
+    "images": [
+      "/delux/delux2.png",
+      "/delux/delux3.png",
+      "/delux/delux4.png",
+      "/delux/delux5.png",
+      "/delux/delux6.png",
+      "/delux/delux7.png",
+      "/delux/delux8.png",
+      "/delux/delux9.png",
+      "/delux/delux10.png"
+    ],
+    "description": "Deluxe Suites are spacious, chalet-style rooms ideal for families or groups, featuring separate beds for kids. Include a front veranda and natural ventilation. Spacious deluxe suites offering enhanced comfort with premium amenities and stunning views of the surrounding landscape.",
+    "size": "650 sq ft",
+    "features": [
+      "Queen Size Bed",
+      "Free WiFi",
+      "Room Service",
+      "Luxurious Interior",
+      "King Size Bed",
+      "Separate Living Area",
+      "Premium Mini Bar"
+    ],
+    "capacity": "2 Guests / 3 Guests",
+    "price": "₹3,700 / ₹12,500",
+    "phone": "+91 7719036036",
+    "beds": 1,
+    "baths": 1,
+    "guests": 3,
+    "amenities": [
+      "Air Conditioning",
+      "Flat Screen TV",
+      "In-room Safe",
+      "Bathrobe & Slippers",
+      "Luxury Toiletries",
+      "Premium Air Conditioning",
+      "Smart TV",
+      "High-Speed Wi-Fi",
+      "Premium Mini Bar",
+      "Separate Living Area",
+      "24/7 Room Service",
+      "Concierge Service"
+    ],
+    "additionalAmenities": [
+      {
+        "icon": "<svg  xmlns=\"http://www.w3.org/2000/svg\"  width=\"24\"  height=\"24\"  viewBox=\"0 0 24 24\"  fill=\"none\"  stroke=\"currentColor\"  stroke-width=\"2\"  stroke-linecap=\"round\"  stroke-linejoin=\"round\"  class=\"icon icon-tabler icons-tabler-outline icon-tabler-air-conditioning text-almaris-gold\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M8 16a3 3 0 0 1 -3 3\" /><path d=\"M16 16a3 3 0 0 0 3 3\" /><path d=\"M12 16v4\" /><path d=\"M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z\" /><path d=\"M7 13v-3a1 1 0 0 1 1 -1h8a1 1 0 0 1 1 1v3\" /></svg>",
+        "name": "Dual Zone AC"
+      },
+      {
+        "icon": "<svg  xmlns=\"http://www.w3.org/2000/svg\"  width=\"24\"  height=\"24\"  viewBox=\"0 0 24 24\"  fill=\"none\"  stroke=\"currentColor\"  stroke-width=\"2\"  stroke-linecap=\"round\"  stroke-linejoin=\"round\"  class=\"icon icon-tabler icons-tabler-outline icon-tabler-device-tv-old text-almaris-gold\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z\" /><path d=\"M16 3l-4 4l-4 -4\" /><path d=\"M15 7v13\" /><path d=\"M18 15v.01\" /><path d=\"M18 12v.01\" /></svg>",
+        "name": "42-inch Smart TV"
+      },
+      { "icon": "📶", "name": "High-Speed Wi-Fi" },
+      { "icon": "🔒", "name": "Digital Safe" },
+      { "icon": "🍾", "name": "Premium Mini Bar" },
+      { "icon": "🛋️", "name": "Living Area" },
+      { "icon": "🛁", "name": "Marble Bathroom" },
+      { "icon": "☕", "name": "Espresso Machine" },
+      { "icon": "🌅", "name": "Garden View" }
+    ],
+    "checkInRules": [
+      "Check-in time: 2:00 PM onwards",
+      "Valid government ID and address proof required",
+      "Complimentary early check-in for loyalty members",
+      "Maximum 3 guests per deluxe suite",
+      "Welcome drink included"
+    ],
+    "checkOutRules": [
+      "Check-out time: 12:00 PM",
+      "Late check-out until 3:00 PM (complimentary for stays 3+ nights)",
+      "Express check-out with mobile key",
+      "Complimentary luggage storage"
+    ]
+  },
+  "3": {
+    "id": 3,
+    "name": "Super Deluxe Suite",
+    "subtitle": "Ultimate luxury experience",
+    "image": "/superdelux/superdelux1.png",
+    "poster": "/superdelux/superdelux1.png",
+    "images": [
+      "/superdelux/superdelux1.png",
+      "/superdelux/superdelux2.png",
+      "/superdelux/superdelux3.png",
+      "/superdelux/superdelux4.png",
+      "/superdelux/superdelux5.png",
+      "/superdelux/superdelux6.png"
+    ],
+    "description": "Our most luxurious suites featuring exceptional space, premium furnishings, and exclusive amenities for the ultimate experience.",
+    "size": "850 sq ft",
+    "features": [
+      "King Size Bed",
+      "Spacious Living Room",
+      "Premium Bar",
+      "Butler Service",
+      "Queen Size Bed",
+      "Spacious Living Space",
+      "Free WiFi",
+      "Private Balcony"
+    ],
+    "capacity": "4 Guests",
+    "beds": 1,
+    "baths": 2,
+    "guests": 4,
+    "price": "₹18,500",
+    "phone": "+91 7719036036",
+    "amenities": [
+      "Climate Control",
+      "Premium Entertainment System",
+      "High-Speed Wi-Fi",
+      "Personal Safe",
+      "Premium Bar",
+      "Spacious Living Room",
+      "Butler Service",
+      "Priority Check-in",
+      "Air Conditioning",
+      "Flat Screen TV",
+      "In-room Safe",
+      "Bathrobe & Slippers",
+      "Luxury Toiletries"
+    ],
+    "additionalAmenities": [
+      {
+        "icon": "<svg  xmlns=\"http://www.w3.org/2000/svg\"  width=\"24\"  height=\"24\"  viewBox=\"0 0 24 24\"  fill=\"none\"  stroke=\"currentColor\"  stroke-width=\"2\"  stroke-linecap=\"round\"  stroke-linejoin=\"round\"  class=\"icon icon-tabler icons-tabler-outline icon-tabler-air-conditioning text-almaris-gold\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M8 16a3 3 0 0 1 -3 3\" /><path d=\"M16 16a3 3 0 0 0 3 3\" /><path d=\"M12 16v4\" /><path d=\"M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z\" /><path d=\"M7 13v-3a1 1 0 0 1 1 -1h8a1 1 0 0 1 1 1v3\" /></svg>",
+        "name": "Smart Climate Control"
+      },
+      {
+        "icon": "<svg  xmlns=\"http://www.w3.org/2000/svg\"  width=\"24\"  height=\"24\"  viewBox=\"0 0 24 24\"  fill=\"none\"  stroke=\"currentColor\"  stroke-width=\"2\"  stroke-linecap=\"round\"  stroke-linejoin=\"round\"  class=\"icon icon-tabler icons-tabler-outline icon-tabler-device-tv-old text-almaris-gold\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z\" /><path d=\"M16 3l-4 4l-4 -4\" /><path d=\"M15 7v13\" /><path d=\"M18 15v.01\" /><path d=\"M18 12v.01\" /></svg>",
+        "name": "55-inch OLED TV"
+      },
+      { "icon": "📶", "name": "Fiber Optic Wi-Fi" },
+      { "icon": "🔒", "name": "Biometric Safe" },
+      { "icon": "🍸", "name": "Premium Bar Setup" },
+      { "icon": "🛋️", "name": "Designer Furniture" },
+      { "icon": "🛁", "name": "Jacuzzi Bathtub" },
+      { "icon": "🎵", "name": "Sound System" },
+      { "icon": "🌊", "name": "Ocean View" }
+    ],
+    "checkInRules": [
+      "Check-in time: 1:00 PM onwards",
+      "VIP check-in with dedicated concierge",
+      "Complimentary airport transfer (within 50km)",
+      "Maximum 4 guests per super deluxe suite",
+      "Welcome amenities and champagne included"
+    ],
+    "checkOutRules": [
+      "Check-out time: 1:00 PM",
+      "Complimentary late check-out until 4:00 PM",
+      "Butler-assisted check-out",
+      "Complimentary departure transfer",
+      "Post-stay concierge follow-up"
+    ]
+  },
+  "4": {
+    "id": 4,
+    "name": "Bungalow (2/3/4 BHK)",
+    "subtitle": "Private sanctuary in nature",
+    "image": "/bunglow/bunglow2.png",
+    "poster": "/bunglow/bunglow1.png",
+    "images": [
+      "/bunglow/2bhk/bunglow1.png",
+      "/bunglow/2bhk/bunglow2.png",
+      "/bunglow/2bhk/bunglow3.png",
+      "/bunglow/2bhk/bunglow4.png",
+      "/bunglow/2bhk/bunglow5.png",
+      "/bunglow/2bhk/bunglow6.png",
+      "/bunglow/2bhk/bunglow7.png",
+      "/bunglow/2bhk/bunglow8.png",
+      "/bunglow/2bhk/bunglow9.png"
+    ],
+    "images2": [
+      "/bunglow/3bhk/bunglow1.png",
+      "/bunglow/3bhk/bunglow2.jpeg",
+      "/bunglow/3bhk/bunglow3.png",
+      "/bunglow/3bhk/bunglow4.png",
+      "/bunglow/3bhk/bunglow5.png",
+      "/bunglow/3bhk/bunglow6.png",
+      "/bunglow/3bhk/bunglow7.png",
+      "/bunglow/3bhk/bunglow8.png",
+      "/bunglow/3bhk/bunglow9.png",
+      "/bunglow/3bhk/bunglow10.png",
+      "/bunglow/3bhk/bunglow11.png"
+    ],
+    "images3": [
+      "/bunglow/4bhk/bunglow1.png",
+      "/bunglow/4bhk/bunglow2.png",
+      "/bunglow/4bhk/bunglow3.png",
+      "/bunglow/4bhk/bunglow4.png",
+      "/bunglow/4bhk/bunglow5.png",
+      "/bunglow/4bhk/bunglow6.png",
+      "/bunglow/4bhk/bunglow7.png",
+      "/bunglow/4bhk/bunglow8.png",
+      "/bunglow/4bhk/bunglow9.png",
+      "/bunglow/4bhk/bunglow10.png",
+      "/bunglow/4bhk/bunglow11.png",
+      "/bunglow/4bhk/bunglow12.png"
+    ],
+    "description": "Private bungalows offering complete privacy and independence with all modern amenities in a serene natural setting.",
+    "size": "1200 sq ft",
+    "features": [
+      "Multiple Bedrooms",
+      "Private Garden",
+      "Full Kitchen",
+      "Dedicated Staff",
+      "2 Queen Size Beds",
+      "Private Pool *",
+      "Free WiFi",
+      "Room Service"
+    ],
+    "capacity": "4/6/8 Guests",
+    "beds": 2,
+    "baths": 2,
+    "guests": 6,
+    "price": "₹ 4000/5000/4500",
+    "phone": "+91 7719036036",
+    "amenities": [
+      "Central Air Conditioning",
+      "Full Kitchen",
+      "Private Garden",
+      "Dedicated Staff",
+      "Private Parking",
+      "Multiple Bedrooms",
+      "Complete Privacy",
+      "24/7 Support",
+      "Air Conditioning",
+      "Bathrobe & Slippers",
+      "Luxury Toiletries",
+      "Private Bathrooms"
+    ],
+    "additionalAmenities": [
+      {
+        "icon": "<svg  xmlns=\"http://www.w3.org/2000/svg\"  width=\"24\"  height=\"24\"  viewBox=\"0 0 24 24\"  fill=\"none\"  stroke=\"currentColor\"  stroke-width=\"2\"  stroke-linecap=\"round\"  stroke-linejoin=\"round\"  class=\"icon icon-tabler icons-tabler-outline icon-tabler-air-conditioning text-almaris-gold\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M8 16a3 3 0 0 1 -3 3\" /><path d=\"M16 16a3 3 0 0 0 3 3\" /><path d=\"M12 16v4\" /><path d=\"M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z\" /><path d=\"M7 13v-3a1 1 0 0 1 1 -1h8a1 1 0 0 1 1 1v3\" /></svg>",
+        "name": "Central AC System"
+      },
+      {
+        "icon": "<svg  xmlns=\"http://www.w3.org/2000/svg\"  width=\"24\"  height=\"24\"  viewBox=\"0 0 24 24\"  fill=\"none\"  stroke=\"currentColor\"  stroke-width=\"2\"  stroke-linecap=\"round\"  stroke-linejoin=\"round\"  class=\"icon icon-tabler icons-tabler-outline icon-tabler-device-tv-old text-almaris-gold\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z\" /><path d=\"M16 3l-4 4l-4 -4\" /><path d=\"M15 7v13\" /><path d=\"M18 15v.01\" /><path d=\"M18 12v.01\" /></svg>",
+        "name": "Multiple Smart TVs"
+      },
+      { "icon": "📶", "name": "Mesh Wi-Fi Network" },
+      { "icon": "🔒", "name": "Smart Lock System" },
+      { "icon": "🍳", "name": "Fully Equipped Kitchen" },
+      { "icon": "🌳", "name": "Private Garden" },
+      { "icon": "🛁", "name": "Master Bathroom Suite" },
+      { "icon": "🚗", "name": "Private Parking" },
+      { "icon": "🏡", "name": "Independent Villa" }
+    ],
+    "checkInRules": [
+      "Check-in time: 12:00 PM onwards",
+      "Private check-in at bungalow",
+      "Dedicated staff orientation included",
+      "Maximum 6 guests per bungalow",
+      "Grocery pre-stocking service available",
+      "Pet-friendly accommodation (with prior notice)"
+    ],
+    "checkOutRules": [
+      "Check-out time: 2:00 PM",
+      "Flexible check-out timing (up to 6:00 PM)",
+      "Staff-assisted packing and departure",
+      "Kitchen cleaning service included",
+      "Property inspection with guest walkthrough",
+      "Complimentary laundry service for extended stays"
+    ]
+  }
+}

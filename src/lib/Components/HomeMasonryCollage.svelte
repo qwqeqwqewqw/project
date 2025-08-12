@@ -1,22 +1,22 @@
 <script>
   const topRow = [
     {
-      src: "https://picsum.photos/100/300?image=100",
+      src: "Activities/Pool.jpg",
       width: "w-[22vw]",
       height: "h-[18vw] sm:h-[16vw] md:h-[14vw]",
     },
     {
-      src: "https://picsum.photos/140/300?image=300",
+      src: "Activities/froggy.jpg",
       width: "w-[12vw]",
       height: "h-[20vw] sm:h-[18vw] md:h-[16vw]",
     },
     {
-      src: "https://picsum.photos/220/300?image=200",
+      src: "Activities/sindhadurg-fort2.jpg",
       width: "w-[18vw]",
       height: "h-[18vw] sm:h-[16vw] md:h-[14vw]",
     },
     {
-      src: "https://picsum.photos/270/300?image=350",
+      src: "Activities/archery.jpg",
       width: "w-[8vw]",
       height: "h-[14vw] sm:h-[12vw] md:h-[10vw]",
     },
@@ -24,22 +24,22 @@
 
   const bottomRow = [
     {
-      src: "https://picsum.photos/120/260?image=400",
+      src: "Activities/Indoor-games.jpg",
       width: "w-[10vw]",
-      height: "h-[12vw] sm:h-[10vw] md:h-[9vw]",
+      height: "h-[12vw] sm:h-[10vw] md:h-[12vw]",
     },
     {
-      src: "https://picsum.photos/190/260?image=500",
+      src: "Activities/commando.jpg",
       width: "w-[16vw]",
       height: "h-[18vw] sm:h-[16vw] md:h-[14vw]",
     },
     {
-      src: "https://picsum.photos/170/260?image=600",
+      src: "Activities/meditation.jpg",
       width: "w-[14vw]",
       height: "h-[22vw] sm:h-[20vw] md:h-[18vw]",
     },
     {
-      src: "https://picsum.photos/220/260?image=700",
+      src: "Activities/kayaking.jpg",
       width: "w-[18vw]",
       height: "h-[18vw] sm:h-[16vw] md:h-[14vw]",
     },

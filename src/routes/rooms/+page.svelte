@@ -2,8 +2,6 @@
   import RoomsHero from "$lib/Components/RoomsHero.svelte";
   import RoomsGrid from "$lib/Components/RoomsGrid.svelte";
   import RoomsCallToAction from "$lib/Components/RoomsCallToAction.svelte";
-
-  import { roomlist as rooms } from "$lib/Data/data";
 </script>
 
 <svelte:head>
@@ -19,7 +17,7 @@
   <RoomsHero />
 
   <!-- Rooms Grid Section -->
-  <RoomsGrid {rooms} />
+  <RoomsGrid />
 
   <!-- Call to Action Section -->
   <RoomsCallToAction />

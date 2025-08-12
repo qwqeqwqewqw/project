@@ -9,7 +9,7 @@
       <div class="relative lg:order-1">
         <div class=" rounded-2xl overflow-hidden shadow-xl h-120">
           <img
-            src="/gate.png"
+            src="About/main.jpg"
             alt="Cherilyn Monta Resort entrance"
             class="w-full h-full object-cover"
           />

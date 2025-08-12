@@ -1,10 +1,19 @@
 <script>
   import { onMount } from "svelte";
-  import { roomlist } from "$lib/Data/data";
+  import { callServerApi } from "../../services/DataService";
+
   let currentIndex = 0;
   let interval;
+  let roomlist = null;
+
+  async function getRoomData() {
+    const data = await callServerApi("getVillaInfo", {}, {});
+    console.log("main : ", data.data);
+    roomlist = data.data;
+  }
 
   onMount(() => {
+    getRoomData();
     // Only rotate if mobile
     const isMobile = window.innerWidth < 640;
 
