@@ -9,17 +9,4 @@
   <p class="text-gray-600 leading-relaxed mb-6">
     {room.description}
   </p>
-
-  <!-- Key Features -->
-  <div>
-    <h4 class="text-lg font-semibold text-gray-900 mb-3">Key Features</h4>
-    <div class="grid sm:grid-cols-2 gap-3">
-      {#each room.features as feature}
-        <div class="flex items-center space-x-2">
-          <IconCheck class="w-4 h-4 text-almaris-gold flex-shrink-0" />
-          <span class="text-gray-900">{feature}</span>
-        </div>
-      {/each}
-    </div>
-  </div>
 </div>

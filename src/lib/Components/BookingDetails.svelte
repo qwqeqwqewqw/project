@@ -135,30 +135,4 @@
       <span class="text-sm lg:text-lg">{room.phone}</span>
     </button>
   </div>
-
-  <!-- Room Specs -->
-  <div class="grid grid-cols-4 gap-4 pt-6 border-t border-blue-200">
-    <div class="flex items-center space-x-2">
-      <IconBed class="w-5 h-5 text-almaris-gold" />
-      <span class="text-gray-900"
-        >{room.beds} Bed{room.beds > 1 ? "s" : ""}</span
-      >
-    </div>
-    <div class="flex items-center space-x-2">
-      <IconBath class="w-5 h-5 text-almaris-gold" />
-      <span class="text-gray-900"
-        >{room.baths} Bath{room.baths > 1 ? "s" : ""}</span
-      >
-    </div>
-    <div class="flex items-center space-x-2">
-      <IconMaximize class="w-5 h-5 text-almaris-gold" />
-      <span class="text-gray-900">{room.size}</span>
-    </div>
-    <div class="flex items-center space-x-2">
-      <IconUsers class="w-5 h-5 text-almaris-gold" />
-      <span class="text-gray-900"
-        >{room.guests} Guest{room.guests > 1 ? "s" : ""}</span
-      >
-    </div>
-  </div>
 </div>

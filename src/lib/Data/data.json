@@ -1,5 +1,6 @@
-{
-  "1": {
+[
+  {
+    "_id": "6899e1102cdda897c199a1b9",
     "id": 1,
     "name": "Studio",
     "subtitle": "A blend of elegance and comfort",
@@ -54,13 +55,34 @@
         "icon": "<svg  xmlns=\"http://www.w3.org/2000/svg\"  width=\"24\"  height=\"24\"  viewBox=\"0 0 24 24\"  fill=\"none\"  stroke=\"currentColor\"  stroke-width=\"2\"  stroke-linecap=\"round\"  stroke-linejoin=\"round\"  class=\"icon icon-tabler icons-tabler-outline icon-tabler-device-tv-old text-almaris-gold\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z\" /><path d=\"M16 3l-4 4l-4 -4\" /><path d=\"M15 7v13\" /><path d=\"M18 15v.01\" /><path d=\"M18 12v.01\" /></svg>",
         "name": "32-inch Smart TV"
       },
-      { "icon": "📶", "name": "Complimentary Wi-Fi" },
-      { "icon": "🔒", "name": "In-room Safe" },
-      { "icon": "☕", "name": "Coffee/Tea Maker" },
-      { "icon": "🪞", "name": "Vanity Mirror" },
-      { "icon": "🛁", "name": "Premium Bathroom" },
-      { "icon": "🪑", "name": "Reading Chair" },
-      { "icon": "⏰", "name": "Wake-up Service" }
+      {
+        "icon": "📶",
+        "name": "Complimentary Wi-Fi"
+      },
+      {
+        "icon": "🔒",
+        "name": "In-room Safe"
+      },
+      {
+        "icon": "☕",
+        "name": "Coffee/Tea Maker"
+      },
+      {
+        "icon": "🪞",
+        "name": "Vanity Mirror"
+      },
+      {
+        "icon": "🛁",
+        "name": "Premium Bathroom"
+      },
+      {
+        "icon": "🪑",
+        "name": "Reading Chair"
+      },
+      {
+        "icon": "⏰",
+        "name": "Wake-up Service"
+      }
     ],
     "checkInRules": [
       "Check-in time: 3:00 PM onwards",
@@ -73,9 +95,12 @@
       "Late check-out until 2:00 PM (50% of room rate)",
       "Express check-out available",
       "Room inspection required before departure"
-    ]
+    ],
+    "villa_type": "Studio Room",
+    "v_admin_company": []
   },
-  "2": {
+  {
+    "_id": "6899e1102cdda897c199a1ba",
     "id": 2,
     "name": "Deluxe Suite",
     "subtitle": "Enhanced luxury with premium amenities",
@@ -132,13 +157,34 @@
         "icon": "<svg  xmlns=\"http://www.w3.org/2000/svg\"  width=\"24\"  height=\"24\"  viewBox=\"0 0 24 24\"  fill=\"none\"  stroke=\"currentColor\"  stroke-width=\"2\"  stroke-linecap=\"round\"  stroke-linejoin=\"round\"  class=\"icon icon-tabler icons-tabler-outline icon-tabler-device-tv-old text-almaris-gold\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z\" /><path d=\"M16 3l-4 4l-4 -4\" /><path d=\"M15 7v13\" /><path d=\"M18 15v.01\" /><path d=\"M18 12v.01\" /></svg>",
         "name": "42-inch Smart TV"
       },
-      { "icon": "📶", "name": "High-Speed Wi-Fi" },
-      { "icon": "🔒", "name": "Digital Safe" },
-      { "icon": "🍾", "name": "Premium Mini Bar" },
-      { "icon": "🛋️", "name": "Living Area" },
-      { "icon": "🛁", "name": "Marble Bathroom" },
-      { "icon": "☕", "name": "Espresso Machine" },
-      { "icon": "🌅", "name": "Garden View" }
+      {
+        "icon": "📶",
+        "name": "High-Speed Wi-Fi"
+      },
+      {
+        "icon": "🔒",
+        "name": "Digital Safe"
+      },
+      {
+        "icon": "🍾",
+        "name": "Premium Mini Bar"
+      },
+      {
+        "icon": "🛋️",
+        "name": "Living Area"
+      },
+      {
+        "icon": "🛁",
+        "name": "Marble Bathroom"
+      },
+      {
+        "icon": "☕",
+        "name": "Espresso Machine"
+      },
+      {
+        "icon": "🌅",
+        "name": "Garden View"
+      }
     ],
     "checkInRules": [
       "Check-in time: 2:00 PM onwards",
@@ -152,9 +198,12 @@
       "Late check-out until 3:00 PM (complimentary for stays 3+ nights)",
       "Express check-out with mobile key",
       "Complimentary luggage storage"
-    ]
+    ],
+    "villa_type": "Delux Room",
+    "v_admin_company": []
   },
-  "3": {
+  {
+    "_id": "6899e1102cdda897c199a1bb",
     "id": 3,
     "name": "Super Deluxe Suite",
     "subtitle": "Ultimate luxury experience",
@@ -210,13 +259,34 @@
         "icon": "<svg  xmlns=\"http://www.w3.org/2000/svg\"  width=\"24\"  height=\"24\"  viewBox=\"0 0 24 24\"  fill=\"none\"  stroke=\"currentColor\"  stroke-width=\"2\"  stroke-linecap=\"round\"  stroke-linejoin=\"round\"  class=\"icon icon-tabler icons-tabler-outline icon-tabler-device-tv-old text-almaris-gold\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z\" /><path d=\"M16 3l-4 4l-4 -4\" /><path d=\"M15 7v13\" /><path d=\"M18 15v.01\" /><path d=\"M18 12v.01\" /></svg>",
         "name": "55-inch OLED TV"
       },
-      { "icon": "📶", "name": "Fiber Optic Wi-Fi" },
-      { "icon": "🔒", "name": "Biometric Safe" },
-      { "icon": "🍸", "name": "Premium Bar Setup" },
-      { "icon": "🛋️", "name": "Designer Furniture" },
-      { "icon": "🛁", "name": "Jacuzzi Bathtub" },
-      { "icon": "🎵", "name": "Sound System" },
-      { "icon": "🌊", "name": "Ocean View" }
+      {
+        "icon": "📶",
+        "name": "Fiber Optic Wi-Fi"
+      },
+      {
+        "icon": "🔒",
+        "name": "Biometric Safe"
+      },
+      {
+        "icon": "🍸",
+        "name": "Premium Bar Setup"
+      },
+      {
+        "icon": "🛋️",
+        "name": "Designer Furniture"
+      },
+      {
+        "icon": "🛁",
+        "name": "Jacuzzi Bathtub"
+      },
+      {
+        "icon": "🎵",
+        "name": "Sound System"
+      },
+      {
+        "icon": "🌊",
+        "name": "Ocean View"
+      }
     ],
     "checkInRules": [
       "Check-in time: 1:00 PM onwards",
@@ -231,9 +301,12 @@
       "Butler-assisted check-out",
       "Complimentary departure transfer",
       "Post-stay concierge follow-up"
-    ]
+    ],
+    "villa_type": "Super Delux Room",
+    "v_admin_company": []
   },
-  "4": {
+  {
+    "_id": "6899e1102cdda897c199a1bc",
     "id": 4,
     "name": "Bungalow (2/3/4 BHK)",
     "subtitle": "Private sanctuary in nature",
@@ -318,13 +391,34 @@
         "icon": "<svg  xmlns=\"http://www.w3.org/2000/svg\"  width=\"24\"  height=\"24\"  viewBox=\"0 0 24 24\"  fill=\"none\"  stroke=\"currentColor\"  stroke-width=\"2\"  stroke-linecap=\"round\"  stroke-linejoin=\"round\"  class=\"icon icon-tabler icons-tabler-outline icon-tabler-device-tv-old text-almaris-gold\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z\" /><path d=\"M16 3l-4 4l-4 -4\" /><path d=\"M15 7v13\" /><path d=\"M18 15v.01\" /><path d=\"M18 12v.01\" /></svg>",
         "name": "Multiple Smart TVs"
       },
-      { "icon": "📶", "name": "Mesh Wi-Fi Network" },
-      { "icon": "🔒", "name": "Smart Lock System" },
-      { "icon": "🍳", "name": "Fully Equipped Kitchen" },
-      { "icon": "🌳", "name": "Private Garden" },
-      { "icon": "🛁", "name": "Master Bathroom Suite" },
-      { "icon": "🚗", "name": "Private Parking" },
-      { "icon": "🏡", "name": "Independent Villa" }
+      {
+        "icon": "📶",
+        "name": "Mesh Wi-Fi Network"
+      },
+      {
+        "icon": "🔒",
+        "name": "Smart Lock System"
+      },
+      {
+        "icon": "🍳",
+        "name": "Fully Equipped Kitchen"
+      },
+      {
+        "icon": "🌳",
+        "name": "Private Garden"
+      },
+      {
+        "icon": "🛁",
+        "name": "Master Bathroom Suite"
+      },
+      {
+        "icon": "🚗",
+        "name": "Private Parking"
+      },
+      {
+        "icon": "🏡",
+        "name": "Independent Villa"
+      }
     ],
     "checkInRules": [
       "Check-in time: 12:00 PM onwards",
@@ -341,6 +435,8 @@
       "Kitchen cleaning service included",
       "Property inspection with guest walkthrough",
       "Complimentary laundry service for extended stays"
-    ]
+    ],
+    "villa_type": "Bungalow",
+    "v_admin_company": []
   }
-}
+]

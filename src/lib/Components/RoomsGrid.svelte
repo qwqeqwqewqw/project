@@ -3,18 +3,18 @@
   import { callServerApi } from "../../services/DataService";
   import { selectedVilla } from "../../stores/villaStore";
   import { get } from "svelte/store";
-  import { rooms } from "../Data/data";
 
-  let room3 = rooms;
+  let room3 = null;
 
-  // async function getRoomData() {
-  //   const data = await callServerApi("getVillaInfo", {}, {});
-  //   room3 = rooms;
-  // }
+  async function getRoomData() {
+    const data = await callServerApi("getVillaInfo", {}, {});
+    console.log(data.data);
+    room3 = data.data;
+  }
 
-  // onMount(() => {
-  //   getRoomData();
-  // });
+  onMount(() => {
+    getRoomData();
+  });
 
   function bookVilla(villa) {
     selectedVilla.set(villa);
