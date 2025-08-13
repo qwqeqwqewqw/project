@@ -1,7 +1,8 @@
 <script>
   import { IconCheck } from "@tabler/icons-svelte";
 
-  let { room, additionalAmenities } = $props();
+  let { room, selectedPlan, roomInv } = $props();
+  let additionalAmenities = room.additionalAmenities;
 </script>
 
 <div class="bg-white rounded-2xl p-6 shadow-lg">

@@ -17,6 +17,8 @@
   let currentRoom = null;
   let villaplans = [];
   let selectedPlan = null;
+  let currenttype = null;
+  let roomInv = null;
 
   let rating = 4.9;
   let reviewCount = 245;
@@ -46,14 +48,14 @@
     await getPlans(); // load plans after room is set
 
     if (villaplans.length > 0) selectedPlan = villaplans[0];
-
+    console.log("selected plan : ", selectedPlan);
     console.log("Filtered plans:", villaplans);
   });
 
   async function getPlans() {
     const data = await callServerApi("getSalesPackages", {}, {});
     console.log("unfiltered list: ", data.data);
-    let currenttype = currentRoom?.villa_type;
+    currenttype = currentRoom?.villa_type;
     console.log("Current villa type:", currenttype);
 
     if (!currenttype) {
@@ -72,6 +74,10 @@
         (plan) => plan.room_type !== "Super Delux Room"
       );
     }
+  }
+
+  async function getRoomInv() {
+    const data = await callServerApi("getSalesPackages", {}, {});
   }
 
   function handleBooking() {
@@ -99,6 +105,7 @@
 
   function handlePlanSelect(plan) {
     selectedPlan = plan;
+    console.log("selected plan : ", selectedPlan);
   }
 </script>
 
@@ -132,16 +139,21 @@
             <BookingVillaPlans
               {villaplans}
               {selectedPlan}
+              {currenttype}
               onSelectPlan={handlePlanSelect}
             />
 
             <!-- Show selected plan details -->
             {#if selectedPlan}
-              <section class="mt-8 p-4 bg-gray-100 rounded shadow">
+              <section class="mt-8 p-4 bg-gray-100 text-black rounded shadow">
                 <h3 class="text-xl font-semibold mb-2">
                   Selected Plan Details
                 </h3>
-                <p><strong>Plan Name:</strong> {selectedPlan.plan_name}</p>
+                <p>
+                  <strong>Plan Name:</strong>
+                  {selectedPlan.package_name.replace(/ - Slab \(1-15\)/, "") ||
+                    ""}
+                </p>
                 <p>
                   <strong>Price Range:</strong> ₹{selectedPlan.min_mrp} - ₹{selectedPlan.max_mrp}
                 </p>
@@ -149,6 +161,8 @@
                 <!-- Future: show amenities here -->
               </section>
             {/if}
+
+            <RoomAmenities {roomInv} {selectedPlan} room={currentRoom} />
 
             <BookingRules
               checkInRules={currentRoom.checkInRules}
@@ -158,6 +172,7 @@
 
           <div class="lg:col-span-1">
             <BookingForm
+              {selectedPlan}
               room={currentRoom}
               {formData}
               onSubmit={handleBooking}
