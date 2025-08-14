@@ -26,23 +26,28 @@
     }
   });
 
-  // derived: curr_room updates when selectedPlan or roomInv changes
   let curr_room = $derived.by(() => {
     if (!selectedPlan?.room_type || !roomInv?.length) return null;
 
-    const match = selectedPlan.room_type.match(/\d+\s*BHK/i);
-    if (!match) return null;
+    if (room.villa_type.includes("Bungalow")) {
+      const match = selectedPlan.room_type.match(/\d+\s*BHK/i);
+      if (!match) return null;
 
-    const bhk = match[0].replace(/\s+/g, "").toUpperCase(); // "3BHK"
-    return (
-      roomInv.find((r) => r.villa_type?.toUpperCase().includes(bhk)) || null
-    );
+      const bhk = match[0].replace(/\s+/g, "").toUpperCase(); // "3BHK"
+      return (
+        roomInv.find((r) => r.villa_type?.toUpperCase().includes(bhk)) || null
+      );
+    } else {
+      return (
+        roomInv.find((r) => r.villa_type?.includes(room.villa_type)) || null
+      );
+    }
   });
 
-  // optional logging
-  $effect(() => {
-    console.log("curr_room updated:", curr_room);
-  });
+  //
+  // $effect(() => {
+  //   console.log("curr_room updated:", curr_room);
+  // });
 </script>
 
 {#if loading}

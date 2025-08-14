@@ -8,7 +8,7 @@
 
   async function getRoomData() {
     const data = await callServerApi("getVillaInfo", {}, {});
-    console.log(data.data);
+    // console.log(data.data);
     room3 = data.data;
   }
 
@@ -18,7 +18,7 @@
 
   function bookVilla(villa) {
     selectedVilla.set(villa);
-    console.log("Selected villa:", get(selectedVilla));
+    // console.log("Selected villa:", get(selectedVilla));
     window.location.href = `/book`;
   }
 </script>

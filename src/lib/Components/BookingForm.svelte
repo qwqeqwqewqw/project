@@ -1,11 +1,14 @@
 <script>
-  const { room, formData, onSubmit, onCallRoom, selectedPlan } = $props();
+  const { room, formData, onSubmit, onCallRoom, selectedPlan, bookingStatus } =
+    $props();
 
   // Generate options for adults and children based on max_pax
   let adultsOptions = $state([]);
   let childrenOptions = $state([]);
   let PackageName = $state("Package");
   let totalPrice = $state("0.00");
+
+  console.log(selectedPlan);
 
   $effect(() => {
     if (selectedPlan) {
@@ -138,7 +141,8 @@
         id="name"
         type="text"
         placeholder="Ex. John Doe"
-        bind:value={formData.name}
+        value={formData.name}
+        onchange={(e) => (formData.name = e.target.value)}
         class="input input-bordered text-gray-600 w-full bg-gray-100 border-blue-200 focus:border-green-700"
         required
       />
@@ -154,7 +158,24 @@
         id="phone"
         type="tel"
         placeholder="Enter Phone Number"
-        bind:value={formData.phone}
+        value={formData.phone}
+        onchange={(e) => (formData.phone = e.target.value)}
+        class="input input-bordered text-gray-600 w-full bg-gray-100 border-blue-200 focus:border-green-700"
+        required
+      />
+    </div>
+    <div class="form-control">
+      <label class="label" for="email">
+        <p class="label-text font-medium text-gray-900">
+          Email Address <span class="text-red-800">*</span>
+        </p>
+      </label>
+      <input
+        id="email"
+        type="email"
+        placeholder="you@example.com"
+        value={formData.email}
+        onchange={(e) => (formData.email = e.target.value)}
         class="input input-bordered text-gray-600 w-full bg-gray-100 border-blue-200 focus:border-green-700"
         required
       />
@@ -222,7 +243,7 @@
         onchange={(e) => handleChildrenChange(e.target.value)}
         class="select input-bordered w-full text-gray-600 bg-gray-100 border-blue-200 focus:border-green-700"
       >
-        <option value="" selected>Select</option>
+        <option value={0} selected>Select</option>
         {#each childrenOptions as option}
           <option value={Number(option)}>{option}</option>
         {/each}
@@ -239,7 +260,7 @@
         onchange={() => (totalPrice = calculatePrice())}
         class="select input-bordered w-full text-gray-600 bg-gray-100 border-blue-200 focus:border-green-700"
       >
-        <option value={0} selected>0</option>
+        <option value={0} selected>Select</option>
         {#each Array(selectedPlan?.extra_bedding || 0)
           .fill(0)
           .map((_, i) => i + 1) as bed}
@@ -267,13 +288,18 @@
         <option value={3}>3</option>
       </select>
     </div>
-
-    <button
-      type="submit"
-      class="btn w-full bg-almaris-blue text-white border-0 transition-all duration-300 mt-6 py-3 text-lg font-semibold"
-    >
-      Book
-    </button>
+    {#if !bookingStatus}
+      <button
+        type="submit"
+        class="btn w-full bg-almaris-blue text-white border-0 transition-all duration-300 mt-6 py-3 text-lg font-semibold"
+      >
+        Book
+      </button>
+    {:else}
+      <div class=" bg-green-600 text-white px-4 py-3 rounded shadow">
+        Booking Complete
+      </div>
+    {/if}
 
     <div class="text-center mt-4 pt-4 border-t border-blue-200">
       <p class="text-sm text-gray-600 mb-2">Need help? Call us directly</p>
