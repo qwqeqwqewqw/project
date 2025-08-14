@@ -1,0 +1,259 @@
+[
+  {
+    "status": "Active",
+    "villa_type": "Studio Room",
+    "villa_no": "S1",
+    "villa_name": "",
+    "specifications": [
+      { "spec_name": "Double bed", "spec_value": "1" },
+      { "spec_name": "Washroom", "spec_value": "1" },
+      { "spec_name": "Balcony", "spec_value": "1" }
+    ],
+    "amenities": [
+      { "title": "Air Conditioning", "value": "1" },
+      { "title": "WiFi", "value": "1" },
+      { "title": "Television", "value": "1" }
+    ],
+    "contacts": [
+      {
+        "phone1": "9764202288",
+        "email_id": "",
+        "status": "Active",
+        "complete_name": "Cherylin Monta",
+        "first_name": "Cherylin",
+        "last_name": "Monta"
+      }
+    ],
+    "addresses": [
+      {
+        "address": "B6-102, Tirupati Campus, phase 2, lane 2, tingre nagar, vishrantwadi\nAirport Road, Near Tirupati Mangal Karyalaya",
+        "country": "India",
+        "pincode": "411015",
+        "state": "Maharashtra",
+        "city": "Pune",
+        "is_default": "Yes",
+        "status": "Active",
+        "address_type": "Corrospondance"
+      }
+    ],
+    "audit_info": [],
+    "extra_beds": 0,
+    "pax": 2
+  },
+  {
+    "status": "Active",
+    "villa_type": "Delux Room",
+    "villa_no": "D1",
+    "villa_name": "",
+    "specifications": [
+      { "spec_name": "Double beds", "spec_value": "1" },
+      { "spec_name": "Washroom", "spec_value": "1" },
+      { "spec_name": "Mini Fridge", "spec_value": "1" }
+    ],
+    "amenities": [
+      { "title": "WiFi", "value": "1" },
+      { "title": "Television", "value": "1" },
+      { "title": "Room Heater", "value": "1" }
+    ],
+    "contacts": [
+      {
+        "phone1": "9764202288",
+        "email_id": "",
+        "status": "Active",
+        "complete_name": "Cherylin Monta",
+        "first_name": "Cherylin",
+        "last_name": "Monta"
+      }
+    ],
+    "addresses": [
+      {
+        "address": "B6-102, Tirupati Campus, phase 2, lane 2, tingre nagar, vishrantwadi\nAirport Road, Near Tirupati Mangal Karyalaya",
+        "country": "India",
+        "pincode": "411015",
+        "state": "Maharashtra",
+        "city": "Pune",
+        "is_default": "Yes",
+        "status": "Active",
+        "address_type": "Corrospondance"
+      }
+    ],
+    "audit_info": [],
+    "extra_beds": 1,
+    "pax": 2
+  },
+  {
+    "status": "Active",
+    "villa_type": "Super Delux Room",
+    "villa_no": "SD1",
+    "villa_name": "",
+    "specifications": [
+      { "spec_name": "King Size Bed", "spec_value": "1" },
+      { "spec_name": "Washroom", "spec_value": "1" },
+      { "spec_name": "Private Balcony", "spec_value": "1" },
+      { "spec_name": "Mini Bar", "spec_value": "1" }
+    ],
+    "amenities": [
+      { "title": "WiFi", "value": "1" },
+      { "title": "Television", "value": "1" },
+      { "title": "Air Conditioning", "value": "1" },
+      { "title": "Jacuzzi", "value": "1" }
+    ],
+    "contacts": [
+      {
+        "phone1": "9764202288",
+        "email_id": "",
+        "status": "Active",
+        "complete_name": "Cherylin Monta",
+        "first_name": "Cherylin",
+        "last_name": "Monta"
+      }
+    ],
+    "addresses": [
+      {
+        "address": "B6-102, Tirupati Campus, phase 2, lane 2, tingre nagar, vishrantwadi\nAirport Road, Near Tirupati Mangal Karyalaya",
+        "country": "India",
+        "pincode": "411015",
+        "state": "Maharashtra",
+        "city": "Pune",
+        "is_default": "Yes",
+        "status": "Active",
+        "address_type": "Corrospondance"
+      }
+    ],
+    "audit_info": [],
+    "extra_beds": 1,
+    "pax": 3
+  },
+  {
+    "status": "Active",
+    "villa_type": "2BHK Bungalow",
+    "villa_no": "B2-1",
+    "villa_name": "",
+    "specifications": [
+      { "spec_name": "Bedrooms", "spec_value": "2" },
+      { "spec_name": "Washrooms", "spec_value": "2" },
+      { "spec_name": "Living Room", "spec_value": "1" },
+      { "spec_name": "Kitchen", "spec_value": "1" }
+    ],
+    "amenities": [
+      { "title": "Swimming Pool", "value": "1" },
+      { "title": "WiFi", "value": "1" },
+      { "title": "Television", "value": "2" },
+      { "title": "Parking", "value": "1" }
+    ],
+    "contacts": [
+      {
+        "phone1": "9764202288",
+        "email_id": "",
+        "status": "Active",
+        "complete_name": "Cherylin Monta",
+        "first_name": "Cherylin",
+        "last_name": "Monta"
+      }
+    ],
+    "addresses": [
+      {
+        "address": "B6-102, Tirupati Campus, phase 2, lane 2, tingre nagar, vishrantwadi\nAirport Road, Near Tirupati Mangal Karyalaya",
+        "country": "India",
+        "pincode": "411015",
+        "state": "Maharashtra",
+        "city": "Pune",
+        "is_default": "Yes",
+        "status": "Active",
+        "address_type": "Corrospondance"
+      }
+    ],
+    "audit_info": [],
+    "extra_beds": 2,
+    "pax": 4
+  },
+  {
+    "status": "Active",
+    "villa_type": "3BHK Bungalow",
+    "villa_no": "B3-1",
+    "villa_name": "",
+    "specifications": [
+      { "spec_name": "Bedrooms", "spec_value": "3" },
+      { "spec_name": "Washrooms", "spec_value": "3" },
+      { "spec_name": "Living Room", "spec_value": "1" },
+      { "spec_name": "Kitchen", "spec_value": "1" }
+    ],
+    "amenities": [
+      { "title": "Swimming Pool", "value": "1" },
+      { "title": "WiFi", "value": "1" },
+      { "title": "Television", "value": "3" },
+      { "title": "Parking", "value": "1" },
+      { "title": "Barbecue Area", "value": "1" }
+    ],
+    "contacts": [
+      {
+        "phone1": "9764202288",
+        "email_id": "",
+        "status": "Active",
+        "complete_name": "Cherylin Monta",
+        "first_name": "Cherylin",
+        "last_name": "Monta"
+      }
+    ],
+    "addresses": [
+      {
+        "address": "B6-102, Tirupati Campus, phase 2, lane 2, tingre nagar, vishrantwadi\nAirport Road, Near Tirupati Mangal Karyalaya",
+        "country": "India",
+        "pincode": "411015",
+        "state": "Maharashtra",
+        "city": "Pune",
+        "is_default": "Yes",
+        "status": "Active",
+        "address_type": "Corrospondance"
+      }
+    ],
+    "audit_info": [],
+    "extra_beds": 3,
+    "pax": 6
+  },
+  {
+    "status": "Active",
+    "villa_type": "4BHK Bungalow",
+    "villa_no": "B4-1",
+    "villa_name": "",
+    "specifications": [
+      { "spec_name": "Bedrooms", "spec_value": "4" },
+      { "spec_name": "Washrooms", "spec_value": "4" },
+      { "spec_name": "Living Rooms", "spec_value": "2" },
+      { "spec_name": "Kitchen", "spec_value": "1" }
+    ],
+    "amenities": [
+      { "title": "Swimming Pool", "value": "1" },
+      { "title": "WiFi", "value": "1" },
+      { "title": "Television", "value": "4" },
+      { "title": "Parking", "value": "1" },
+      { "title": "Barbecue Area", "value": "1" },
+      { "title": "Private Garden", "value": "1" }
+    ],
+    "contacts": [
+      {
+        "phone1": "9764202288",
+        "email_id": "",
+        "status": "Active",
+        "complete_name": "Cherylin Monta",
+        "first_name": "Cherylin",
+        "last_name": "Monta"
+      }
+    ],
+    "addresses": [
+      {
+        "address": "B6-102, Tirupati Campus, phase 2, lane 2, tingre nagar, vishrantwadi\nAirport Road, Near Tirupati Mangal Karyalaya",
+        "country": "India",
+        "pincode": "411015",
+        "state": "Maharashtra",
+        "city": "Pune",
+        "is_default": "Yes",
+        "status": "Active",
+        "address_type": "Corrospondance"
+      }
+    ],
+    "audit_info": [],
+    "extra_beds": 4,
+    "pax": 8
+  }
+]

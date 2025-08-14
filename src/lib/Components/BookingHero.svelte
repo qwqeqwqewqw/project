@@ -30,37 +30,42 @@
       />
     </div>
 
-    <!-- Right Side: Three Stacked Images -->
-    <div class="flex flex-col gap-4">
-      {#each room.images.slice(1, 4) as img, i}
-        <!-- svelte-ignore a11y_click_events_have_key_events -->
-        <!-- svelte-ignore a11y_no_static_element_interactions -->
-        <div
-          class="relative"
-          class:cursor-pointer={i === 2}
-          onclick={() => {
-            if (i === 2) openModal();
-          }}
-        >
+    <!-- Right Side: Two Tall Images, One Full-Width Below -->
+    <div class="grid grid-cols-2 grid-rows-3 gap-4">
+      {#each room.images.slice(1, 3) as img, i}
+        <!-- First two images spanning two rows -->
+        <div class="row-span-2">
           <img
             src={img}
             alt={`Preview ${i + 1}`}
+            class="w-full h-full object-cover rounded-lg"
+            style="max-height: calc(13.33vh * 2 + 1rem);"
+          />
+        </div>
+      {/each}
+
+      <!-- Third image in bottom row full width -->
+      {#if room.images[3]}
+        <!-- svelte-ignore a11y_click_events_have_key_events -->
+        <!-- svelte-ignore a11y_no_static_element_interactions -->
+        <div class="col-span-2 relative cursor-pointer" onclick={openModal}>
+          <img
+            src={room.images[3]}
+            alt="Preview 3"
             class="w-full object-cover rounded-lg"
             style="height: 13.33vh;"
           />
-          {#if i === 2 && room.images.length > 4}
+          {#if room.images.length > 4}
             <div
               class="absolute inset-0 bg-black/50 flex items-center justify-center rounded-lg"
             >
-              <span
-                class="text-white md:text-lg text-sm font-semibold md:pl-0 pl-3"
-              >
+              <span class="text-white md:text-lg text-sm font-semibold">
                 View More Photos
               </span>
             </div>
           {/if}
         </div>
-      {/each}
+      {/if}
     </div>
   </div>
 </section>

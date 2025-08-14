@@ -3,10 +3,10 @@
   import { get } from "svelte/store";
   import { goto } from "$app/navigation";
 
-  import RoomHero from "$lib/Components/BookingHero.svelte";
-  import RoomDetails from "$lib/Components/BookingDetails.svelte";
-  import RoomOverview from "$lib/Components/BookingOverview.svelte";
-  import RoomAmenities from "$lib/Components/BookingAmenities.svelte";
+  import BookingHero from "$lib/Components/BookingHero.svelte";
+  import BookingDetails from "$lib/Components/BookingDetails.svelte";
+  import BookingOverview from "$lib/Components/BookingOverview.svelte";
+  import BookingAmenities from "$lib/Components/BookingAmenities.svelte";
   import BookingRules from "$lib/Components/BookingRules.svelte";
   import BookingForm from "$lib/Components/BookingForm.svelte";
   import BookingVillaPlans from "../../lib/Components/BookingVillaPlans.svelte";
@@ -76,10 +76,6 @@
     }
   }
 
-  async function getRoomInv() {
-    const data = await callServerApi("getSalesPackages", {}, {});
-  }
-
   function handleBooking() {
     // Attach selected plan to formData before booking
     formData.plan = selectedPlan ? selectedPlan.plan_name : "";
@@ -120,20 +116,20 @@
 
 <main class="min-h-screen">
   {#if currentRoom}
-    <RoomHero room={currentRoom} />
+    <BookingHero room={currentRoom} />
 
     <div class="bg-off-white">
       <div class="w-full px-4 sm:px-6 lg:px-8 py-8">
         <div class="grid lg:grid-cols-3 gap-8">
           <div class="lg:col-span-2 space-y-8">
-            <RoomDetails
+            <BookingDetails
               room={currentRoom}
               {rating}
               {reviewCount}
               {address}
               onCallRoom={callRoom}
             />
-            <RoomOverview room={currentRoom} />
+            <BookingOverview room={currentRoom} />
 
             <!-- Plans selector with props -->
             <BookingVillaPlans
@@ -162,7 +158,7 @@
               </section>
             {/if}
 
-            <RoomAmenities {roomInv} {selectedPlan} room={currentRoom} />
+            <BookingAmenities {roomInv} {selectedPlan} room={currentRoom} />
 
             <BookingRules
               checkInRules={currentRoom.checkInRules}

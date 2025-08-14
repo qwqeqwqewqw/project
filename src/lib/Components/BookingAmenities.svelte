@@ -1,44 +1,116 @@
 <script>
-  import { IconCheck } from "@tabler/icons-svelte";
+  import { onMount } from "svelte";
+  import { callServerApi } from "../../services/DataService";
 
-  let { room, selectedPlan, roomInv } = $props();
-  let additionalAmenities = room.additionalAmenities;
+  // props
+  let { room, selectedPlan } = $props();
+
+  // state
+  let additionalAmenities = room?.additionalAmenities || [];
+  let roomInv = $state([]); // reactive
+  let loading = $state(true);
+  let fetchError = $state(null);
+
+  // fetch inventory
+  onMount(async () => {
+    loading = true;
+    fetchError = null;
+    try {
+      const data = await callServerApi("getInvVillas", {}, {});
+      roomInv = data?.data ?? [];
+    } catch (err) {
+      console.error("Failed to fetch roomInv:", err);
+      fetchError = err;
+    } finally {
+      loading = false;
+    }
+  });
+
+  // derived: curr_room updates when selectedPlan or roomInv changes
+  let curr_room = $derived.by(() => {
+    if (!selectedPlan?.room_type || !roomInv?.length) return null;
+
+    const match = selectedPlan.room_type.match(/\d+\s*BHK/i);
+    if (!match) return null;
+
+    const bhk = match[0].replace(/\s+/g, "").toUpperCase(); // "3BHK"
+    return (
+      roomInv.find((r) => r.villa_type?.toUpperCase().includes(bhk)) || null
+    );
+  });
+
+  // optional logging
+  $effect(() => {
+    console.log("curr_room updated:", curr_room);
+  });
 </script>
 
-<div class="bg-white rounded-2xl p-6 shadow-lg">
-  <h3 class="text-2xl font-bold text-gray-900 mb-2">Room Amenities</h3>
-  <p class="text-gray-600 mb-6">
-    Enjoy premium amenities designed for your comfort and convenience during
-    your stay at Cherilyn Monta Resort.
-  </p>
+{#if loading}
+  <p class="text-black">Loading room amenities...</p>
+{:else if fetchError}
+  <p class="text-red-600">Failed to load amenities. Check console.</p>
+{:else}
+  <div class="bg-white rounded-2xl p-6 shadow-lg">
+    {#if curr_room}
+      <h3 class="text-2xl font-bold text-gray-900 mb-2">
+        Room Amenities for {curr_room.villa_type}
+      </h3>
 
-  <!-- Premium Amenities from room data -->
-  <div class="mb-6">
-    <h4 class="text-lg font-semibold text-gray-900 mb-3">Premium Amenities</h4>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-      {#each room.amenities as amenity}
-        <div class="flex items-center space-x-2">
-          <IconCheck class="w-4 h-4 text-almaris-gold flex-shrink-0" />
-          <span class="text-gray-900">{amenity}</span>
-        </div>
-      {/each}
-    </div>
-  </div>
+      <p class="text-gray-600 mb-6">
+        Enjoy premium amenities designed for your comfort and convenience during
+        your stay at Cherilyn Monta Resort.
+      </p>
 
-  <!-- Additional Amenities -->
-  <div>
-    <h4 class="text-lg font-semibold text-gray-900 mb-3">
-      Additional Amenities
-    </h4>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-      {#each additionalAmenities as amenity}
-        <div
-          class="flex items-center space-x-3 p-3 rounded-lg hover:bg-orange-50 transition-colors"
-        >
-          <span class="text-2xl">{@html amenity.icon}</span>
-          <span class="text-gray-900">{amenity.name}</span>
+      <!-- Premium Amenities -->
+      <div class="mb-6">
+        <h4 class="text-lg font-semibold text-gray-900 mb-3">
+          Premium Amenities
+        </h4>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {#each curr_room.amenities ?? [] as amenity}
+            <div class="flex items-center space-x-2">
+              <span class="text-gray-900">{amenity.title ?? amenity}</span>
+            </div>
+          {/each}
         </div>
-      {/each}
-    </div>
+      </div>
+
+      <!-- Room specs -->
+      <div>
+        <h4 class="text-lg font-semibold text-gray-900 mb-3">Room specs</h4>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {#each curr_room.specifications ?? [] as specs}
+            <div
+              class="flex items-center space-x-3 p-3 rounded-lg hover:bg-orange-50 transition-colors"
+            >
+              <span class="text-2xl text-black"
+                >{specs.spec_value} {specs.spec_name}</span
+              >
+            </div>
+          {/each}
+        </div>
+      </div>
+    {:else}
+      <!-- No matching curr_room found: show fallback or message -->
+      <h3 class="text-2xl font-bold text-gray-900 mb-2">Room Amenities</h3>
+      <p class="text-gray-600 mb-4">
+        No exact match found for the selected plan (showing room-level amenities
+        instead).
+      </p>
+
+      <div class="mb-6">
+        <h4 class="text-lg font-semibold text-gray-900 mb-3">
+          Premium Amenities
+        </h4>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {#each room?.amenities ?? [] as amenity}
+            <div class="flex items-center space-x-2">
+              <span class="text-gray-900">{amenity}</span>
+            </div>
+          {/each}
+        </div>
+      </div>
+    {/if}
   </div>
-</div>
+{/if}
